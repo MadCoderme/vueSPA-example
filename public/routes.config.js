@@ -1,0 +1,1 @@
+export const routes = [{"path":"/","component":"views/Home.vue","meta":[{"name":"title","content":"Home page!"}]},{"path":"/fruits","component":"views/Fruits.vue","meta":[{"name":"title","content":"Fruits page!"}]},{"path":"/flowers","component":"views/Flowers.vue","meta":[{"name":"title","content":"Flowers page!"}]}]

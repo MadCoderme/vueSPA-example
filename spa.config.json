@@ -1,0 +1,4 @@
+{
+    "routes": "routes.config.json",
+    "prerenderer": "prerenderer.js"
+}
