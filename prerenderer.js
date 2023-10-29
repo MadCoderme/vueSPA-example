@@ -1,1 +1,1 @@
-document.main.innerHTML = 'Loading...'
+document.getElementsByTagName('main')[0].innerHTML = 'Loading...'
