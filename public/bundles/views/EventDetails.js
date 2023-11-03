@@ -1,141 +1,4 @@
-import {defineComponent,openBlock,createBlock,Transition,withCtx,createElementVNode,pushScopeId,popScopeId,createTextVNode,normalizeClass,ref,createElementBlock,Fragment,withDirectives,createVNode,vShow,computed,resolveComponent,hasInjectionContext,inject,watch,reactive,effectScope,isRef,isReactive,toRaw,getCurrentScope,onScopeDispose,nextTick,toRefs,markRaw,createStaticVNode,toDisplayString,unref,createCommentVNode,renderList,onMounted}from'vue';function _mergeNamespaces(n, m){m.forEach(function(e){e&&typeof e!=='string'&&!Array.isArray(e)&&Object.keys(e).forEach(function(k){if(k!=='default'&&!(k in n)){var d=Object.getOwnPropertyDescriptor(e,k);Object.defineProperty(n,k,d.get?d:{enumerable:true,get:function(){return e[k]}});}})});return Object.freeze(n);}const _withScopeId$3 = n => (pushScopeId("data-v-4659f920"), n = n(), popScopeId(), n);
-const _hoisted_1$6 = _withScopeId$3(() => createElementVNode("h3", null, [
-    createElementVNode("svg", {
-        width: "20",
-        height: "20",
-        viewBox: "0 0 20 20",
-        fill: "none",
-        xmlns: "http://www.w3.org/2000/svg"
-    }, [
-        createElementVNode("path", {
-            "fill-rule": "evenodd",
-            "clip-rule": "evenodd",
-            d: "M2.5 8.33329C2.5 5.19079 2.5 3.61913 3.47667 2.64329C4.4525 1.66663 6.02417 1.66663 9.16667 1.66663H10.8333C13.9758 1.66663 15.5475 1.66663 16.5233 2.64329C17.5 3.61913 17.5 5.19079 17.5 8.33329V11.6666C17.5 14.8091 17.5 16.3808 16.5233 17.3566C15.5475 18.3333 13.9758 18.3333 10.8333 18.3333H9.16667C6.02417 18.3333 4.4525 18.3333 3.47667 17.3566C2.5 16.3808 2.5 14.8091 2.5 11.6666V8.33329ZM5 9.99996C5 8.82163 5 8.23246 5.36667 7.86663C5.73167 7.49996 6.32083 7.49996 7.5 7.49996H12.5C13.6783 7.49996 14.2675 7.49996 14.6333 7.86663C15 8.23246 15 8.82163 15 9.99996V13.3333C15 14.5116 15 15.1008 14.6333 15.4666C14.2675 15.8333 13.6783 15.8333 12.5 15.8333H7.5C6.32167 15.8333 5.7325 15.8333 5.36667 15.4666C5 15.1016 5 14.5125 5 13.3333V9.99996ZM5.83333 4.37496C5.66757 4.37496 5.5086 4.44081 5.39139 4.55802C5.27418 4.67523 5.20833 4.8342 5.20833 4.99996C5.20833 5.16572 5.27418 5.32469 5.39139 5.4419C5.5086 5.55911 5.66757 5.62496 5.83333 5.62496H10C10.1658 5.62496 10.3247 5.55911 10.4419 5.4419C10.5592 5.32469 10.625 5.16572 10.625 4.99996C10.625 4.8342 10.5592 4.67523 10.4419 4.55802C10.3247 4.44081 10.1658 4.37496 10 4.37496H5.83333Z",
-            fill: "#A3F7BF",
-            "fill-opacity": "0.8"
-        })
-    ]),
-    createTextVNode(" Feeds ")
-], -1));
-const _hoisted_2$5 = _withScopeId$3(() => createElementVNode("button", { class: "new-btn" }, [
-    createElementVNode("svg", {
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
-        fill: "none",
-        xmlns: "http://www.w3.org/2000/svg"
-    }, [
-        createElementVNode("path", {
-            d: "M11 12H3M16 6H3M16 18H3M18 9V15M21 12H15",
-            stroke: "#A3F7BF",
-            "stroke-opacity": "0.8",
-            "stroke-width": "2",
-            "stroke-linecap": "round",
-            "stroke-linejoin": "round"
-        })
-    ])
-], -1));
-const _hoisted_3$2 = _withScopeId$3(() => createElementVNode("p", { style: { color: '#A3F7BF' } }, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot-fill'])
-    }),
-    createTextVNode(" Home ")
-], -1));
-const _hoisted_4$2 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Following ")
-], -1));
-const _hoisted_5$2 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Demo Feed 1 ")
-], -1));
-const _hoisted_6$2 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Demo Feed 2 ")
-], -1));
-const _hoisted_7$2 = _withScopeId$3(() => createElementVNode("br", null, null, -1));
-const _hoisted_8$3 = _withScopeId$3(() => createElementVNode("h3", null, [
-    createElementVNode("svg", {
-        width: "20",
-        height: "20",
-        viewBox: "0 0 20 20",
-        fill: "none",
-        xmlns: "http://www.w3.org/2000/svg"
-    }, [
-        createElementVNode("path", {
-            d: "M0 6.23702C0.000305196 7.68489 0.502143 9.08787 1.42001 10.2069C2.33788 11.326 3.61499 12.0918 5.03375 12.3741C5.19342 10.6123 5.92483 8.95122 7.11625 7.64459C6.63697 7.46715 6.11488 7.44098 5.62029 7.56961C5.12569 7.69824 4.68236 7.97549 4.35 8.36402C4.29665 8.42646 4.23154 8.47777 4.15838 8.51502C4.08522 8.55226 4.00545 8.57473 3.92361 8.58111C3.84178 8.58751 3.75949 8.5777 3.68145 8.55226C3.6034 8.52682 3.53113 8.48624 3.46875 8.43284C3.40637 8.37944 3.35511 8.31426 3.3179 8.24103C3.28069 8.1678 3.25825 8.08796 3.25186 8.00605C3.24548 7.92414 3.25527 7.84177 3.28069 7.76365C3.30611 7.68553 3.34665 7.61319 3.4 7.55076C3.96599 6.88858 4.74452 6.44416 5.60208 6.29372C6.45963 6.14327 7.34276 6.29619 8.1 6.72623C9.33147 5.7537 10.819 5.16074 12.3812 5.01962C12.0747 3.50007 11.2156 2.14849 9.97041 1.22668C8.72522 0.30487 7.18254 -0.12156 5.6412 0.029993C4.09987 0.181546 2.66958 0.900296 1.62739 2.04702C0.585204 3.19374 0.00529622 4.68681 0 6.23702ZM5.3125 4.36025C5.3125 4.48348 5.28825 4.6055 5.24114 4.71935C5.19402 4.8332 5.12497 4.93665 5.03791 5.02378C4.95086 5.11092 4.84751 5.18004 4.73377 5.2272C4.62002 5.27436 4.49811 5.29863 4.375 5.29863C4.25189 5.29863 4.12998 5.27436 4.01623 5.2272C3.90249 5.18004 3.79914 5.11092 3.71209 5.02378C3.62503 4.93665 3.55598 4.8332 3.50886 4.71935C3.46175 4.6055 3.4375 4.48348 3.4375 4.36025C3.4375 4.11137 3.53627 3.87269 3.71209 3.69671C3.8879 3.52073 4.12636 3.42186 4.375 3.42186C4.62364 3.42186 4.8621 3.52073 5.03791 3.69671C5.21373 3.87269 5.3125 4.11137 5.3125 4.36025ZM9.0625 4.36025C9.0625 4.60912 8.96373 4.8478 8.78791 5.02378C8.6121 5.19977 8.37364 5.29863 8.125 5.29863C7.87636 5.29863 7.6379 5.19977 7.46209 5.02378C7.28627 4.8478 7.1875 4.60912 7.1875 4.36025C7.1875 4.11137 7.28627 3.87269 7.46209 3.69671C7.6379 3.52073 7.87636 3.42186 8.125 3.42186C8.37364 3.42186 8.6121 3.52073 8.78791 3.69671C8.96373 3.87269 9.0625 4.11137 9.0625 4.36025ZM20 13.1185C20 14.9436 19.2757 16.6939 17.9864 17.9845C16.697 19.275 14.9484 20 13.125 20C11.3016 20 9.55295 19.275 8.26364 17.9845C6.97433 16.6939 6.25 14.9436 6.25 13.1185C6.25 11.2934 6.97433 9.54309 8.26364 8.25256C9.55295 6.96203 11.3016 6.23702 13.125 6.23702C14.9484 6.23702 16.697 6.96203 17.9864 8.25256C19.2757 9.54309 20 11.2934 20 13.1185ZM11.5625 11.8673C11.5625 11.6185 11.4637 11.3798 11.2879 11.2038C11.1121 11.0278 10.8736 10.9289 10.625 10.9289C10.3764 10.9289 10.1379 11.0278 9.96209 11.2038C9.78627 11.3798 9.6875 11.6185 9.6875 11.8673C9.6875 12.1162 9.78627 12.3549 9.96209 12.5309C10.1379 12.7068 10.3764 12.8057 10.625 12.8057C10.8736 12.8057 11.1121 12.7068 11.2879 12.5309C11.4637 12.3549 11.5625 12.1162 11.5625 11.8673ZM16.3812 15.0829C16.3189 15.0295 16.2466 14.9889 16.1686 14.9634C16.0905 14.938 16.0082 14.9282 15.9264 14.9346C15.8446 14.941 15.7648 14.9634 15.6916 15.0007C15.6185 15.0379 15.5533 15.0892 15.5 15.1517C15.2068 15.4945 14.843 15.7697 14.4335 15.9586C14.024 16.1474 13.5786 16.2454 13.1277 16.2457C12.6769 16.2461 12.2313 16.1488 11.8215 15.9606C11.4118 15.7724 11.0475 15.4978 10.7537 15.1554C10.7002 15.0931 10.635 15.0419 10.5617 15.0048C10.4884 14.9677 10.4086 14.9454 10.3267 14.9391C10.2448 14.9329 10.1625 14.9429 10.0844 14.9685C10.0064 14.9942 9.93417 15.0349 9.87187 15.0885C9.80958 15.1421 9.75843 15.2074 9.72136 15.2807C9.68428 15.3541 9.66201 15.434 9.6558 15.516C9.64958 15.5979 9.65956 15.6803 9.68517 15.7584C9.71077 15.8366 9.75149 15.9088 9.805 15.9712C10.2161 16.4509 10.726 16.8358 11.2998 17.0995C11.8736 17.3632 12.4976 17.4994 13.1289 17.4989C13.7603 17.4983 14.3841 17.3608 14.9574 17.0961C15.5306 16.8313 16.0398 16.4454 16.45 15.9649C16.5034 15.9025 16.5439 15.8302 16.5693 15.752C16.5947 15.6739 16.6045 15.5916 16.5982 15.5096C16.5918 15.4277 16.5693 15.3479 16.5321 15.2747C16.4949 15.2014 16.4436 15.1363 16.3812 15.0829ZM15.625 12.8057C15.8736 12.8057 16.1121 12.7068 16.2879 12.5309C16.4637 12.3549 16.5625 12.1162 16.5625 11.8673C16.5625 11.6185 16.4637 11.3798 16.2879 11.2038C16.1121 11.0278 15.8736 10.9289 15.625 10.9289C15.3764 10.9289 15.1379 11.0278 14.9621 11.2038C14.7863 11.3798 14.6875 11.6185 14.6875 11.8673C14.6875 12.1162 14.7863 12.3549 14.9621 12.5309C15.1379 12.7068 15.3764 12.8057 15.625 12.8057Z",
-            fill: "#A3F7BF",
-            "fill-opacity": "0.8"
-        })
-    ]),
-    createTextVNode(" Moods ")
-], -1));
-const _hoisted_9$3 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Positive ")
-], -1));
-const _hoisted_10$3 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Motivational ")
-], -1));
-const _hoisted_11$2 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: "dot",
-        style: { backgroundColor: '#A3F7BF' }
-    }),
-    createTextVNode(" Neutral ")
-], -1));
-const _hoisted_12$2 = [
-    _hoisted_1$6,
-    _hoisted_2$5,
-    _hoisted_3$2,
-    _hoisted_4$2,
-    _hoisted_5$2,
-    _hoisted_6$2,
-    _hoisted_7$2,
-    _hoisted_8$3,
-    _hoisted_9$3,
-    _hoisted_10$3,
-    _hoisted_11$2
-];
-var script$6 = defineComponent({
-    __name: 'FeedOptions',
-    props: {
-        hide: {
-            type: Function,
-            required: true
-        }
-    },
-    setup(__props) {
-        const props = __props;
-        return (_ctx, _cache) => {
-            return (openBlock(), createBlock(Transition, { name: "fadeIn" }, {
-                default: withCtx(() => [
-                    createElementVNode("div", {
-                        class: "wrapper",
-                        onClick: _cache[1] || (_cache[1] = ($event) => (props.hide()))
-                    }, [
-                        createElementVNode("div", {
-                            class: "popup",
-                            onClick: _cache[0] || (_cache[0] = ($event) => ($event.stopPropagation()))
-                        }, [..._hoisted_12$2])
-                    ])
-                ]),
-                _: 1
-            }));
-        };
-    }
-});function styleInject(css, ref) {
+import {hasInjectionContext,inject,ref,watch,reactive,effectScope,isRef,isReactive,toRaw,getCurrentScope,onScopeDispose,nextTick,toRefs,markRaw,computed,defineComponent,resolveComponent,openBlock,createElementBlock,normalizeStyle,createElementVNode,createTextVNode,toDisplayString,createCommentVNode,unref,withDirectives,vShow,Fragment,renderList,createBlock,pushScopeId,popScopeId,createStaticVNode,createVNode,onMounted,onUnmounted,normalizeClass}from'vue';function _mergeNamespaces(n, m){m.forEach(function(e){e&&typeof e!=='string'&&!Array.isArray(e)&&Object.keys(e).forEach(function(k){if(k!=='default'&&!(k in n)){var d=Object.getOwnPropertyDescriptor(e,k);Object.defineProperty(n,k,d.get?d:{enumerable:true,get:function(){return e[k]}});}})});return Object.freeze(n);}function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
   var insertAt = ref.insertAt;
 
@@ -160,349 +23,237 @@ var script$6 = defineComponent({
   } else {
     style.appendChild(document.createTextNode(css));
   }
-}var css_248z$7 = "\n.fadeIn-enter-active[data-v-4659f920] {\n  transition: all 0.5s ease-in;\n  opacity: 1;\n  -webkit-backdrop-filter: blur(2px);\n          backdrop-filter: blur(2px);\n}\n.fadeIn-enter-to[data-v-4659f920] {\n  transition: all 0.5s ease-in;\n  opacity: 1;\n  -webkit-backdrop-filter: blur(2px);\n          backdrop-filter: blur(2px);\n}\n.fadeIn-leave-active[data-v-4659f920] {\n  transition: all 0.3s ease-out;\n  opacity: 0;\n}\n.wrapper[data-v-4659f920] {\n    position: absolute;\n    height: 100%;\n    width: 100%;\n    z-index: 100;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-backdrop-filter: blur(2px);\n            backdrop-filter: blur(2px);\n}\n.popup[data-v-4659f920] {\n    width: 90%;\n    padding: 25px;\n    background-color: var(--c-black-mute);\n    border-radius: 20px;\n}\n.popup > h3[data-v-4659f920] {\n  color: white;\n  font-weight: bold;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-bottom: 10px;\n}\n.popup > h3 > svg[data-v-4659f920] {\n  margin-right: 6px;\n}\n.popup > p[data-v-4659f920] {\n  color: white;\n  font-size: 16px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  cursor: pointer;\n}\n.new-btn[data-v-4659f920] {\n  float: right;\n  margin-top: -30px;\n  background: transparent;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n}\n.new-btn[data-v-4659f920]:hover {\n  background: var(--color-background);\n}\n.dot-fill[data-v-4659f920] {\n  height: 15px;\n  width: 15px;\n  background-color: var(--c-primary);\n  border-radius: 50%;\n  display: inline-block;\n  margin-right: 10px;\n}\n.dot[data-v-4659f920] {\n  height: 15px;\n  width: 15px;\n  border: 1px solid var(--c-primary);\n  border-radius: 50%;\n  display: inline-block;\n  margin-right: 10px;\n}\n";
-styleInject(css_248z$7);script$6.__scopeId = "data-v-4659f920";
-script$6.__file = "src/components/FeedOptions.vue";const _withScopeId$2 = n => (pushScopeId("data-v-4fab8702"), n = n(), popScopeId(), n);
-const _hoisted_1$5 = { class: "header" };
-const _hoisted_2$4 = _withScopeId$2(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M11.3 14.3L8.7 11.7C8.38333 11.3833 8.31266 11.021 8.488 10.613C8.66333 10.205 8.97566 10.0007 9.425 10H14.575C15.025 10 15.3377 10.2043 15.513 10.613C15.6883 11.0217 15.6173 11.384 15.3 11.7L12.7 14.3C12.6 14.4 12.4917 14.475 12.375 14.525C12.2583 14.575 12.1333 14.6 12 14.6C11.8667 14.6 11.7417 14.575 11.625 14.525C11.5083 14.475 11.4 14.4 11.3 14.3Z",
-        fill: "#A3F7BF"
-    })
-], -1));
-var script$5 = defineComponent({
-    __name: 'Header',
-    setup(__props) {
-        const isFeedOptionsVisible = ref(false);
-        return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock(Fragment, null, [
-                createElementVNode("div", _hoisted_1$5, [
-                    createElementVNode("p", {
-                        onClick: _cache[0] || (_cache[0] = ($event) => (isFeedOptionsVisible.value = !isFeedOptionsVisible.value))
-                    }, [
-                        createTextVNode(" Home "),
-                        _hoisted_2$4
-                    ])
-                ]),
-                withDirectives(createVNode(script$6, {
-                    hide: () => isFeedOptionsVisible.value = false
-                }, null, 8, ["hide"]), [
-                    [vShow, isFeedOptionsVisible.value]
-                ])
-            ], 64));
-        };
-    }
-});var css_248z$6 = "\n.header[data-v-4fab8702] {\n        position: absolute;\n        top: 0px;\n        left: 0px;\n        right: 0px;\n        width: 100%;\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-flex-direction: row;\n            -ms-flex-direction: row;\n                flex-direction: row;\n        -webkit-justify-content: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n        -webkit-align-items: center;\n            -ms-flex-align: center;\n                align-items: center;\n        background-color: var(--color-background);\n        padding-top: 2%;\n        padding-bottom: 2%;\n}\n.header > p[data-v-4fab8702] {\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-align-items: center;\n            -ms-flex-align: center;\n                align-items: center;\n        color: var(--c-primary);\n        cursor: pointer;\n}\n";
-styleInject(css_248z$6);script$5.__scopeId = "data-v-4fab8702";
-script$5.__file = "src/components/template/Header.vue";const _withScopeId$1 = n => (pushScopeId("data-v-29eff494"), n = n(), popScopeId(), n);
-const _hoisted_1$4 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "22",
-    height: "22",
-    viewBox: "0 0 15 15",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M3.64001 2.27L7.50001 6.13L11.34 2.29C11.4248 2.19972 11.527 2.12749 11.6404 2.07766C11.7538 2.02783 11.8761 2.00141 12 2C12.2652 2 12.5196 2.10536 12.7071 2.29289C12.8947 2.48043 13 2.73478 13 3C13.0023 3.1226 12.9796 3.24439 12.9332 3.35788C12.8867 3.47138 12.8176 3.57419 12.73 3.66L8.84001 7.5L12.73 11.39C12.8948 11.5512 12.9915 11.7696 13 12C13 12.2652 12.8947 12.5196 12.7071 12.7071C12.5196 12.8946 12.2652 13 12 13C11.8726 13.0053 11.7454 12.984 11.6266 12.9375C11.5078 12.8911 11.4 12.8204 11.31 12.73L7.50001 8.87L3.65001 12.72C3.56552 12.8073 3.46457 12.8769 3.35301 12.925C3.24145 12.9731 3.12147 12.9986 3.00001 13C2.73479 13 2.48044 12.8946 2.2929 12.7071C2.10537 12.5196 2.00001 12.2652 2.00001 12C1.99768 11.8774 2.02043 11.7556 2.06686 11.6421C2.11328 11.5286 2.18242 11.4258 2.27001 11.34L6.16001 7.5L2.27001 3.61C2.1052 3.44876 2.00855 3.23041 2.00001 3C2.00001 2.73478 2.10537 2.48043 2.2929 2.29289C2.48044 2.10536 2.73479 2 3.00001 2C3.24001 2.003 3.47001 2.1 3.64001 2.27Z",
-        fill: "#A3F7BF",
-        "fill-opacity": "0.7"
-    })
-], -1));
-const _hoisted_2$3 = [
-    _hoisted_1$4
+}var css_248z$5 = ".avatar {\n    width: 42px;\n    height: 42px;\n    border-radius: 50%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border: 2px solid var(--color-primary);\n}\n.avatar-small {\n    width: 35px;\n    height: 35px;\n    border-radius: 25px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border: 2px solid var(--color-primary);\n}\n.userinfo {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.username {\n    font-size: 18px;\n    color: white;\n    font-weight: bold;\n    margin-left: 15px;\n    margin-right: 10px;\n}\n.username-small {\n    font-size: 16px;\n    color: white;\n    font-weight: bold;\n    margin-left: 15px;\n    margin-right: 10px;\n}\n@media (max-width: 480px) {\n    .username {\n        font-size: 16px;\n    }\n    .avatar {\n        width: 35px;\n        height: 35px;\n    }\n    .post-buttons > button > svg {\n        height: 25px !important;\n        width: 25px !important;\n    }\n    .post-more-options > svg {\n        height: 18px !important;\n    }\n}\n.btn-primary {\n    border: 0px;\n    background-color: var(--c-secondary);\n    padding: 10px;\n    padding-left: 25px;\n    padding-right: 25px;\n    border-radius: 10px;\n    font-size: 16px;\n    cursor: pointer;\n}\n.btn-secondary {\n    border: 1px solid var(--c-secondary);\n    background: transparent;\n    color: white;\n    padding: 10px;\n    padding-left: 25px;\n    padding-right: 25px;\n    border-radius: 10px;\n    font-size: 16px;\n    cursor: pointer;\n}\n.btn-primary:active, .btn-secondary:active {\n    -webkit-transform: scale(0.95);\n            transform: scale(0.95);\n    transition: all 0.1s cubic-bezier(0.17, 0.89, 0.24, 1.11);\n}\n.rounded {\n    border-radius: 20px;\n}\n.btn-small {\n    padding: 6px;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.close-btn {\n    background: var(--color-background-soft);\n    border: 0px;\n    margin-left: 5%;\n    margin-top: 20px;\n    padding: 5px;\n    padding-bottom: 4px;\n    border-radius: 10px;\n}\n.loader {\n    width: 48px;\n    height: 48px;\n    border: 5px solid var(--c-divider-dark-1);\n    border-top-color: var(--c-secondary);\n    border-radius: 50%;\n    display: inline-block;\n    box-sizing: border-box;\n    -webkit-animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;\n            animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;\n}\n@-webkit-keyframes rotation {\n    0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n    }\n    100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n@keyframes rotation {\n    0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n    }\n    100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n.container {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    padding-top: 20px;\n    padding-bottom: var(--bottom-menu-height);\n}";
+styleInject(css_248z$5);var css_248z$4 = "\n.post-body {\n    width: 100%;\n    -webkit-align-self: center;\n        -ms-flex-item-align: center;\n            align-self: center;\n    max-width: 600px;\n    padding: 5%;\n    background-color: var(--color-background);\n    margin-bottom: 6px;\n    cursor: pointer;\n}\n@media (min-width: 1024px) {\n    .post-body {\n        padding: 0%;\n        padding-top: 3%;\n        padding-bottom: 3%;\n    }\n}\n.post-text {\n    font-size: 17px;\n    color: white;\n    margin-left: 60px;\n}\n@media (max-width: 480px) {\n    .post-text {\n        font-size: 15px;\n        margin-left: 50px;\n    }\n}\n.post-text-small {\n    font-size: 15px;\n    color: white;\n}\n.post-text-detail {\n    font-size: 17px;\n    color: white;\n    margin-left: 10px;\n    margin-top: 20px;\n    margin-bottom: 50px;\n}\n.post-buttons {\n    min-width: 200px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-justify-content: space-evenly;\n        -ms-flex-pack: space-evenly;\n            justify-content: space-evenly;\n    margin-top: 5px;\n}\n.post-buttons > button {\n    width: 100%;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    background-color: transparent;\n    border: 0px;\n    padding: 10px;\n    border-radius: 10px;\n    color: white;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    transition: 0.5s ease;\n}\n.post-buttons > button[disabled=false]:hover {\n    background-color: #111111;\n    transition: 0.5s;\n}\n.post-buttons button span {\n    margin-left: 5px;\n}\n.post-more-options {\n    float: right;\n    margin-top: -35px;\n    background-color: transparent;\n    border: 0px;\n    padding-left: 5px;\n    padding-right: 5px;\n    border-radius: 5px;\n}\n.post-more-options:hover {\n    background-color: #111111;\n    transition: 0.5s;\n}\n.btn-gift {\n    background-color: transparent;\n    border: 0px;\n    position: absolute;\n    right: 20px;\n}\n.comment-input {\n    position: fixed;\n    bottom: var(--bottom-menu-height);\n    margin-bottom: -3px;\n    left: 0px;\n    width: 100%;\n}\n.comment-input textarea {\n    width: 100%;\n    resize: none;\n    background-color: var(--c-black-mute);\n    border: 0px;\n    color: white;\n    padding-left: 15px;\n    padding-top: 15px;\n}\n.comment-input textarea:focus {\n    outline: none;\n}\n.comment-share-btn, .comment-share-btn-d {\n    position: absolute;\n    right: 10px;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.8;\n    cursor: pointer;\n}\n.comment-share-btn:hover {\n    fill-opacity: 1;\n}\n.comment-sticker-btn, .comment-sticker-btn-d {\n    position: absolute;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.5;\n}\n.comment-sticker-btn {\n    right: 10px;\n    -webkit-animation: moveRight 0.1s ease-out both;\n            animation: moveRight 0.1s ease-out both;\n}\n.comment-sticker-btn-d {\n    right: 0px;\n    -webkit-animation: moveRightD 0.1s ease-out both;\n            animation: moveRightD 0.1s ease-out both;\n}\n@-webkit-keyframes moveRight {\n    0% {\n        right: 45px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@keyframes moveRight {\n    0% {\n        right: 45px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@-webkit-keyframes moveRightD {\n    0% {\n        right: 15px;\n    }        \n    100% {\n        right: 0px;\n    }\n}\n@keyframes moveRightD {\n    0% {\n        right: 15px;\n    }        \n    100% {\n        right: 0px;\n    }\n}\n.comment-sticker-btn:hover {\n    fill-opacity: 0.9;\n}\n.comment-sticker-btn-2, .comment-sticker-btn-2-d {\n    position: absolute;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.5;\n}\n.comment-sticker-btn-2 {\n    -webkit-animation: moveLeft 0.1s ease-out both;\n            animation: moveLeft 0.1s ease-out both;\n}\n.comment-sticker-btn-2-d {\n    -webkit-animation: moveLeftD 0.2s ease-out both;\n            animation: moveLeftD 0.2s ease-out both;\n}\n.comment-sticker-btn-2:hover {\n    fill-opacity: 0.9;\n}\n@-webkit-keyframes moveLeft {\n    0% {\n        right: 10px;\n    }        \n    100% {\n        right: 45px;\n    }\n}\n@keyframes moveLeft {\n    0% {\n        right: 10px;\n    }        \n    100% {\n        right: 45px;\n    }\n}\n@-webkit-keyframes moveLeftD {\n    0% {\n        right: 0px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@keyframes moveLeftD {\n    0% {\n        right: 0px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n.translation-original {\n    margin-bottom: 20px;\n}\n.translation-source {\n    color: var(--c-primary); \n    opacity: 0.5; \n    margin-top: 5px\n}\n.donation-container {\n    display: block;\n    width: 80%;\n    margin: 15px;\n    margin-left: 10%;\n    border-radius: 20px;\n    color: white;\n    overflow: hidden;\n}\n.donation-container > div {\n    height: 100%;\n    width: 100%;\n    padding: 10px;\n    padding-top: 20px;\n    padding-bottom: 20px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    background: rgba(0,0,0,0.7);\n    -webkit-backdrop-filter: blur(1px);\n            backdrop-filter: blur(1px);\n}\n.donation-texts {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 90%;\n    -webkit-justify-content: space-between;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}";
+styleInject(css_248z$4);const epochs = [
+    ['y', 31536000],
+    ['m', 2592000],
+    ['d', 86400],
+    ['h', 3600],
+    ['min', 60],
+    ['s', 1]
 ];
-const _hoisted_3$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M17 20H22V18C22 17.3765 21.8057 16.7686 21.4441 16.2606C21.0826 15.7527 20.5718 15.37 19.9827 15.1658C19.3937 14.9615 18.7556 14.9459 18.1573 15.121C17.5589 15.2962 17.03 15.6534 16.644 16.143M17 20H7M17 20V18C17 17.344 16.874 16.717 16.644 16.143M16.644 16.143C16.2726 15.215 15.6318 14.4195 14.804 13.8591C13.9762 13.2988 12.9996 12.9993 12 12.9993C11.0004 12.9993 10.0238 13.2988 9.196 13.8591C8.36825 14.4195 7.72736 15.215 7.356 16.143M7 20H2V18C2.00005 17.3765 2.19434 16.7686 2.55586 16.2606C2.91739 15.7527 3.42819 15.37 4.01725 15.1658C4.60632 14.9615 5.24438 14.9459 5.84274 15.121C6.4411 15.2962 6.97003 15.6534 7.356 16.143M7 20V18C7 17.344 7.126 16.717 7.356 16.143M15 7C15 7.79565 14.6839 8.55871 14.1213 9.12132C13.5587 9.68393 12.7956 10 12 10C11.2044 10 10.4413 9.68393 9.87868 9.12132C9.31607 8.55871 9 7.79565 9 7C9 6.20435 9.31607 5.44129 9.87868 4.87868C10.4413 4.31607 11.2044 4 12 4C12.7956 4 13.5587 4.31607 14.1213 4.87868C14.6839 5.44129 15 6.20435 15 7ZM21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12C18.4696 12 17.9609 11.7893 17.5858 11.4142C17.2107 11.0391 17 10.5304 17 10C17 9.46957 17.2107 8.96086 17.5858 8.58579C17.9609 8.21071 18.4696 8 19 8C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10ZM7 10C7 10.5304 6.78929 11.0391 6.41421 11.4142C6.03914 11.7893 5.53043 12 5 12C4.46957 12 3.96086 11.7893 3.58579 11.4142C3.21071 11.0391 3 10.5304 3 10C3 9.46957 3.21071 8.96086 3.58579 8.58579C3.96086 8.21071 4.46957 8 5 8C5.53043 8 6.03914 8.21071 6.41421 8.58579C6.78929 8.96086 7 9.46957 7 10Z",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    })
-], -1));
-const _hoisted_4$1 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Communities", -1));
-const _hoisted_5$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("g", { "clip-path": "url(#clip0_61_626)" }, [
-        createElementVNode("path", {
-            d: "M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4ZM12 6C12.2449 6.00003 12.4813 6.08996 12.6644 6.25272C12.8474 6.41547 12.9643 6.63975 12.993 6.883L13 7V11.586L15.707 14.293C15.8863 14.473 15.9905 14.7144 15.9982 14.9684C16.006 15.2223 15.9168 15.4697 15.7488 15.6603C15.5807 15.8508 15.3464 15.9703 15.0935 15.9944C14.8406 16.0185 14.588 15.9454 14.387 15.79L14.293 15.707L11.293 12.707C11.1376 12.5514 11.0378 12.349 11.009 12.131L11 12V7C11 6.73478 11.1054 6.48043 11.2929 6.29289C11.4804 6.10536 11.7348 6 12 6Z",
-            fill: "#A3F7BF",
-            "fill-opacity": "0.7"
-        })
-    ]),
-    createElementVNode("defs", null, [
-        createElementVNode("clipPath", { id: "clip0_61_626" }, [
-            createElementVNode("rect", {
-                width: "24",
-                height: "24",
-                fill: "white"
-            })
-        ])
-    ])
-], -1));
-const _hoisted_6$1 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Time Travel Posts", -1));
-const _hoisted_7$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        "fill-rule": "evenodd",
-        "clip-rule": "evenodd",
-        d: "M4.929 17.657C4.74153 17.8445 4.63621 18.0988 4.63621 18.364C4.63621 18.6292 4.74153 18.8835 4.929 19.071C8.834 22.976 15.166 22.976 19.071 19.071C22.976 15.166 22.976 8.83399 19.071 4.92899C15.166 1.02399 8.834 1.02399 4.929 4.92899C3.29488 6.55806 2.27694 8.70386 2.049 11H1C0.80225 11 0.608952 11.0587 0.444542 11.1686C0.280132 11.2785 0.151993 11.4346 0.0763226 11.6173C0.000652529 11.8 -0.0191504 12.0011 0.0194171 12.195C0.0579847 12.389 0.153191 12.5671 0.293001 12.707L2.293 14.707L2.295 14.709C2.38783 14.8018 2.49809 14.8754 2.61944 14.9255C2.74078 14.9757 2.87083 15.0013 3.00212 15.001C3.13341 15.0007 3.26335 14.9745 3.38449 14.9239C3.50562 14.8733 3.61556 14.7992 3.708 14.706L5.708 12.707C5.84787 12.5671 5.9431 12.3888 5.98163 12.1948C6.02017 12.0007 6.00028 11.7996 5.92449 11.6169C5.84869 11.4341 5.7204 11.278 5.55584 11.1682C5.39127 11.0584 5.19784 10.9998 5 11H4.062C4.28809 9.20635 5.11503 7.54216 6.40804 6.27868C7.70105 5.01519 9.38389 4.2269 11.1823 4.0423C12.9807 3.85769 14.7886 4.28765 16.3113 5.2621C17.834 6.23654 18.9818 7.69802 19.5676 9.40833C20.1534 11.1186 20.1426 12.9769 19.537 14.6803C18.9314 16.3837 17.7667 17.8318 16.2328 18.7885C14.6988 19.7452 12.8861 20.1541 11.09 19.9486C9.29383 19.7432 7.62026 18.9354 6.342 17.657C6.15451 17.4698 5.90042 17.3647 5.6355 17.3647C5.37058 17.3647 5.11649 17.4698 4.929 17.657ZM10 7.99999C10 7.73478 10.1054 7.48042 10.2929 7.29289C10.4804 7.10535 10.7348 6.99999 11 6.99999C11.2652 6.99999 11.5196 7.10535 11.7071 7.29289C11.8946 7.48042 12 7.73478 12 7.99999V12H16C16.2652 12 16.5196 12.1054 16.7071 12.2929C16.8946 12.4804 17 12.7348 17 13C17 13.2652 16.8946 13.5196 16.7071 13.7071C16.5196 13.8946 16.2652 14 16 14H11C10.7348 14 10.4804 13.8946 10.2929 13.7071C10.1054 13.5196 10 13.2652 10 13V7.99999Z",
-        fill: "#A3F7BF",
-        "fill-opacity": "0.7"
-    })
-], -1));
-const _hoisted_8$2 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "History", -1));
-const _hoisted_9$2 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M4 12V9C4 8.20435 4.31607 7.44129 4.87868 6.87868C5.44129 6.31607 6.20435 6 7 6H20M20 6L17 3M20 6L17 9M20 12V15C20 15.7956 19.6839 16.5587 19.1213 17.1213C18.5587 17.6839 17.7956 18 17 18H4M4 18L7 21M4 18L7 15",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    })
-], -1));
-const _hoisted_10$2 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Recaps", -1));
-const _hoisted_11$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M15 22L14.445 22.832C14.5956 22.9325 14.7707 22.9902 14.9515 22.999C15.1323 23.0077 15.3121 22.9673 15.4718 22.8819C15.6314 22.7965 15.7648 22.6693 15.8579 22.514C15.9509 22.3587 16 22.181 16 22H15ZM12 20L12.555 19.168C12.3907 19.0584 12.1975 18.9998 12 18.9998C11.8025 18.9998 11.6093 19.0584 11.445 19.168L12 20ZM9 22H8C7.99997 22.181 8.04909 22.3587 8.14213 22.514C8.23516 22.6693 8.3686 22.7965 8.52823 22.8819C8.68786 22.9673 8.86769 23.0077 9.04852 22.999C9.22935 22.9902 9.4044 22.9325 9.555 22.832L9 22ZM15.555 21.168L12.555 19.168L11.445 20.832L14.445 22.832L15.555 21.168ZM11.445 19.168L8.445 21.168L9.555 22.832L12.555 20.832L11.445 19.168ZM12.762 3.43799L12.804 3.48799L14.327 2.19199L14.285 2.14199L12.762 3.43799ZM15.329 4.53399L15.394 4.52899L15.234 2.53499L15.169 2.53999L15.329 4.53399ZM16.471 5.60599L16.466 5.67099L18.46 5.83099L18.465 5.76599L16.471 5.60599ZM17.512 8.19599L17.562 8.23799L18.858 6.71499L18.808 6.67299L17.512 8.19599ZM17.562 9.76199L17.512 9.80399L18.808 11.327L18.858 11.285L17.562 9.76199ZM16.466 12.329L16.471 12.394L18.465 12.234L18.46 12.169L16.466 12.329ZM15.394 13.471L15.329 13.466L15.169 15.46L15.234 15.465L15.394 13.471ZM12.804 14.512L12.762 14.562L14.285 15.858L14.327 15.808L12.804 14.512ZM11.238 14.562L11.196 14.512L9.673 15.808L9.715 15.858L11.238 14.562ZM8.671 13.466L8.606 13.471L8.766 15.465L8.831 15.46L8.671 13.466ZM7.529 12.394L7.534 12.329L5.54 12.169L5.535 12.234L7.529 12.394ZM6.488 9.80399L6.438 9.76199L5.142 11.285L5.192 11.327L6.488 9.80399ZM6.438 8.23799L6.488 8.19599L5.192 6.67299L5.142 6.71499L6.438 8.23799ZM7.534 5.67099L7.529 5.60599L5.535 5.76599L5.54 5.83099L7.534 5.67099ZM8.606 4.52899L8.67 4.53399L8.831 2.53999L8.766 2.53499L8.606 4.52899ZM11.196 3.48799L11.238 3.43799L9.715 2.14199L9.673 2.19199L11.196 3.48799ZM8.67 4.53399C9.14364 4.57207 9.62054 4.49709 10.0595 4.31523C10.4985 4.13338 10.888 3.84985 11.196 3.48799L9.673 2.19199C9.57024 2.31254 9.44032 2.40695 9.29393 2.46745C9.14755 2.52796 8.98888 2.55282 8.831 2.53999L8.67 4.53399ZM7.529 5.60599C7.51738 5.46161 7.53726 5.31642 7.58728 5.18048C7.63729 5.04454 7.71625 4.92109 7.81867 4.81866C7.92109 4.71624 8.04455 4.63729 8.18049 4.58727C8.31643 4.53726 8.46162 4.51737 8.606 4.52899L8.766 2.53499C8.33293 2.50028 7.89749 2.56005 7.48979 2.71017C7.08208 2.86028 6.71185 3.09716 6.40469 3.40441C6.09753 3.71167 5.86077 4.08197 5.71078 4.48972C5.56079 4.89747 5.50016 5.33293 5.535 5.76599L7.529 5.60599ZM6.488 8.19599C6.84986 7.88803 7.13339 7.49852 7.31524 7.05953C7.4971 6.62054 7.57207 6.14463 7.534 5.67099L5.54 5.83099C5.55283 5.98887 5.52796 6.14754 5.46746 6.29393C5.40696 6.44031 5.31255 6.57024 5.192 6.67299L6.488 8.19599ZM6.438 9.76199C6.32754 9.66812 6.2388 9.55134 6.17795 9.41977C6.1171 9.28819 6.08558 9.14496 6.08558 8.99999C6.08558 8.85503 6.1171 8.71179 6.17795 8.58022C6.2388 8.44864 6.32754 8.33187 6.438 8.23799L5.142 6.71499C4.81095 6.99663 4.54505 7.34683 4.3627 7.74137C4.18035 8.1359 4.08591 8.56535 4.08591 8.99999C4.08591 9.43463 4.18035 9.86408 4.3627 10.2586C4.54505 10.6532 4.81095 11.0034 5.142 11.285L6.438 9.76199ZM7.534 12.329C7.57207 11.8554 7.4971 11.3794 7.31524 10.9405C7.13339 10.5015 6.84986 10.112 6.488 9.80399L5.192 11.327C5.31255 11.4297 5.40696 11.5597 5.46746 11.7061C5.52796 11.8524 5.55283 12.0111 5.54 12.169L7.534 12.329ZM8.606 13.471C8.46162 13.4826 8.31643 13.4627 8.18049 13.4127C8.04455 13.3627 7.92109 13.2837 7.81867 13.1813C7.71625 13.0789 7.63729 12.9554 7.58728 12.8195C7.53726 12.6836 7.51738 12.5384 7.529 12.394L5.535 12.234C5.50029 12.6671 5.56006 13.1025 5.71017 13.5102C5.86029 13.9179 6.09716 14.2881 6.40442 14.5953C6.71168 14.9025 7.08198 15.1392 7.48973 15.2892C7.89748 15.4392 8.33294 15.4988 8.766 15.464L8.606 13.471ZM12.762 14.561C12.6681 14.6715 12.5514 14.7602 12.4198 14.821C12.2882 14.8819 12.145 14.9134 12 14.9134C11.855 14.9134 11.7118 14.8819 11.5802 14.821C11.4486 14.7602 11.3319 14.6715 11.238 14.561L9.715 15.858C9.99663 16.189 10.3468 16.4549 10.7414 16.6373C11.1359 16.8196 11.5654 16.9141 12 16.9141C12.4346 16.9141 12.8641 16.8196 13.2586 16.6373C13.6532 16.4549 14.0034 16.189 14.285 15.858L12.762 14.562V14.561ZM16.471 12.394C16.4826 12.5385 16.4637 12.6837 16.4137 12.8198C16.3636 12.9558 16.2845 13.0793 16.182 13.1817C16.0795 13.2842 15.9559 13.3631 15.8198 13.413C15.6838 13.463 15.5385 13.4828 15.394 13.471L15.234 15.465C15.6671 15.4997 16.1025 15.4399 16.5102 15.2898C16.9179 15.1397 17.2882 14.9028 17.5953 14.5956C17.9025 14.2883 18.1392 13.918 18.2892 13.5103C18.4392 13.1025 18.4998 12.6671 18.465 12.234L16.471 12.394ZM17.512 9.80399C17.1501 10.112 16.8666 10.5015 16.6848 10.9405C16.5029 11.3794 16.4279 11.8554 16.466 12.329L18.46 12.169C18.4472 12.0111 18.472 11.8524 18.5325 11.7061C18.593 11.5597 18.6875 11.4297 18.808 11.327L17.512 9.80399ZM17.562 8.23799C17.6725 8.33187 17.7612 8.44864 17.8221 8.58022C17.8829 8.71179 17.9144 8.85503 17.9144 8.99999C17.9144 9.14496 17.8829 9.28819 17.8221 9.41977C17.7612 9.55134 17.6725 9.66812 17.562 9.76199L18.858 11.285C19.189 11.0034 19.455 10.6532 19.6373 10.2586C19.8196 9.86408 19.9141 9.43463 19.9141 8.99999C19.9141 8.56535 19.8196 8.1359 19.6373 7.74137C19.455 7.34683 19.189 6.99663 18.858 6.71499L17.562 8.23799ZM16.466 5.67099C16.4279 6.14463 16.5029 6.62054 16.6848 7.05953C16.8666 7.49852 17.1501 7.88803 17.512 8.19599L18.808 6.67299C18.6875 6.57024 18.593 6.44031 18.5325 6.29393C18.472 6.14754 18.4472 5.98887 18.46 5.83099L16.466 5.67099ZM15.394 4.52899C15.5384 4.51737 15.6836 4.53726 15.8195 4.58727C15.9555 4.63729 16.0789 4.71624 16.1813 4.81866C16.2838 4.92109 16.3627 5.04454 16.4127 5.18048C16.4627 5.31642 16.4826 5.46161 16.471 5.60599L18.465 5.76599C18.4997 5.33292 18.4399 4.89748 18.2898 4.48978C18.1397 4.08208 17.9028 3.71184 17.5956 3.40468C17.2883 3.09752 16.918 2.86076 16.5103 2.71077C16.1025 2.56078 15.6671 2.50015 15.234 2.53499L15.394 4.52899ZM12.804 3.48799C13.112 3.84985 13.5015 4.13338 13.9405 4.31523C14.3795 4.49709 14.8554 4.57207 15.329 4.53399L15.169 2.53999C15.0111 2.55282 14.8525 2.52796 14.7061 2.46745C14.5597 2.40695 14.4298 2.31254 14.327 2.19199L12.804 3.48799ZM14.285 2.14199C14.0034 1.81111 13.6522 1.54536 13.2578 1.36312C12.8633 1.18087 12.434 1.08649 11.9995 1.08649C11.565 1.08649 11.1357 1.18087 10.7412 1.36312C10.3468 1.54536 9.99663 1.81111 9.715 2.14199L11.238 3.43799C11.3319 3.32753 11.4486 3.23879 11.5802 3.17794C11.7118 3.11709 11.855 3.08557 12 3.08557C12.145 3.08557 12.2882 3.11709 12.4198 3.17794C12.5514 3.23879 12.6681 3.32753 12.762 3.43799L14.285 2.14199ZM11.196 14.512C10.9289 14.198 10.5999 13.9425 10.2297 13.7613C9.85942 13.5802 9.4558 13.4772 9.044 13.459L8.956 15.457C9.09321 15.4631 9.22769 15.4975 9.35104 15.5578C9.4744 15.6182 9.584 15.7034 9.673 15.808L11.196 14.512ZM9.044 13.46C8.91964 13.4546 8.79507 13.457 8.671 13.467L8.831 15.461C8.87256 15.4574 8.91431 15.4564 8.956 15.458L9.044 13.46ZM10 22V14.458H8V22H10ZM15.329 13.466C15.2046 13.4559 15.0807 13.4536 14.956 13.459L15.044 15.457C15.0857 15.4554 15.1274 15.4564 15.169 15.46L15.329 13.466ZM14.956 13.459C14.5442 13.4772 14.1406 13.5802 13.7703 13.7613C13.4001 13.9425 13.0711 14.198 12.804 14.512L14.327 15.808C14.4161 15.7036 14.5257 15.6186 14.6491 15.5584C14.7724 15.4982 14.9069 15.464 15.044 15.458L14.956 13.459ZM14 14.459V22H16V14.458L14 14.459Z",
-        fill: "#A3F7BF",
-        "fill-opacity": "0.7"
-    }),
-    createElementVNode("path", {
-        d: "M14 8L11 11L10 10",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    })
-], -1));
-const _hoisted_12$1 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Badges", -1));
-const _hoisted_13$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M14.5 18C13.8 18 13.2083 17.7583 12.725 17.275C12.2417 16.7917 12 16.2 12 15.5C12 14.8 12.2417 14.2083 12.725 13.725C13.2083 13.2417 13.8 13 14.5 13C15.2 13 15.7917 13.2417 16.275 13.725C16.7583 14.2083 17 14.8 17 15.5C17 16.2 16.7583 16.7917 16.275 17.275C15.7917 17.7583 15.2 18 14.5 18ZM5 22C4.45 22 3.979 21.804 3.587 21.412C3.195 21.02 2.99934 20.5493 3 20V6C3 5.45 3.196 4.979 3.588 4.587C3.98 4.195 4.45067 3.99933 5 4H6V2H8V4H16V2H18V4H19C19.55 4 20.021 4.196 20.413 4.588C20.805 4.98 21.0007 5.45067 21 6V20C21 20.55 20.804 21.021 20.412 21.413C20.02 21.805 19.5493 22.0007 19 22H5ZM5 20H19V10H5V20ZM5 8H19V6H5V8Z",
-        fill: "#A3F7BF",
-        "fill-opacity": "0.7"
-    })
-], -1));
-const _hoisted_14$1 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Events", -1));
-const _hoisted_15$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M12 13V2L20 6L12 10",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    }),
-    createElementVNode("path", {
-        d: "M20.55 10.23C21.0821 11.8701 21.1319 13.6286 20.6934 15.2963C20.255 16.9639 19.3466 18.4704 18.0766 19.6367C16.8065 20.8029 15.2281 21.5798 13.5292 21.8748C11.8304 22.1699 10.0825 21.9707 8.49356 21.3009C6.90464 20.6311 5.54156 19.519 4.56649 18.0969C3.59142 16.6748 3.04541 15.0025 2.99341 13.2789C2.94142 11.5554 3.38563 9.85322 4.2732 8.37489C5.16077 6.89656 6.45434 5.70432 8 4.94",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    }),
-    createElementVNode("path", {
-        d: "M8 10C7.49891 10.667 7.17268 11.4488 7.05105 12.2742C6.92941 13.0996 7.01624 13.9422 7.30361 14.7254C7.59098 15.5087 8.06976 16.2075 8.69633 16.7584C9.32291 17.3092 10.0774 17.6945 10.8909 17.8792C11.7045 18.0638 12.5514 18.042 13.3544 17.8156C14.1573 17.5892 14.8909 17.1655 15.4882 16.5831C16.0855 16.0007 16.5276 15.278 16.7742 14.481C17.0208 13.684 17.0641 12.838 16.9 12.02",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    })
-], -1));
-const _hoisted_16$2 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Challenges", -1));
-var script$4 = defineComponent({
-    __name: 'SidebarMenu',
-    props: {
-        collapsed: Boolean,
-        setCollapsed: {
-            type: Function,
-            required: true
+const getDuration = (timeAgoInSeconds) => {
+    for (const [name, seconds] of epochs) {
+        const interval = Math.floor(timeAgoInSeconds / seconds);
+        if (interval >= 1) {
+            return {
+                interval: interval,
+                epoch: name
+            };
         }
-    },
-    setup(__props) {
-        const props = __props;
-        const collapsed = computed(() => props?.collapsed);
-        return (_ctx, _cache) => {
-            const _component_RouterLink = resolveComponent("RouterLink");
-            return (openBlock(), createBlock(Transition, {
-                name: "slide",
-                persisted: ""
-            }, {
-                default: withCtx(() => [
-                    withDirectives(createElementVNode("nav", null, [
-                        createElementVNode("button", {
-                            onClick: _cache[0] || (_cache[0] = ($event) => (props?.setCollapsed(true))),
-                            class: "close-btn"
-                        }, [..._hoisted_2$3]),
-                        createVNode(_component_RouterLink, {
-                            to: "/communities",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_3$1,
-                                _hoisted_4$1
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/timetravel",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_5$1,
-                                _hoisted_6$1
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/history",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_7$1,
-                                _hoisted_8$2
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/recaps",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_9$2,
-                                _hoisted_10$2
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/badges",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_11$1,
-                                _hoisted_12$1
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/events",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_13$1,
-                                _hoisted_14$1
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/challenges",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_15$1,
-                                _hoisted_16$2
-                            ]),
-                            _: 1
-                        })
-                    ], 512), [
-                        [vShow, !collapsed.value]
-                    ])
-                ]),
-                _: 1
-            }));
-        };
     }
-});var css_248z$5 = "\nnav[data-v-29eff494] {\n    position: fixed;\n    height: 100vh;\n    width: 60vw;\n    background-color: var(--color-background-mute);\n    right: 0px;\n    top: 0px;\n    z-index: 100;\n}\n.close-btn[data-v-29eff494]:hover {\n    background: var(--color-background);\n}\n.slide-enter-active[data-v-29eff494] {\n  transition: all 0.3s ease-out;\n  -webkit-transform: translateX(90%);\n          transform: translateX(90%);\n}\n.slide-enter-to[data-v-29eff494] {\n  transition: all 0.3s ease-out;\n  -webkit-transform: translateX(0%);\n          transform: translateX(0%);\n}\n.slide-leave-active[data-v-29eff494] {\n  transition: all 0.3s ease-out;\n  -webkit-transform: translateX(100%);\n          transform: translateX(100%);\n}\n.nav-item[data-v-29eff494] {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin: 10px;\n    font-size: 16px;\n    padding: 5px;\n    padding-left: 10%;\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-radius: 10px;\n    color: white;\n}\n.nav-item[data-v-29eff494]:hover {\n    background-color: var(--vt-c-black)\n}\n";
-styleInject(css_248z$5);script$4.__scopeId = "data-v-29eff494";
-script$4.__file = "src/components/template/SidebarMenu.vue";const _withScopeId = n => (pushScopeId("data-v-00be3d38"), n = n(), popScopeId(), n);
-const _hoisted_1$3 = _withScopeId(() => createElementVNode("svg", {
-    width: "26",
-    height: "26",
-    viewBox: "0 0 26 26",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M21 11.75H5C4.31 11.75 4.25 12.3088 4.25 13C4.25 13.6912 4.31 14.25 5 14.25H21C21.69 14.25 21.75 13.6912 21.75 13C21.75 12.3088 21.69 11.75 21 11.75ZM21 16.75H5C4.31 16.75 4.25 17.3088 4.25 18C4.25 18.6912 4.31 19.25 5 19.25H21C21.69 19.25 21.75 18.6912 21.75 18C21.75 17.3088 21.69 16.75 21 16.75ZM5 9.25H21C21.69 9.25 21.75 8.69125 21.75 8C21.75 7.30875 21.69 6.75 21 6.75H5C4.31 6.75 4.25 7.30875 4.25 8C4.25 8.69125 4.31 9.25 5 9.25Z",
-        fill: "white"
-    })
-], -1));
-const _hoisted_2$2 = [
-    _hoisted_1$3
-];
-var script$3 = defineComponent({
-    __name: 'MoreOptions',
-    props: {
-        toggleSidebar: {
-            type: Function,
-            required: true
-        }
-    },
-    setup(__props) {
-        const props = __props;
-        return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock("button", {
-                onClick: _cache[0] || (_cache[0] = ($event) => (props?.toggleSidebar())),
-                class: "more-options"
-            }, [..._hoisted_2$2]));
-        };
-    }
-});var css_248z$4 = "\n.more-options[data-v-00be3d38] {\n    position: fixed;\n    top: 2%;\n    right: 3%;\n    height: 60px;\n    width: 60px;\n    background-color: var(--c-secondary);\n    border: none;\n    border-radius: 30px;\n    z-index: 99;\n}\n@media (max-width: 480px) {\n.more-options[data-v-00be3d38] {\n        height: 50px;\n        width: 50px;\n}\n}\n";
-styleInject(css_248z$4);script$3.__scopeId = "data-v-00be3d38";
-script$3.__file = "src/components/template/MoreOptions.vue";var css_248z$3 = ".avatar {\n    width: 42px;\n    height: 42px;\n    border-radius: 50%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border: 2px solid var(--color-primary);\n}\n.avatar-small {\n    width: 35px;\n    height: 35px;\n    border-radius: 25px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border: 2px solid var(--color-primary);\n}\n.userinfo {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.username {\n    font-size: 18px;\n    color: white;\n    font-weight: bold;\n    margin-left: 15px;\n    margin-right: 10px;\n}\n.username-small {\n    font-size: 16px;\n    color: white;\n    font-weight: bold;\n    margin-left: 15px;\n    margin-right: 10px;\n}\n@media (max-width: 480px) {\n    .username {\n        font-size: 16px;\n    }\n    .avatar {\n        width: 35px;\n        height: 35px;\n    }\n    .post-buttons > button > svg {\n        height: 25px !important;\n        width: 25px !important;\n    }\n    .post-more-options > svg {\n        height: 18px !important;\n    }\n}\n.btn-primary {\n    border: 0px;\n    background-color: var(--c-secondary);\n    padding: 10px;\n    padding-left: 25px;\n    padding-right: 25px;\n    border-radius: 10px;\n    font-size: 16px;\n    cursor: pointer;\n}\n.btn-secondary {\n    border: 1px solid var(--c-secondary);\n    background: transparent;\n    color: white;\n    padding: 10px;\n    padding-left: 25px;\n    padding-right: 25px;\n    border-radius: 10px;\n    font-size: 16px;\n    cursor: pointer;\n}\n.btn-primary:active, .btn-secondary:active {\n    -webkit-transform: scale(0.95);\n            transform: scale(0.95);\n    transition: all 0.1s cubic-bezier(0.17, 0.89, 0.24, 1.11);\n}\n.rounded {\n    border-radius: 20px;\n}\n.btn-small {\n    padding: 6px;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.close-btn {\n    background: var(--color-background-soft);\n    border: 0px;\n    margin-left: 5%;\n    margin-top: 20px;\n    padding: 5px;\n    padding-bottom: 4px;\n    border-radius: 10px;\n}\n.loader {\n    width: 48px;\n    height: 48px;\n    border: 5px solid var(--c-divider-dark-1);\n    border-top-color: var(--c-secondary);\n    border-radius: 50%;\n    display: inline-block;\n    box-sizing: border-box;\n    -webkit-animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;\n            animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;\n}\n@-webkit-keyframes rotation {\n    0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n    }\n    100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n@keyframes rotation {\n    0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n    }\n    100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n.container {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    padding-top: 20px;\n    padding-bottom: var(--bottom-menu-height);\n}";
-styleInject(css_248z$3);var css_248z$2 = "\n.post-body {\n    width: 100%;\n    -webkit-align-self: center;\n        -ms-flex-item-align: center;\n            align-self: center;\n    max-width: 600px;\n    padding: 5%;\n    background-color: var(--color-background);\n    margin-bottom: 6px;\n    cursor: pointer;\n}\n@media (min-width: 1024px) {\n    .post-body {\n        padding: 0%;\n        padding-top: 3%;\n        padding-bottom: 3%;\n    }\n}\n.post-text {\n    font-size: 17px;\n    color: white;\n    margin-left: 60px;\n}\n@media (max-width: 480px) {\n    .post-text {\n        font-size: 15px;\n        margin-left: 50px;\n    }\n}\n.post-text-small {\n    font-size: 15px;\n    color: white;\n}\n.post-text-detail {\n    font-size: 17px;\n    color: white;\n    margin-left: 10px;\n    margin-top: 20px;\n    margin-bottom: 50px;\n}\n.post-buttons {\n    min-width: 200px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-justify-content: space-evenly;\n        -ms-flex-pack: space-evenly;\n            justify-content: space-evenly;\n    margin-top: 5px;\n}\n.post-buttons > button {\n    width: 100%;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    background-color: transparent;\n    border: 0px;\n    padding: 10px;\n    border-radius: 10px;\n    color: white;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    transition: 0.5s ease;\n}\n.post-buttons > button[disabled=false]:hover {\n    background-color: #111111;\n    transition: 0.5s;\n}\n.post-buttons button span {\n    margin-left: 5px;\n}\n.post-more-options {\n    float: right;\n    margin-top: -35px;\n    background-color: transparent;\n    border: 0px;\n    padding-left: 5px;\n    padding-right: 5px;\n    border-radius: 5px;\n}\n.post-more-options:hover {\n    background-color: #111111;\n    transition: 0.5s;\n}\n.btn-gift {\n    background-color: transparent;\n    border: 0px;\n    position: absolute;\n    right: 20px;\n}\n.comment-input {\n    position: fixed;\n    bottom: var(--bottom-menu-height);\n    margin-bottom: -3px;\n    left: 0px;\n    width: 100%;\n}\n.comment-input textarea {\n    width: 100%;\n    resize: none;\n    background-color: var(--c-black-mute);\n    border: 0px;\n    color: white;\n    padding-left: 15px;\n    padding-top: 15px;\n}\n.comment-input textarea:focus {\n    outline: none;\n}\n.comment-share-btn, .comment-share-btn-d {\n    position: absolute;\n    right: 10px;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.8;\n    cursor: pointer;\n}\n.comment-share-btn:hover {\n    fill-opacity: 1;\n}\n.comment-sticker-btn, .comment-sticker-btn-d {\n    position: absolute;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.5;\n}\n.comment-sticker-btn {\n    right: 10px;\n    -webkit-animation: moveRight 0.1s ease-out both;\n            animation: moveRight 0.1s ease-out both;\n}\n.comment-sticker-btn-d {\n    right: 0px;\n    -webkit-animation: moveRightD 0.1s ease-out both;\n            animation: moveRightD 0.1s ease-out both;\n}\n@-webkit-keyframes moveRight {\n    0% {\n        right: 45px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@keyframes moveRight {\n    0% {\n        right: 45px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@-webkit-keyframes moveRightD {\n    0% {\n        right: 15px;\n    }        \n    100% {\n        right: 0px;\n    }\n}\n@keyframes moveRightD {\n    0% {\n        right: 15px;\n    }        \n    100% {\n        right: 0px;\n    }\n}\n.comment-sticker-btn:hover {\n    fill-opacity: 0.9;\n}\n.comment-sticker-btn-2, .comment-sticker-btn-2-d {\n    position: absolute;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.5;\n}\n.comment-sticker-btn-2 {\n    -webkit-animation: moveLeft 0.1s ease-out both;\n            animation: moveLeft 0.1s ease-out both;\n}\n.comment-sticker-btn-2-d {\n    -webkit-animation: moveLeftD 0.2s ease-out both;\n            animation: moveLeftD 0.2s ease-out both;\n}\n.comment-sticker-btn-2:hover {\n    fill-opacity: 0.9;\n}\n@-webkit-keyframes moveLeft {\n    0% {\n        right: 10px;\n    }        \n    100% {\n        right: 45px;\n    }\n}\n@keyframes moveLeft {\n    0% {\n        right: 10px;\n    }        \n    100% {\n        right: 45px;\n    }\n}\n@-webkit-keyframes moveLeftD {\n    0% {\n        right: 0px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@keyframes moveLeftD {\n    0% {\n        right: 0px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n.translation-original {\n    margin-bottom: 20px;\n}\n.translation-source {\n    color: var(--c-primary); \n    opacity: 0.5; \n    margin-top: 5px\n}\n.donation-container {\n    display: block;\n    width: 80%;\n    margin: 15px;\n    margin-left: 10%;\n    border-radius: 20px;\n    color: white;\n    overflow: hidden;\n}\n.donation-container > div {\n    height: 100%;\n    width: 100%;\n    padding: 10px;\n    padding-top: 20px;\n    padding-bottom: 20px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    background: rgba(0,0,0,0.7);\n    -webkit-backdrop-filter: blur(1px);\n            backdrop-filter: blur(1px);\n}\n.donation-texts {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 90%;\n    -webkit-justify-content: space-between;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}";
-styleInject(css_248z$2);/*!
+    return { interval: 'now', epoch: null };
+};
+const formatTime = (date) => {
+    const timeAgoInSeconds = Math.floor((+new Date() - +new Date(date)) / 1000);
+    const { interval, epoch } = getDuration(timeAgoInSeconds);
+    return `${interval} ${epoch ?? ''}`;
+};
+const formatText = (text) => {
+    text = text.replace(/#([^# ]+)/g, (str, $1) => {
+        return `<a href="#/search/results?hashtag=${$1}">${str}</a>`;
+    });
+    return text;
+};
+const langCodes = {
+    "af": "Afrikaans",
+    "sq": "Albanian",
+    "an": "Aragonese",
+    "ar": "Arabic (Standard)",
+    "ar-dz": "Arabic (Algeria)",
+    "ar-bh": "Arabic (Bahrain)",
+    "ar-eg": "Arabic (Egypt)",
+    "ar-iq": "Arabic (Iraq)",
+    "ar-jo": "Arabic (Jordan)",
+    "ar-kw": "Arabic (Kuwait)",
+    "ar-lb": "Arabic (Lebanon)",
+    "ar-ly": "Arabic (Libya)",
+    "ar-ma": "Arabic (Morocco)",
+    "ar-om": "Arabic (Oman)",
+    "ar-qa": "Arabic (Qatar)",
+    "ar-sa": "Arabic (Saudi Arabia)",
+    "ar-sy": "Arabic (Syria)",
+    "ar-tn": "Arabic (Tunisia)",
+    "ar-ae": "Arabic (U.A.E.)",
+    "ar-ye": "Arabic (Yemen)",
+    "hy": "Armenian",
+    "as": "Assamese",
+    "ast": "Asturian",
+    "az": "Azerbaijani",
+    "eu": "Basque",
+    "bg": "Bulgarian",
+    "be": "Belarusian",
+    "bn": "Bengali",
+    "bs": "Bosnian",
+    "br": "Breton",
+    "my": "Burmese",
+    "ca": "Catalan",
+    "ch": "Chamorro",
+    "ce": "Chechen",
+    "zh": "Chinese",
+    "zh-hk": "Chinese (Hong Kong)",
+    "zh-cn": "Chinese (PRC)",
+    "zh-sg": "Chinese (Singapore)",
+    "zh-tw": "Chinese (Taiwan)",
+    "cv": "Chuvash",
+    "co": "Corsican",
+    "cr": "Cree",
+    "hr": "Croatian",
+    "cs": "Czech",
+    "da": "Danish",
+    "nl": "Dutch (Standard)",
+    "nl-be": "Dutch (Belgian)",
+    "en": "English",
+    "en-au": "English (Australia)",
+    "en-bz": "English (Belize)",
+    "en-ca": "English (Canada)",
+    "en-ie": "English (Ireland)",
+    "en-jm": "English (Jamaica)",
+    "en-nz": "English (New Zealand)",
+    "en-ph": "English (Philippines)",
+    "en-za": "English (South Africa)",
+    "en-tt": "English (Trinidad & Tobago)",
+    "en-gb": "English (United Kingdom)",
+    "en-us": "English (United States)",
+    "en-zw": "English (Zimbabwe)",
+    "eo": "Esperanto",
+    "et": "Estonian",
+    "fo": "Faeroese",
+    "fj": "Fijian",
+    "fi": "Finnish",
+    "fr": "French (Standard)",
+    "fr-be": "French (Belgium)",
+    "fr-ca": "French (Canada)",
+    "fr-fr": "French (France)",
+    "fr-lu": "French (Luxembourg)",
+    "fr-mc": "French (Monaco)",
+    "fr-ch": "French (Switzerland)",
+    "fy": "Frisian",
+    "fur": "Friulian",
+    "gd": "Gaelic (Scots)",
+    "gd-ie": "Gaelic (Irish)",
+    "gl": "Galacian",
+    "ka": "Georgian",
+    "de": "German (Standard)",
+    "de-at": "German (Austria)",
+    "de-de": "German (Germany)",
+    "de-li": "German (Liechtenstein)",
+    "de-lu": "German (Luxembourg)",
+    "de-ch": "German (Switzerland)",
+    "el": "Greek",
+    "gu": "Gujurati",
+    "ht": "Haitian",
+    "he": "Hebrew",
+    "hi": "Hindi",
+    "hu": "Hungarian",
+    "is": "Icelandic",
+    "id": "Indonesian",
+    "iu": "Inuktitut",
+    "ga": "Irish",
+    "it": "Italian (Standard)",
+    "it-ch": "Italian (Switzerland)",
+    "ja": "Japanese",
+    "kn": "Kannada",
+    "ks": "Kashmiri",
+    "kk": "Kazakh",
+    "km": "Khmer",
+    "ky": "Kirghiz",
+    "tlh": "Klingon",
+    "ko": "Korean",
+    "ko-kp": "Korean (North Korea)",
+    "ko-kr": "Korean (South Korea)",
+    "la": "Latin",
+    "lv": "Latvian",
+    "lt": "Lithuanian",
+    "lb": "Luxembourgish",
+    "mk": "FYRO Macedonian",
+    "ms": "Malay",
+    "ml": "Malayalam",
+    "mt": "Maltese",
+    "mi": "Maori",
+    "mr": "Marathi",
+    "mo": "Moldavian",
+    "nv": "Navajo",
+    "ng": "Ndonga",
+    "ne": "Nepali",
+    "no": "Norwegian",
+    "nb": "Norwegian (Bokmal)",
+    "nn": "Norwegian (Nynorsk)",
+    "oc": "Occitan",
+    "or": "Oriya",
+    "om": "Oromo",
+    "fa": "Persian",
+    "fa-ir": "Persian/Iran",
+    "pl": "Polish",
+    "pt": "Portuguese",
+    "pt-br": "Portuguese (Brazil)",
+    "pa": "Punjabi",
+    "pa-in": "Punjabi (India)",
+    "pa-pk": "Punjabi (Pakistan)",
+    "qu": "Quechua",
+    "rm": "Rhaeto-Romanic",
+    "ro": "Romanian",
+    "ro-mo": "Romanian (Moldavia)",
+    "ru": "Russian",
+    "ru-mo": "Russian (Moldavia)",
+    "sz": "Sami (Lappish)",
+    "sg": "Sango",
+    "sa": "Sanskrit",
+    "sc": "Sardinian",
+    "sd": "Sindhi",
+    "si": "Singhalese",
+    "sr": "Serbian",
+    "sk": "Slovak",
+    "sl": "Slovenian",
+    "so": "Somani",
+    "sb": "Sorbian",
+    "es": "Spanish",
+    "es-ar": "Spanish (Argentina)",
+    "es-bo": "Spanish (Bolivia)",
+    "es-cl": "Spanish (Chile)",
+    "es-co": "Spanish (Colombia)",
+    "es-cr": "Spanish (Costa Rica)",
+    "es-do": "Spanish (Dominican Republic)",
+    "es-ec": "Spanish (Ecuador)",
+    "es-sv": "Spanish (El Salvador)",
+    "es-gt": "Spanish (Guatemala)",
+    "es-hn": "Spanish (Honduras)",
+    "es-mx": "Spanish (Mexico)",
+    "es-ni": "Spanish (Nicaragua)",
+    "es-pa": "Spanish (Panama)",
+    "es-py": "Spanish (Paraguay)",
+    "es-pe": "Spanish (Peru)",
+    "es-pr": "Spanish (Puerto Rico)",
+    "es-es": "Spanish (Spain)",
+    "es-uy": "Spanish (Uruguay)",
+    "es-ve": "Spanish (Venezuela)",
+    "sx": "Sutu",
+    "sw": "Swahili",
+    "sv": "Swedish",
+    "sv-fi": "Swedish (Finland)",
+    "sv-sv": "Swedish (Sweden)",
+    "ta": "Tamil",
+    "tt": "Tatar",
+    "te": "Teluga",
+    "th": "Thai",
+    "tig": "Tigre",
+    "ts": "Tsonga",
+    "tn": "Tswana",
+    "tr": "Turkish",
+    "tk": "Turkmen",
+    "uk": "Ukrainian",
+    "hsb": "Upper Sorbian",
+    "ur": "Urdu",
+    "ve": "Venda",
+    "vi": "Vietnamese",
+    "vo": "Volapuk",
+    "wa": "Walloon",
+    "cy": "Welsh",
+    "xh": "Xhosa",
+    "ji": "Yiddish",
+    "zu": "Zulu",
+};/*!
  * pinia v2.1.7
  * (c) 2023 Eduardo San Martin Morote
  * @license MIT
@@ -935,13 +686,7 @@ idOrOptions, setup, setupOptions) {
     }
     useStore.$id = id;
     return useStore;
-}const useMoreOptionsSheet = defineStore('more-options', () => {
-    const sheetRef = ref(false);
-    function toggle() {
-        sheetRef.value = !sheetRef.value;
-    }
-    return { sheetRef, toggle };
-});const resolveFetch$3 = (customFetch) => {
+}const resolveFetch$3 = (customFetch) => {
     let _fetch;
     if (customFetch) {
         _fetch = customFetch;
@@ -8120,242 +7865,285 @@ defineStore('discussion-api', {
             }
         }
     }
-});const epochs = [
-    ['y', 31536000],
-    ['m', 2592000],
-    ['d', 86400],
-    ['h', 3600],
-    ['min', 60],
-    ['s', 1]
+});const _withScopeId = n => (pushScopeId("data-v-0448a3e0"), n = n(), popScopeId(), n);
+const _hoisted_1$4 = {
+    key: 0,
+    class: "userinfo"
+};
+const _hoisted_2$3 = _withScopeId(() => createElementVNode("img", {
+    src: "https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    class: "avatar-small",
+    loading: "lazy"
+}, null, -1));
+const _hoisted_3$1 = { class: "username-small" };
+const _hoisted_4$1 = _withScopeId(() => createElementVNode("span", { style: { "color": "#ababab", "margin-left": "6px" } }, "2m", -1));
+const _hoisted_5$1 = { class: "comment-text-discussion" };
+const _hoisted_6$1 = {
+    key: 1,
+    class: "userinfo"
+};
+const _hoisted_7$1 = _withScopeId(() => createElementVNode("img", {
+    src: "https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    class: "avatar",
+    style: { width: 35 + 'px', height: 35 + 'px' },
+    loading: "lazy"
+}, null, -1));
+const _hoisted_8$2 = {
+    class: "username",
+    style: { fontSize: 16 + 'px' }
+};
+const _hoisted_9$2 = {
+    key: 2,
+    class: "comment-text"
+};
+const _hoisted_10$2 = _withScopeId(() => createElementVNode("svg", {
+    width: "24",
+    height: "24",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+}, [
+    createElementVNode("path", {
+        d: "M20.4461 16.06C20.4929 16.1526 20.5098 16.2574 20.4943 16.36C20.4789 16.4626 20.432 16.5579 20.36 16.6326C20.288 16.7073 20.1946 16.7578 20.0927 16.777C19.9907 16.7963 19.8853 16.7833 19.7911 16.74L17.2911 15.587C15.2009 14.6222 12.9097 14.1733 10.6101 14.278C10.5829 15.0133 10.5426 15.7481 10.4891 16.482L10.4201 17.42C10.4106 17.5503 10.3675 17.6759 10.295 17.7845C10.2224 17.8931 10.1229 17.981 10.0062 18.0396C9.88941 18.0981 9.75945 18.1254 9.62901 18.1186C9.49857 18.1119 9.37212 18.0713 9.26206 18.001C7.17321 16.6662 5.35729 14.9463 3.91106 12.933L3.45106 12.293C3.38986 12.2079 3.35693 12.1058 3.35693 12.001C3.35693 11.8962 3.38986 11.7941 3.45106 11.709L3.91106 11.069C5.35719 9.05534 7.17312 7.33511 9.26206 6C9.37205 5.92971 9.49842 5.88917 9.62878 5.88237C9.75914 5.87556 9.88904 5.90272 10.0058 5.96117C10.1225 6.01963 10.222 6.1074 10.2946 6.21587C10.3673 6.32434 10.4105 6.44982 10.4201 6.58L10.4891 7.52C10.5351 8.15 10.5711 8.78 10.5971 9.41H11.2411C12.9971 9.41013 14.7188 9.897 16.2149 10.8165C17.7109 11.7361 18.9229 13.0523 19.7161 14.619L20.4461 16.061V16.06Z",
+        fill: "#435055"
+    })
+], -1));
+const _hoisted_11$1 = [
+    _hoisted_10$2
 ];
-const getDuration = (timeAgoInSeconds) => {
-    for (const [name, seconds] of epochs) {
-        const interval = Math.floor(timeAgoInSeconds / seconds);
-        if (interval >= 1) {
-            return {
-                interval: interval,
-                epoch: name
-            };
+const _hoisted_12$1 = {
+    width: "10",
+    height: "46",
+    viewBox: "0 0 10 46",
+    class: "comment-flow",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+};
+const _hoisted_13$1 = _withScopeId(() => createElementVNode("path", {
+    d: "M 1 1 L 1 35 C 1 40 3 45 9 44.5",
+    stroke: "#A3F7BF",
+    "stroke-opacity": "0.5",
+    "stroke-width": "3",
+    "stroke-linecap": "round"
+}, null, -1));
+const _hoisted_14$1 = [
+    _hoisted_13$1
+];
+const _hoisted_15$1 = { key: 4 };
+const _hoisted_16$2 = {
+    key: 0,
+    class: "replies-section"
+};
+var script$4 = defineComponent({
+    __name: 'Comment',
+    props: {
+        data: { type: null, required: true },
+        isDiscussion: { type: Boolean, required: false }
+    },
+    setup(__props) {
+        const props = __props;
+        const showReplies = ref(false);
+        const replies = ref();
+        const api = usePostsApi();
+        function loadReplies() {
+            showReplies.value = true;
+            api.getReplies(props.data.id)
+                .then(res => {
+                if (res) {
+                    replies.value = res;
+                }
+            });
         }
+        return (_ctx, _cache) => {
+            const _component_Comment = resolveComponent("Comment", true);
+            return (openBlock(), createElementBlock("div", {
+                style: normalizeStyle({ marginLeft: _ctx.isDiscussion ? '50px' : '0px', marginBottom: '20px' })
+            }, [
+                (props?.isDiscussion)
+                    ? (openBlock(), createElementBlock("div", _hoisted_1$4, [
+                        _hoisted_2$3,
+                        createElementVNode("div", null, [
+                            createElementVNode("p", _hoisted_3$1, [
+                                createTextVNode(toDisplayString(props.data?.user.username) + " ", 1),
+                                _hoisted_4$1
+                            ]),
+                            createElementVNode("p", _hoisted_5$1, toDisplayString(props.data.comment), 1)
+                        ])
+                    ]))
+                    : createCommentVNode("v-if", true),
+                (!props?.isDiscussion)
+                    ? (openBlock(), createElementBlock("div", _hoisted_6$1, [
+                        _hoisted_7$1,
+                        createElementVNode("p", _hoisted_8$2, toDisplayString(props.data.user?.username ?? 'Anonymous'), 1),
+                        createElementVNode("p", null, toDisplayString(props.data.created_at ? unref(formatTime)(new Date(props.data.created_at)) : ''), 1)
+                    ]))
+                    : createCommentVNode("v-if", true),
+                (!props?.isDiscussion)
+                    ? (openBlock(), createElementBlock("p", _hoisted_9$2, toDisplayString(props.data.comment), 1))
+                    : createCommentVNode("v-if", true),
+                (!_ctx.isDiscussion)
+                    ? (openBlock(), createElementBlock("button", {
+                        key: 3,
+                        class: "reply-btn",
+                        onClick: _cache[0] || (_cache[0] = ($event) => (unref(api).replyingTo = props.data))
+                    }, [..._hoisted_11$1]))
+                    : createCommentVNode("v-if", true),
+                withDirectives((openBlock(), createElementBlock("svg", _hoisted_12$1, [..._hoisted_14$1], 512)), [
+                    [vShow, props.data?.replies && props.data?.replies.length > 0]
+                ]),
+                (props.data.replyCount > 0)
+                    ? (openBlock(), createElementBlock("div", _hoisted_15$1, [
+                        createElementVNode("p", {
+                            class: "reply-show-text",
+                            onClick: _cache[1] || (_cache[1] = ($event) => (loadReplies()))
+                        }, toDisplayString(props.data.replyCount) + " Replies", 1),
+                        (showReplies.value && replies.value)
+                            ? (openBlock(), createElementBlock("div", _hoisted_16$2, [
+                                (openBlock(true), createElementBlock(Fragment, null, renderList(replies.value, (item) => {
+                                    return (openBlock(), createBlock(_component_Comment, {
+                                        data: item,
+                                        key: item.id
+                                    }, null, 8, ["data"]));
+                                }), 128))
+                            ]))
+                            : createCommentVNode("v-if", true)
+                    ]))
+                    : createCommentVNode("v-if", true)
+            ], 4));
+        };
     }
-    return { interval: 'now', epoch: null };
+});var css_248z$3 = "\n.comment-text-discussion[data-v-0448a3e0] {\n    font-size: 18px;\n    margin-left: 15px;\n    color: white;\n}\n.comment-text[data-v-0448a3e0] {\n    font-size: 17px;\n    margin-left: 50px;\n    color: white;\n}\n@media (max-width: 480px) {\n.comment-text[data-v-0448a3e0] {\n        font-size: 15px;\n}\n}\n.comment-flow[data-v-0448a3e0] {\n    position: absolute;\n    margin-top: -10px;\n    margin-left: 15px;\n}\n.reply-btn[data-v-0448a3e0] {\n    position: absolute;\n    right: 10px;\n    background-color: transparent;\n    border: 0px;\n    margin-top: -25px;\n}\n.reply-btn[data-v-0448a3e0]:hover {\n    background-color: var(--c-black-mute);\n    border-radius: 10px;\n}\n.reply-show-text[data-v-0448a3e0] {\n    color: var(--c-primary);\n    text-decoration: underline;\n    cursor: pointer;\n    opacity: 0.8;\n    margin-left: 45px;\n    margin-top: 10px;\n}\n.replies-section[data-v-0448a3e0] {\n    margin-top: 15px;\n    margin-left: 45px;\n}\n";
+styleInject(css_248z$3);script$4.__scopeId = "data-v-0448a3e0";
+script$4.__file = "src/components/post/Comment.vue";const _hoisted_1$3 = {
+    key: 0,
+    style: { "width": "100%" }
 };
-const formatTime = (date) => {
-    const timeAgoInSeconds = Math.floor((+new Date() - +new Date(date)) / 1000);
-    const { interval, epoch } = getDuration(timeAgoInSeconds);
-    return `${interval} ${epoch ?? ''}`;
+const _hoisted_2$2 = createStaticVNode("<div class=\"image\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:40px;\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 6);
+const _hoisted_8$1 = [
+    _hoisted_2$2
+];
+const _hoisted_9$1 = {
+    key: 1,
+    class: "skeleton-loader",
+    style: { "padding-top": "20px", "background": "transparent" }
 };
-const formatText = (text) => {
-    text = text.replace(/#([^# ]+)/g, (str, $1) => {
-        return `<a href="#/search/results?hashtag=${$1}">${str}</a>`;
-    });
-    return text;
+const _hoisted_10$1 = createStaticVNode("<div class=\"image\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:40px;\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 6);
+const _hoisted_16$1 = [
+    _hoisted_10$1
+];
+const _hoisted_17$1 = { key: 2 };
+const _hoisted_18$1 = createStaticVNode("<div class=\"image\" style=\"margin-left:0px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:20px;margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div>", 5);
+const _hoisted_23$1 = [
+    _hoisted_18$1
+];
+const _hoisted_24$1 = {
+    key: 3,
+    class: "skeleton-loader",
+    style: { "padding-top": "12%", "display": "flex", "flex-direction": "column", "align-items": "center", "background": "transparent" }
 };
-const langCodes = {
-    "af": "Afrikaans",
-    "sq": "Albanian",
-    "an": "Aragonese",
-    "ar": "Arabic (Standard)",
-    "ar-dz": "Arabic (Algeria)",
-    "ar-bh": "Arabic (Bahrain)",
-    "ar-eg": "Arabic (Egypt)",
-    "ar-iq": "Arabic (Iraq)",
-    "ar-jo": "Arabic (Jordan)",
-    "ar-kw": "Arabic (Kuwait)",
-    "ar-lb": "Arabic (Lebanon)",
-    "ar-ly": "Arabic (Libya)",
-    "ar-ma": "Arabic (Morocco)",
-    "ar-om": "Arabic (Oman)",
-    "ar-qa": "Arabic (Qatar)",
-    "ar-sa": "Arabic (Saudi Arabia)",
-    "ar-sy": "Arabic (Syria)",
-    "ar-tn": "Arabic (Tunisia)",
-    "ar-ae": "Arabic (U.A.E.)",
-    "ar-ye": "Arabic (Yemen)",
-    "hy": "Armenian",
-    "as": "Assamese",
-    "ast": "Asturian",
-    "az": "Azerbaijani",
-    "eu": "Basque",
-    "bg": "Bulgarian",
-    "be": "Belarusian",
-    "bn": "Bengali",
-    "bs": "Bosnian",
-    "br": "Breton",
-    "my": "Burmese",
-    "ca": "Catalan",
-    "ch": "Chamorro",
-    "ce": "Chechen",
-    "zh": "Chinese",
-    "zh-hk": "Chinese (Hong Kong)",
-    "zh-cn": "Chinese (PRC)",
-    "zh-sg": "Chinese (Singapore)",
-    "zh-tw": "Chinese (Taiwan)",
-    "cv": "Chuvash",
-    "co": "Corsican",
-    "cr": "Cree",
-    "hr": "Croatian",
-    "cs": "Czech",
-    "da": "Danish",
-    "nl": "Dutch (Standard)",
-    "nl-be": "Dutch (Belgian)",
-    "en": "English",
-    "en-au": "English (Australia)",
-    "en-bz": "English (Belize)",
-    "en-ca": "English (Canada)",
-    "en-ie": "English (Ireland)",
-    "en-jm": "English (Jamaica)",
-    "en-nz": "English (New Zealand)",
-    "en-ph": "English (Philippines)",
-    "en-za": "English (South Africa)",
-    "en-tt": "English (Trinidad & Tobago)",
-    "en-gb": "English (United Kingdom)",
-    "en-us": "English (United States)",
-    "en-zw": "English (Zimbabwe)",
-    "eo": "Esperanto",
-    "et": "Estonian",
-    "fo": "Faeroese",
-    "fj": "Fijian",
-    "fi": "Finnish",
-    "fr": "French (Standard)",
-    "fr-be": "French (Belgium)",
-    "fr-ca": "French (Canada)",
-    "fr-fr": "French (France)",
-    "fr-lu": "French (Luxembourg)",
-    "fr-mc": "French (Monaco)",
-    "fr-ch": "French (Switzerland)",
-    "fy": "Frisian",
-    "fur": "Friulian",
-    "gd": "Gaelic (Scots)",
-    "gd-ie": "Gaelic (Irish)",
-    "gl": "Galacian",
-    "ka": "Georgian",
-    "de": "German (Standard)",
-    "de-at": "German (Austria)",
-    "de-de": "German (Germany)",
-    "de-li": "German (Liechtenstein)",
-    "de-lu": "German (Luxembourg)",
-    "de-ch": "German (Switzerland)",
-    "el": "Greek",
-    "gu": "Gujurati",
-    "ht": "Haitian",
-    "he": "Hebrew",
-    "hi": "Hindi",
-    "hu": "Hungarian",
-    "is": "Icelandic",
-    "id": "Indonesian",
-    "iu": "Inuktitut",
-    "ga": "Irish",
-    "it": "Italian (Standard)",
-    "it-ch": "Italian (Switzerland)",
-    "ja": "Japanese",
-    "kn": "Kannada",
-    "ks": "Kashmiri",
-    "kk": "Kazakh",
-    "km": "Khmer",
-    "ky": "Kirghiz",
-    "tlh": "Klingon",
-    "ko": "Korean",
-    "ko-kp": "Korean (North Korea)",
-    "ko-kr": "Korean (South Korea)",
-    "la": "Latin",
-    "lv": "Latvian",
-    "lt": "Lithuanian",
-    "lb": "Luxembourgish",
-    "mk": "FYRO Macedonian",
-    "ms": "Malay",
-    "ml": "Malayalam",
-    "mt": "Maltese",
-    "mi": "Maori",
-    "mr": "Marathi",
-    "mo": "Moldavian",
-    "nv": "Navajo",
-    "ng": "Ndonga",
-    "ne": "Nepali",
-    "no": "Norwegian",
-    "nb": "Norwegian (Bokmal)",
-    "nn": "Norwegian (Nynorsk)",
-    "oc": "Occitan",
-    "or": "Oriya",
-    "om": "Oromo",
-    "fa": "Persian",
-    "fa-ir": "Persian/Iran",
-    "pl": "Polish",
-    "pt": "Portuguese",
-    "pt-br": "Portuguese (Brazil)",
-    "pa": "Punjabi",
-    "pa-in": "Punjabi (India)",
-    "pa-pk": "Punjabi (Pakistan)",
-    "qu": "Quechua",
-    "rm": "Rhaeto-Romanic",
-    "ro": "Romanian",
-    "ro-mo": "Romanian (Moldavia)",
-    "ru": "Russian",
-    "ru-mo": "Russian (Moldavia)",
-    "sz": "Sami (Lappish)",
-    "sg": "Sango",
-    "sa": "Sanskrit",
-    "sc": "Sardinian",
-    "sd": "Sindhi",
-    "si": "Singhalese",
-    "sr": "Serbian",
-    "sk": "Slovak",
-    "sl": "Slovenian",
-    "so": "Somani",
-    "sb": "Sorbian",
-    "es": "Spanish",
-    "es-ar": "Spanish (Argentina)",
-    "es-bo": "Spanish (Bolivia)",
-    "es-cl": "Spanish (Chile)",
-    "es-co": "Spanish (Colombia)",
-    "es-cr": "Spanish (Costa Rica)",
-    "es-do": "Spanish (Dominican Republic)",
-    "es-ec": "Spanish (Ecuador)",
-    "es-sv": "Spanish (El Salvador)",
-    "es-gt": "Spanish (Guatemala)",
-    "es-hn": "Spanish (Honduras)",
-    "es-mx": "Spanish (Mexico)",
-    "es-ni": "Spanish (Nicaragua)",
-    "es-pa": "Spanish (Panama)",
-    "es-py": "Spanish (Paraguay)",
-    "es-pe": "Spanish (Peru)",
-    "es-pr": "Spanish (Puerto Rico)",
-    "es-es": "Spanish (Spain)",
-    "es-uy": "Spanish (Uruguay)",
-    "es-ve": "Spanish (Venezuela)",
-    "sx": "Sutu",
-    "sw": "Swahili",
-    "sv": "Swedish",
-    "sv-fi": "Swedish (Finland)",
-    "sv-sv": "Swedish (Sweden)",
-    "ta": "Tamil",
-    "tt": "Tatar",
-    "te": "Teluga",
-    "th": "Thai",
-    "tig": "Tigre",
-    "ts": "Tsonga",
-    "tn": "Tswana",
-    "tr": "Turkish",
-    "tk": "Turkmen",
-    "uk": "Ukrainian",
-    "hsb": "Upper Sorbian",
-    "ur": "Urdu",
-    "ve": "Venda",
-    "vi": "Vietnamese",
-    "vo": "Volapuk",
-    "wa": "Walloon",
-    "cy": "Welsh",
-    "xh": "Xhosa",
-    "ji": "Yiddish",
-    "zu": "Zulu",
-};const _hoisted_1$2 = { class: "userinfo" };
-const _hoisted_2$1 = createElementVNode("img", {
+const _hoisted_25$1 = createStaticVNode("<div class=\"image\" style=\"height:85px;width:85px;border-radius:50%;margin-left:0px;align-self:center;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;width:50%;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;margin-top:20px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 5);
+const _hoisted_30$1 = [
+    _hoisted_25$1
+];
+var script$3 = defineComponent({
+    __name: 'SkeletonLoader',
+    props: {
+        count: {
+            type: Number,
+            default: 4
+        },
+        type: String
+    },
+    setup(__props) {
+        const props = __props;
+        return (_ctx, _cache) => {
+            return (openBlock(), createElementBlock(Fragment, null, [
+                (!props?.type)
+                    ? (openBlock(), createElementBlock("div", _hoisted_1$3, [
+                        (openBlock(true), createElementBlock(Fragment, null, renderList(props.count, (item) => {
+                            return (openBlock(), createElementBlock("div", {
+                                class: "skeleton-loader",
+                                key: item
+                            }, [..._hoisted_8$1]));
+                        }), 128))
+                    ]))
+                    : createCommentVNode("v-if", true),
+                (props?.type && props?.type === 'full-post')
+                    ? (openBlock(), createElementBlock("div", _hoisted_9$1, [..._hoisted_16$1]))
+                    : createCommentVNode("v-if", true),
+                (props?.type && props?.type === 'comments')
+                    ? (openBlock(), createElementBlock("div", _hoisted_17$1, [
+                        (openBlock(), createElementBlock(Fragment, null, renderList(3, (item) => {
+                            return createElementVNode("div", {
+                                class: "skeleton-loader",
+                                style: { "padding-top": "20px", "background": "transparent" },
+                                key: item
+                            }, [..._hoisted_23$1]);
+                        }), 64))
+                    ]))
+                    : createCommentVNode("v-if", true),
+                (props?.type && props?.type === 'profile')
+                    ? (openBlock(), createElementBlock("div", _hoisted_24$1, [..._hoisted_30$1]))
+                    : createCommentVNode("v-if", true)
+            ], 64));
+        };
+    }
+});var css_248z$2 = "\n.skeleton-loader[data-v-2606e696] {\n    width: 600px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding: 10px;\n    padding-top: 30px;\n    padding-bottom: 50px;\n    background: var(--color-background-mute);\n    margin-bottom: 10px;\n    -webkit-animation: pulse-2606e696 2s ease-out infinite;\n            animation: pulse-2606e696 2s ease-out infinite;\n}\n@media (max-width: 600px) {\n.skeleton-loader[data-v-2606e696] {\n        width: 100%;\n}\n}\n.image[data-v-2606e696] {\n    width: 40px;\n    height: 40px;\n    background: rgba(255, 255, 255, 0.1);\n    -webkit-align-self: flex-start;\n        -ms-flex-item-align: start;\n            align-self: flex-start;\n    margin-left: 5%;\n    border-radius: 20px;\n    margin-bottom: 20px;\n}\n.text[data-v-2606e696] {\n    width: 75%;\n    height: 10px;\n    background: rgba(255, 255, 255, 0.1);\n    border-radius: 15px;\n    margin-bottom: 10px;\n    margin-left: 18%;\n}\n.btns[data-v-2606e696] {\n    width: 90%;\n    margin-left: 5%;\n    height: 30px;\n    background: rgba(255, 255, 255, 0.1);\n    border-radius: 15px;\n    margin-top: 30px;\n}\n@-webkit-keyframes pulse-2606e696 {\n0% {\n        opacity: 0.8;\n}\n50% {\n        opacity: 1;\n}\n100% {\n        opacity: 0.8;\n}\n}\n@keyframes pulse-2606e696 {\n0% {\n        opacity: 0.8;\n}\n50% {\n        opacity: 1;\n}\n100% {\n        opacity: 0.8;\n}\n}";
+styleInject(css_248z$2);script$3.__scopeId = "data-v-2606e696";
+script$3.__file = "src/components/template/SkeletonLoader.vue";const _hoisted_1$2 = {
+    key: 1,
+    class: "comment-section"
+};
+var script$2 = defineComponent({
+    __name: 'CommentSection',
+    props: {
+        comments: { type: Array, required: false }
+    },
+    setup(__props) {
+        const props = __props;
+        return (_ctx, _cache) => {
+            return (openBlock(), createElementBlock("div", null, [
+                (!props.comments)
+                    ? (openBlock(), createBlock(script$3, {
+                        key: 0,
+                        type: "comments"
+                    }))
+                    : createCommentVNode("v-if", true),
+                (props.comments)
+                    ? (openBlock(), createElementBlock("div", _hoisted_1$2, [
+                        (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.comments, (item) => {
+                            return (openBlock(), createElementBlock("div", {
+                                key: item.id,
+                                class: "comment"
+                            }, [
+                                createVNode(script$4, { data: item }, null, 8, ["data"])
+                            ]));
+                        }), 128))
+                    ]))
+                    : createCommentVNode("v-if", true)
+            ]));
+        };
+    }
+});var css_248z$1 = "\n.comment-section[data-v-6a4526d6] {\n    margin-bottom: 20vh;\n    margin-top: 30px;\n}\n.comment[data-v-6a4526d6] {\n    margin: 5px;\n    margin-bottom: 20px;\n}\n\n";
+styleInject(css_248z$1);script$2.__scopeId = "data-v-6a4526d6";
+script$2.__file = "src/components/post/CommentSection.vue";const useMoreOptionsSheet = defineStore('more-options', () => {
+    const sheetRef = ref(false);
+    function toggle() {
+        sheetRef.value = !sheetRef.value;
+    }
+    return { sheetRef, toggle };
+});const _hoisted_1$1 = {
+    class: "post-body",
+    style: { "cursor": "auto" }
+};
+const _hoisted_2$1 = { class: "userinfo" };
+const _hoisted_3 = createElementVNode("img", {
     src: "https://plus.unsplash.com/premium_photo-1669800502069-499e172df081?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     loading: "lazy",
     class: "avatar"
 }, null, -1);
-const _hoisted_3 = { class: "username" };
-const _hoisted_4 = createElementVNode("svg", {
+const _hoisted_4 = { class: "username" };
+const _hoisted_5 = createElementVNode("svg", {
     width: "23",
     height: "20",
     viewBox: "0 0 23 20",
@@ -8374,48 +8162,98 @@ const _hoisted_4 = createElementVNode("svg", {
         "fill-opacity": "0.6"
     })
 ], -1);
-const _hoisted_5 = [
-    _hoisted_4
+const _hoisted_6 = [
+    _hoisted_5
 ];
-const _hoisted_6 = ["innerHTML"];
-const _hoisted_7 = {
+const _hoisted_7 = ["innerHTML"];
+const _hoisted_8 = {
     key: 0,
     class: "donation-container",
     style: { "background-image": "url('https://images.unsplash.com/photo-1537440499989-de5f6b6854de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGtpZHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60')" }
 };
-const _hoisted_8$1 = createElementVNode("div", { class: "donation-texts" }, [
+const _hoisted_9 = createElementVNode("div", { class: "donation-texts" }, [
     createElementVNode("p", null, "4367$ Collected"),
     createElementVNode("p", null, "10000$ Goal")
 ], -1);
-const _hoisted_9$1 = createElementVNode("meter", {
+const _hoisted_10 = createElementVNode("meter", {
     max: "10000",
     value: "4367",
     style: { "height": "8px", "margin-bottom": "15px", "margin-top": "10px" }
 }, null, -1);
-const _hoisted_10$1 = {
+const _hoisted_11 = {
     key: 1,
-    class: "translation-original",
-    style: { "margin-left": "45px", "margin-top": "20px" }
+    class: "translation-original"
 };
-const _hoisted_11 = createElementVNode("br", null, null, -1);
-const _hoisted_12 = { class: "translation-source" };
-const _hoisted_13 = createStaticVNode("<svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_20_229)\"><path d=\"M3.97688 5.87475L3.59625 7H2.625L4.25425 2.625H5.37775L7 7H5.97888L5.59825 5.87475H3.97688ZM5.40662 5.23075L4.8125 3.4615H4.76963L4.1755 5.23075H5.40662Z\" fill=\"#A3F7BF\"></path><path d=\"M0 1.75C0 1.28587 0.184374 0.840752 0.512563 0.512563C0.840752 0.184374 1.28587 0 1.75 0L7.875 0C8.33913 0 8.78425 0.184374 9.11244 0.512563C9.44063 0.840752 9.625 1.28587 9.625 1.75V4.375H12.25C12.7141 4.375 13.1592 4.55937 13.4874 4.88756C13.8156 5.21575 14 5.66087 14 6.125V12.25C14 12.7141 13.8156 13.1592 13.4874 13.4874C13.1592 13.8156 12.7141 14 12.25 14H6.125C5.66087 14 5.21575 13.8156 4.88756 13.4874C4.55937 13.1592 4.375 12.7141 4.375 12.25V9.625H1.75C1.28587 9.625 0.840752 9.44063 0.512563 9.11244C0.184374 8.78425 0 8.33913 0 7.875V1.75ZM1.75 0.875C1.51794 0.875 1.29538 0.967187 1.13128 1.13128C0.967187 1.29538 0.875 1.51794 0.875 1.75V7.875C0.875 8.10706 0.967187 8.32962 1.13128 8.49372C1.29538 8.65781 1.51794 8.75 1.75 8.75H7.875C8.10706 8.75 8.32962 8.65781 8.49372 8.49372C8.65781 8.32962 8.75 8.10706 8.75 7.875V1.75C8.75 1.51794 8.65781 1.29538 8.49372 1.13128C8.32962 0.967187 8.10706 0.875 7.875 0.875H1.75ZM7.99575 9.62062C8.16462 9.884 8.3475 10.1307 8.547 10.3609C7.8925 10.864 7.08313 11.2368 6.125 11.4914C6.28075 11.6813 6.51962 12.047 6.61062 12.25C7.595 11.9359 8.43062 11.5115 9.13587 10.9427C9.81575 11.5246 10.6575 11.9621 11.6996 12.2308C11.816 12.0085 12.0619 11.6419 12.25 11.452C11.2656 11.2306 10.4501 10.8447 9.7825 10.3285C10.3784 9.67488 10.8517 8.88387 11.2009 7.91612H12.25V7H9.625V7.91612H10.2944C10.0161 8.65462 9.64688 9.26888 9.18138 9.77987C9.0528 9.6429 8.93159 9.4992 8.81825 9.34938C8.57134 9.50769 8.2884 9.601 7.99575 9.62062Z\" fill=\"#A3F7BF\"></path></g><defs><clipPath id=\"clip0_20_229\"><rect width=\"14\" height=\"14\" fill=\"white\"></rect></clipPath></defs></svg>", 1);
-const _hoisted_14 = { class: "post-buttons" };
-const _hoisted_15 = {
-    width: "28",
-    height: "27",
+const _hoisted_12 = createElementVNode("br", null, null, -1);
+const _hoisted_13 = { class: "translation-source" };
+const _hoisted_14 = createStaticVNode("<svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_20_229)\"><path d=\"M3.97688 5.87475L3.59625 7H2.625L4.25425 2.625H5.37775L7 7H5.97888L5.59825 5.87475H3.97688ZM5.40662 5.23075L4.8125 3.4615H4.76963L4.1755 5.23075H5.40662Z\" fill=\"#A3F7BF\"></path><path d=\"M0 1.75C0 1.28587 0.184374 0.840752 0.512563 0.512563C0.840752 0.184374 1.28587 0 1.75 0L7.875 0C8.33913 0 8.78425 0.184374 9.11244 0.512563C9.44063 0.840752 9.625 1.28587 9.625 1.75V4.375H12.25C12.7141 4.375 13.1592 4.55937 13.4874 4.88756C13.8156 5.21575 14 5.66087 14 6.125V12.25C14 12.7141 13.8156 13.1592 13.4874 13.4874C13.1592 13.8156 12.7141 14 12.25 14H6.125C5.66087 14 5.21575 13.8156 4.88756 13.4874C4.55937 13.1592 4.375 12.7141 4.375 12.25V9.625H1.75C1.28587 9.625 0.840752 9.44063 0.512563 9.11244C0.184374 8.78425 0 8.33913 0 7.875V1.75ZM1.75 0.875C1.51794 0.875 1.29538 0.967187 1.13128 1.13128C0.967187 1.29538 0.875 1.51794 0.875 1.75V7.875C0.875 8.10706 0.967187 8.32962 1.13128 8.49372C1.29538 8.65781 1.51794 8.75 1.75 8.75H7.875C8.10706 8.75 8.32962 8.65781 8.49372 8.49372C8.65781 8.32962 8.75 8.10706 8.75 7.875V1.75C8.75 1.51794 8.65781 1.29538 8.49372 1.13128C8.32962 0.967187 8.10706 0.875 7.875 0.875H1.75ZM7.99575 9.62062C8.16462 9.884 8.3475 10.1307 8.547 10.3609C7.8925 10.864 7.08313 11.2368 6.125 11.4914C6.28075 11.6813 6.51962 12.047 6.61062 12.25C7.595 11.9359 8.43062 11.5115 9.13587 10.9427C9.81575 11.5246 10.6575 11.9621 11.6996 12.2308C11.816 12.0085 12.0619 11.6419 12.25 11.452C11.2656 11.2306 10.4501 10.8447 9.7825 10.3285C10.3784 9.67488 10.8517 8.88387 11.2009 7.91612H12.25V7H9.625V7.91612H10.2944C10.0161 8.65462 9.64688 9.26888 9.18138 9.77987C9.0528 9.6429 8.93159 9.4992 8.81825 9.34938C8.57134 9.50769 8.2884 9.601 7.99575 9.62062Z\" fill=\"#A3F7BF\"></path></g><defs><clipPath id=\"clip0_20_229\"><rect width=\"14\" height=\"14\" fill=\"white\"></rect></clipPath></defs></svg>", 1);
+const _hoisted_15 = { style: { "display": "flex", "align-items": "center" } };
+const _hoisted_16 = { style: { "color": "var(--c-primary)", "display": "flex", "align-items": "center" } };
+const _hoisted_17 = {
+    width: "22",
+    height: "22",
+    style: { "margin-right": "5px" },
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+};
+const _hoisted_18 = createElementVNode("path", {
+    d: "M14.25 8.75C13.75 11.25 11.865 13.604 9.22001 14.13C7.93 14.3869 6.59182 14.2303 5.39601 13.6824C4.20021 13.1345 3.20773 12.2233 2.55991 11.0786C1.91208 9.93384 1.64193 8.61389 1.78792 7.30667C1.93391 5.99946 2.4886 4.77163 3.37301 3.798C5.18701 1.8 8.25001 1.25 10.75 2.25",
+    stroke: "#A3F7BF",
+    "stroke-width": "1.5",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round"
+}, null, -1);
+const _hoisted_19 = createElementVNode("path", {
+    d: "M5.75 7.75L8.25 10.25L14.25 3.75",
+    stroke: "#A3F7BF",
+    "stroke-width": "1.5",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round"
+}, null, -1);
+const _hoisted_20 = [
+    _hoisted_18,
+    _hoisted_19
+];
+const _hoisted_21 = createElementVNode("button", { class: "btn-gift" }, [
+    createElementVNode("svg", {
+        width: "28",
+        height: "28",
+        viewBox: "0 0 22 22",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+    }, [
+        createElementVNode("path", {
+            opacity: "0.2",
+            d: "M17.875 11V17.1875C17.875 17.3698 17.8026 17.5447 17.6736 17.6736C17.5447 17.8026 17.3698 17.875 17.1875 17.875H4.8125C4.63016 17.875 4.4553 17.8026 4.32636 17.6736C4.19743 17.5447 4.125 17.3698 4.125 17.1875V11H17.875Z",
+            fill: "white",
+            "fill-opacity": "0.7"
+        }),
+        createElementVNode("path", {
+            d: "M18.5625 6.18749H15.5478C15.5813 6.15913 15.6157 6.13164 15.6484 6.10156C15.9094 5.86968 16.1197 5.58644 16.2662 5.26955C16.4128 4.95267 16.4924 4.60896 16.5 4.25992C16.5113 3.87807 16.4444 3.49795 16.3035 3.14289C16.1626 2.78783 15.9505 2.46531 15.6805 2.19515C15.4104 1.92499 15.0879 1.71288 14.7329 1.57184C14.3779 1.43081 13.9978 1.36382 13.6159 1.37499C13.2667 1.38252 12.9229 1.46204 12.6058 1.60858C12.2888 1.75512 12.0054 1.96553 11.7734 2.22663C11.4524 2.59865 11.1915 3.0185 11 3.47101C10.8085 3.0185 10.5476 2.59865 10.2266 2.22663C9.99459 1.96553 9.71121 1.75512 9.39417 1.60858C9.07713 1.46204 8.73325 1.38252 8.38406 1.37499C8.00222 1.36382 7.62211 1.43081 7.26709 1.57184C6.91207 1.71288 6.58962 1.92499 6.31954 2.19515C6.04946 2.46531 5.83745 2.78783 5.69652 3.14289C5.55558 3.49795 5.48871 3.87807 5.5 4.25992C5.50764 4.60896 5.58722 4.95267 5.73375 5.26955C5.88029 5.58644 6.09064 5.86968 6.35164 6.10156C6.3843 6.12992 6.41867 6.15742 6.45219 6.18749H3.4375C3.07283 6.18749 2.72309 6.33236 2.46523 6.59022C2.20737 6.84809 2.0625 7.19782 2.0625 7.56249V10.3125C2.0625 10.6772 2.20737 11.0269 2.46523 11.2848C2.72309 11.5426 3.07283 11.6875 3.4375 11.6875V17.1875C3.4375 17.5522 3.58237 17.9019 3.84023 18.1598C4.09809 18.4176 4.44783 18.5625 4.8125 18.5625H17.1875C17.5522 18.5625 17.9019 18.4176 18.1598 18.1598C18.4176 17.9019 18.5625 17.5522 18.5625 17.1875V11.6875C18.9272 11.6875 19.2769 11.5426 19.5348 11.2848C19.7926 11.0269 19.9375 10.6772 19.9375 10.3125V7.56249C19.9375 7.19782 19.7926 6.84809 19.5348 6.59022C19.2769 6.33236 18.9272 6.18749 18.5625 6.18749ZM12.8047 3.13757C12.9135 3.01736 13.0461 2.92096 13.194 2.85441C13.3419 2.78786 13.5019 2.7526 13.6641 2.75085H13.7062C13.8962 2.75204 14.0842 2.79115 14.2589 2.8659C14.4337 2.94064 14.5917 3.04952 14.7239 3.18614C14.856 3.32276 14.9596 3.48439 15.0284 3.66154C15.0973 3.83869 15.1301 4.02781 15.125 4.21781C15.1233 4.37997 15.088 4.54002 15.0214 4.68791C14.9549 4.83579 14.8585 4.96833 14.7383 5.07718C13.9227 5.79906 12.5692 6.05343 11.7305 6.14281C11.8336 5.23273 12.1172 3.91015 12.8047 3.13757ZM7.29695 3.16851C7.56331 2.90218 7.92404 2.75177 8.3007 2.74999H8.34281C8.50497 2.75174 8.66502 2.787 8.81291 2.85355C8.9608 2.9201 9.09333 3.0165 9.20219 3.13671C9.9232 3.9514 10.1776 5.30234 10.267 6.13765C9.43164 6.05171 8.0807 5.7939 7.26602 5.07289C7.14581 4.96403 7.0494 4.8315 6.98285 4.68361C6.9163 4.53572 6.88105 4.37567 6.8793 4.21351C6.87397 4.02035 6.90793 3.82813 6.97914 3.64849C7.05034 3.46886 7.1573 3.30556 7.29352 3.16851H7.29695ZM3.4375 7.56249H10.3125V10.3125H3.4375V7.56249ZM4.8125 11.6875H10.3125V17.1875H4.8125V11.6875ZM17.1875 17.1875H11.6875V11.6875H17.1875V17.1875ZM18.5625 10.3125H11.6875V7.56249H18.5625V10.3125Z",
+            fill: "white",
+            "fill-opacity": "0.7"
+        })
+    ])
+], -1);
+const _hoisted_22 = createElementVNode("br", null, null, -1);
+const _hoisted_23 = createElementVNode("hr", null, null, -1);
+const _hoisted_24 = { class: "post-buttons" };
+const _hoisted_25 = {
+    width: "32",
+    height: "31",
     viewBox: "0 0 27 26",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
 };
-const _hoisted_16$1 = createElementVNode("path", {
+const _hoisted_26 = createElementVNode("path", {
     d: "M23.8684 7.20078C23.5281 6.41275 23.0374 5.69865 22.4237 5.09844C21.8096 4.49644 21.0855 4.01805 20.2909 3.68926C19.4669 3.34698 18.5831 3.17178 17.6909 3.17383C16.4391 3.17383 15.2179 3.5166 14.1565 4.16407C13.9026 4.31895 13.6614 4.48907 13.4329 4.67442C13.2044 4.48907 12.9632 4.31895 12.7093 4.16407C11.6479 3.5166 10.4266 3.17383 9.17488 3.17383C8.27352 3.17383 7.40008 3.34649 6.57488 3.68926C5.77762 4.01934 5.05906 4.49414 4.44207 5.09844C3.82761 5.69797 3.33676 6.41224 2.99734 7.20078C2.64442 8.0209 2.46414 8.8918 2.46414 9.78809C2.46414 10.6336 2.6368 11.5147 2.97957 12.4109C3.26649 13.16 3.67781 13.9369 4.2034 14.7215C5.03621 15.9631 6.18133 17.258 7.6032 18.5707C9.95945 20.7467 12.2929 22.2498 12.3919 22.3107L12.9936 22.6967C13.2602 22.8668 13.603 22.8668 13.8696 22.6967L14.4714 22.3107C14.5704 22.2473 16.9013 20.7467 19.26 18.5707C20.6819 17.258 21.827 15.9631 22.6598 14.7215C23.1854 13.9369 23.5993 13.16 23.8837 12.4109C24.2264 11.5147 24.3991 10.6336 24.3991 9.78809C24.4016 8.8918 24.2214 8.0209 23.8684 7.20078ZM13.4329 20.6883C13.4329 20.6883 4.39383 14.8967 4.39383 9.78809C4.39383 7.20078 6.53426 5.10352 9.17488 5.10352C11.0309 5.10352 12.6407 6.13946 13.4329 7.65274C14.2251 6.13946 15.8348 5.10352 17.6909 5.10352C20.3315 5.10352 22.472 7.20078 22.472 9.78809C22.472 14.8967 13.4329 20.6883 13.4329 20.6883Z",
     fill: "#E74C3C"
 }, null, -1);
-const _hoisted_17$1 = ["fill-opacity"];
-const _hoisted_18$1 = createElementVNode("svg", {
-    width: "28",
-    height: "27",
+const _hoisted_27 = ["fill-opacity"];
+const _hoisted_28 = createElementVNode("svg", {
+    width: "32",
+    height: "31",
     viewBox: "0 0 25 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -8435,22 +8273,106 @@ const _hoisted_18$1 = createElementVNode("svg", {
         "stroke-linejoin": "round"
     })
 ], -1);
-const _hoisted_19 = createStaticVNode("<svg width=\"28\" height=\"27\" viewBox=\"0 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_14_63)\"><path d=\"M6.05789 10.25C5.95844 10.25 5.86305 10.2895 5.79273 10.3598C5.7224 10.4302 5.68289 10.5255 5.68289 10.625V20.375C5.68289 20.582 5.85089 20.75 6.05789 20.75H18.8079C18.9073 20.75 19.0027 20.7105 19.0731 20.6402C19.1434 20.5698 19.1829 20.4745 19.1829 20.375V10.625C19.1829 10.5255 19.1434 10.4302 19.0731 10.3598C19.0027 10.2895 18.9073 10.25 18.8079 10.25H17.3079C17.0095 10.25 16.7234 10.1315 16.5124 9.9205C16.3014 9.70952 16.1829 9.42337 16.1829 9.125C16.1829 8.82664 16.3014 8.54049 16.5124 8.32951C16.7234 8.11853 17.0095 8 17.3079 8H18.8079C20.2569 8 21.4329 9.176 21.4329 10.625V20.375C21.4329 21.0712 21.1563 21.7389 20.664 22.2312C20.1718 22.7234 19.5041 23 18.8079 23H6.05789C5.3617 23 4.69402 22.7234 4.20174 22.2312C3.70945 21.7389 3.43289 21.0712 3.43289 20.375V10.625C3.43289 9.176 4.60889 8 6.05789 8H7.55789C7.85626 8 8.14241 8.11853 8.35339 8.32951C8.56437 8.54049 8.68289 8.82664 8.68289 9.125C8.68289 9.42337 8.56437 9.70952 8.35339 9.9205C8.14241 10.1315 7.85626 10.25 7.55789 10.25H6.05789ZM12.1674 0.765505C12.2022 0.730582 12.2436 0.702875 12.2892 0.68397C12.3347 0.665066 12.3836 0.655334 12.4329 0.655334C12.4822 0.655334 12.5311 0.665066 12.5766 0.68397C12.6222 0.702875 12.6636 0.730582 12.6984 0.765505L17.0424 5.1095C17.095 5.16195 17.1308 5.22883 17.1453 5.30166C17.1598 5.37449 17.1524 5.45 17.124 5.5186C17.0955 5.58721 17.0474 5.64582 16.9856 5.68702C16.9238 5.72822 16.8512 5.75014 16.7769 5.75H13.5579V14.375C13.5579 14.6734 13.4394 14.9595 13.2284 15.1705C13.0174 15.3815 12.7313 15.5 12.4329 15.5C12.1345 15.5 11.8484 15.3815 11.6374 15.1705C11.4264 14.9595 11.3079 14.6734 11.3079 14.375V5.75H8.08889C8.01463 5.75014 7.94199 5.72822 7.8802 5.68702C7.81841 5.64582 7.77024 5.58721 7.7418 5.5186C7.71337 5.45 7.70594 5.37449 7.72046 5.30166C7.73499 5.22883 7.77081 5.16195 7.82339 5.1095L12.1674 0.765505Z\" fill=\"white\" fill-opacity=\"0.7\"></path></g><defs><clipPath id=\"clip0_14_63\"><rect width=\"24\" height=\"24\" fill=\"white\" transform=\"translate(0.432892 0.5)\"></rect></clipPath></defs></svg>", 1);
-var script$2 = defineComponent({
-    __name: 'PostHome',
+const _hoisted_29 = createStaticVNode("<svg width=\"32\" height=\"32\" viewBox=\"0 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_14_63)\"><path d=\"M6.05789 10.25C5.95844 10.25 5.86305 10.2895 5.79273 10.3598C5.7224 10.4302 5.68289 10.5255 5.68289 10.625V20.375C5.68289 20.582 5.85089 20.75 6.05789 20.75H18.8079C18.9073 20.75 19.0027 20.7105 19.0731 20.6402C19.1434 20.5698 19.1829 20.4745 19.1829 20.375V10.625C19.1829 10.5255 19.1434 10.4302 19.0731 10.3598C19.0027 10.2895 18.9073 10.25 18.8079 10.25H17.3079C17.0095 10.25 16.7234 10.1315 16.5124 9.9205C16.3014 9.70952 16.1829 9.42337 16.1829 9.125C16.1829 8.82664 16.3014 8.54049 16.5124 8.32951C16.7234 8.11853 17.0095 8 17.3079 8H18.8079C20.2569 8 21.4329 9.176 21.4329 10.625V20.375C21.4329 21.0712 21.1563 21.7389 20.664 22.2312C20.1718 22.7234 19.5041 23 18.8079 23H6.05789C5.3617 23 4.69402 22.7234 4.20174 22.2312C3.70945 21.7389 3.43289 21.0712 3.43289 20.375V10.625C3.43289 9.176 4.60889 8 6.05789 8H7.55789C7.85626 8 8.14241 8.11853 8.35339 8.32951C8.56437 8.54049 8.68289 8.82664 8.68289 9.125C8.68289 9.42337 8.56437 9.70952 8.35339 9.9205C8.14241 10.1315 7.85626 10.25 7.55789 10.25H6.05789ZM12.1674 0.765505C12.2022 0.730582 12.2436 0.702875 12.2892 0.68397C12.3347 0.665066 12.3836 0.655334 12.4329 0.655334C12.4822 0.655334 12.5311 0.665066 12.5766 0.68397C12.6222 0.702875 12.6636 0.730582 12.6984 0.765505L17.0424 5.1095C17.095 5.16195 17.1308 5.22883 17.1453 5.30166C17.1598 5.37449 17.1524 5.45 17.124 5.5186C17.0955 5.58721 17.0474 5.64582 16.9856 5.68702C16.9238 5.72822 16.8512 5.75014 16.7769 5.75H13.5579V14.375C13.5579 14.6734 13.4394 14.9595 13.2284 15.1705C13.0174 15.3815 12.7313 15.5 12.4329 15.5C12.1345 15.5 11.8484 15.3815 11.6374 15.1705C11.4264 14.9595 11.3079 14.6734 11.3079 14.375V5.75H8.08889C8.01463 5.75014 7.94199 5.72822 7.8802 5.68702C7.81841 5.64582 7.77024 5.58721 7.7418 5.5186C7.71337 5.45 7.70594 5.37449 7.72046 5.30166C7.73499 5.22883 7.77081 5.16195 7.82339 5.1095L12.1674 0.765505Z\" fill=\"white\" fill-opacity=\"0.7\"></path></g><defs><clipPath id=\"clip0_14_63\"><rect width=\"24\" height=\"24\" fill=\"white\" transform=\"translate(0.432892 0.5)\"></rect></clipPath></defs></svg>", 1);
+const _hoisted_30 = { class: "comment-input" };
+const _hoisted_31 = ["value"];
+const _hoisted_32 = createElementVNode("svg", {
+    width: "28",
+    height: "28",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+}, [
+    createElementVNode("path", {
+        opacity: "0.16",
+        d: "M7.24 4.535L19.184 10.193C20.709 10.915 20.709 13.085 19.184 13.807L7.24 19.465C5.825 20.135 4.223 18.993 4.396 17.437L4.976 12.221C4.99233 12.0741 4.99233 11.9259 4.976 11.779L4.396 6.563C4.223 5.007 5.825 3.864 7.24 4.535Z",
+        fill: "#A3F7BF"
+    }),
+    createElementVNode("path", {
+        d: "M5 12L4.396 6.563C4.223 5.007 5.825 3.864 7.24 4.535L19.184 10.193C20.709 10.915 20.709 13.085 19.184 13.807L7.24 19.465C5.825 20.135 4.223 18.993 4.396 17.437L5 12ZM5 12H12",
+        stroke: "#A3F7BF",
+        "stroke-width": "2",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round"
+    })
+], -1);
+const _hoisted_33 = [
+    _hoisted_32
+];
+const _hoisted_34 = createElementVNode("svg", {
+    width: "28",
+    height: "28",
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+}, [
+    createElementVNode("path", {
+        d: "M16.791 13.342C17.572 13.069 18.543 13.032 20.571 13.028H21.997C21.99 13.125 22.007 12.931 21.997 13.028C21.9657 13.3708 21.8158 13.6919 21.573 13.936L13.923 21.626C13.8055 21.7436 13.666 21.8368 13.5124 21.9003C13.3588 21.9638 13.1942 21.9963 13.028 21.996C12.931 22.006 13.125 21.99 13.028 21.996V20.572C13.033 18.542 13.069 17.572 13.342 16.792C13.6209 15.9947 14.0759 15.2705 14.6732 14.6732C15.2705 14.0759 15.9937 13.6209 16.791 13.342Z",
+        fill: "#A3F7BF"
+    }),
+    createElementVNode("path", {
+        opacity: "0.5",
+        d: "M13.028 21.948C12.6864 21.9825 12.3433 21.9999 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 12.347 21.982 12.69 21.948 13.028H20.57C18.542 13.033 17.571 13.069 16.79 13.342C15.9929 13.621 15.2688 14.0761 14.6717 14.6733C14.0746 15.2706 13.6198 15.9948 13.341 16.792C13.068 17.572 13.031 18.542 13.027 20.572L13.028 21.948Z",
+        fill: "#A3F7BF"
+    }),
+    createElementVNode("path", {
+        d: "M14.898 11.224C15.431 11.081 15.69 10.316 15.476 9.51599C15.261 8.71599 14.655 8.18299 14.121 8.32599C13.588 8.46899 13.329 9.23299 13.544 10.034C13.758 10.834 14.364 11.367 14.898 11.224ZM9.10202 12.777C9.63602 12.634 9.89402 11.869 9.68002 11.069C9.46602 10.269 8.86002 9.73599 8.32602 9.87899C7.79202 10.022 7.53402 10.786 7.74802 11.587C7.96302 12.387 8.56802 12.92 9.10202 12.777ZM9.09502 15.206C8.90208 15.1576 8.69781 15.1878 8.52715 15.29C8.35649 15.3922 8.23342 15.558 8.18502 15.751C8.13662 15.9439 8.16685 16.1482 8.26905 16.3189C8.37126 16.4895 8.53708 16.6126 8.73002 16.661C10.117 17.008 11.674 17.005 13.23 16.588L13.282 16.574L13.362 16.737C13.6458 15.9521 14.1009 15.2402 14.6942 14.6531C15.2875 14.0661 16.0041 13.6185 16.792 13.343C16.884 13.31 16.98 13.281 17.079 13.255C16.9363 13.1521 16.762 13.1026 16.5865 13.1152C16.411 13.1278 16.2455 13.2017 16.119 13.324C15.281 14.134 14.159 14.787 12.841 15.14C11.523 15.493 10.225 15.49 9.09502 15.206Z",
+        fill: "#A3F7BF"
+    })
+], -1);
+const _hoisted_35 = [
+    _hoisted_34
+];
+var script$1 = defineComponent({
+    __name: 'Post',
     props: {
         item: { type: null, required: false }
     },
     setup(__props) {
-        const moreOptions = useMoreOptionsSheet();
-        const api = usePostsApi();
         const props = __props;
         const item = computed(() => props.item);
         const isLoved = ref(item.value?.loves[0]?.id ? true : false);
+        const commentInput = ref('');
+        const replyTo = ref(null);
+        const comments = ref();
+        let commentChannel;
+        const moreOptions = useMoreOptionsSheet();
+        const api = usePostsApi();
+        onMounted(() => {
+            if (item.value?.id && item.value.commentCount > 0) {
+                api.getComments(item.value?.id)
+                    .then(res => {
+                    comments.value = res;
+                    commentChannel = supabase
+                        .channel('comment-updates')
+                        .on('postgres_changes', {
+                        event: 'INSERT',
+                        schema: 'public',
+                        table: 'comments',
+                        filter: 'post_id=eq.' + item.value?.id
+                    }, ev => {
+                        if (!ev.errors) {
+                            comments.value.push(ev.new);
+                        }
+                    })
+                        .subscribe();
+                });
+            }
+            else {
+                comments.value = [];
+            }
+        });
+        api.$subscribe((mutation, state) => {
+            if (state.replyingTo)
+                replyTo.value = state.replyingTo;
+        });
+        onUnmounted(() => {
+            commentChannel && supabase.removeChannel(commentChannel);
+        });
         function handleLove() {
             if (item.value?.id && typeof item.value.loveCount == 'number') {
                 if (!isLoved.value) {
-                    api.lovePost(item.value?.id).then((res) => {
+                    api.lovePost(item.value?.id).then(res => {
                         if (res !== 201) {
                             isLoved.value = false;
                             item.value?.loveCount && item.value.loveCount--;
@@ -8460,7 +8382,7 @@ var script$2 = defineComponent({
                     item.value.loveCount++;
                 }
                 else {
-                    api.unlovePost(item.value?.id).then((res) => {
+                    api.unlovePost(item.value?.id).then(res => {
                         if (res !== 204) {
                             isLoved.value = true;
                             item.value?.loveCount && item.value.loveCount++;
@@ -8471,30 +8393,39 @@ var script$2 = defineComponent({
                 }
             }
         }
+        function handleComment() {
+            if (commentInput.value.length > 0 && item.value?.id) {
+                api.createComment(item.value?.id, commentInput.value, replyTo.value != null ? replyTo.value.id : undefined)
+                    .then(res => {
+                    if (res === 201) {
+                        console.log('commented');
+                        commentInput.value = '';
+                        replyTo.value = null;
+                    }
+                });
+            }
+        }
         return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock("div", {
-                class: "post-body",
-                onClick: _cache[4] || (_cache[4] = ($event) => (_ctx.$router.push('/p/' + item.value?.id)))
-            }, [
-                createElementVNode("div", _hoisted_1$2, [
-                    _hoisted_2$1,
-                    createElementVNode("p", _hoisted_3, toDisplayString(item.value?.user?.username ?? 'Anonymous'), 1),
+            return (openBlock(), createElementBlock("div", _hoisted_1$1, [
+                createElementVNode("div", _hoisted_2$1, [
+                    _hoisted_3,
+                    createElementVNode("p", _hoisted_4, toDisplayString(item.value?.user?.username ?? 'Anonymous'), 1),
                     createElementVNode("p", null, toDisplayString(item.value?.created_at ? unref(formatTime)(new Date(item.value?.created_at)) : ''), 1)
                 ]),
                 createElementVNode("button", {
                     class: "post-more-options",
                     onClick: _cache[0] || (_cache[0] = ($event) => { $event.stopPropagation(); unref(moreOptions).toggle(); })
-                }, [..._hoisted_5]),
+                }, [..._hoisted_6]),
                 createElementVNode("p", {
-                    class: "post-text",
+                    class: "post-text-detail",
                     innerHTML: _ctx.$sanitize(item.value?.text && unref(formatText)(item.value.text)),
                     onClick: _cache[1] || (_cache[1] = ($event) => ($event.target.nodeName === 'A' && $event.stopPropagation()))
-                }, null, 8, _hoisted_6),
+                }, null, 8, _hoisted_7),
                 (item.value?.text == 'donation')
-                    ? (openBlock(), createElementBlock("div", _hoisted_7, [
+                    ? (openBlock(), createElementBlock("div", _hoisted_8, [
                         createElementVNode("div", null, [
-                            _hoisted_8$1,
-                            _hoisted_9$1,
+                            _hoisted_9,
+                            _hoisted_10,
                             createElementVNode("button", {
                                 class: "btn-primary rounded",
                                 onClick: _cache[2] || (_cache[2] = ($event) => ($event.stopPropagation()))
@@ -8503,177 +8434,85 @@ var script$2 = defineComponent({
                     ]))
                     : createCommentVNode("v-if", true),
                 (item.value?.lang !== 'en')
-                    ? (openBlock(), createElementBlock("blockquote", _hoisted_10$1, [
+                    ? (openBlock(), createElementBlock("blockquote", _hoisted_11, [
                         createTextVNode(toDisplayString(item.value?.translatedText) + " ", 1),
-                        _hoisted_11,
-                        createElementVNode("p", _hoisted_12, [
-                            _hoisted_13,
+                        _hoisted_12,
+                        createElementVNode("p", _hoisted_13, [
+                            _hoisted_14,
                             createTextVNode(" Translated from " + toDisplayString(unref(langCodes)[item.value?.lang] ?? 'Foreign Language'), 1)
                         ])
                     ]))
                     : createCommentVNode("v-if", true),
-                createElementVNode("div", _hoisted_14, [
+                createElementVNode("div", null, [
+                    createElementVNode("div", _hoisted_15, [
+                        createElementVNode("p", _hoisted_16, [
+                            (openBlock(), createElementBlock("svg", _hoisted_17, [..._hoisted_20])),
+                            createTextVNode(" Verified Information ")
+                        ]),
+                        _hoisted_21
+                    ]),
+                    _hoisted_22,
+                    _hoisted_23
+                ]),
+                createElementVNode("div", _hoisted_24, [
                     createElementVNode("button", {
                         onClick: _cache[3] || (_cache[3] = ($event) => { handleLove(); $event.stopPropagation(); })
                     }, [
-                        (openBlock(), createElementBlock("svg", _hoisted_15, [
-                            _hoisted_16$1,
+                        (openBlock(), createElementBlock("svg", _hoisted_25, [
+                            _hoisted_26,
                             createElementVNode("path", {
                                 d: "M17.6909 5.10352C15.8348 5.10352 14.2251 6.13945 13.4329 7.65273C12.6407 6.13945 11.0309 5.10352 9.17488 5.10352C6.53426 5.10352 4.39383 7.20078 4.39383 9.78809C4.39383 14.8967 13.4329 20.6883 13.4329 20.6883C13.4329 20.6883 22.472 14.8967 22.472 9.78809C22.472 7.20078 20.3315 5.10352 17.6909 5.10352Z",
                                 fill: "#E74C3C",
                                 "fill-opacity": isLoved.value ? 1 : 0.2
-                            }, null, 8, _hoisted_17$1)
+                            }, null, 8, _hoisted_27)
                         ])),
                         createElementVNode("span", null, toDisplayString(item.value?.loveCount && item.value?.loveCount > 0 ? item.value?.loveCount : ''), 1)
                     ]),
                     createElementVNode("button", null, [
-                        _hoisted_18$1,
+                        _hoisted_28,
                         createElementVNode("span", null, toDisplayString(item.value?.commentCount && item.value?.commentCount > 0 ? item.value?.commentCount : ''), 1)
                     ]),
                     createElementVNode("button", null, [
-                        _hoisted_19,
+                        _hoisted_29,
                         createElementVNode("span", null, toDisplayString(item.value?.shareCount && item.value?.shareCount > 0 ? item.value?.shareCount : ''), 1)
                     ])
+                ]),
+                createVNode(script$2, { comments: comments.value }, null, 8, ["comments"]),
+                createElementVNode("div", _hoisted_30, [
+                    withDirectives(createElementVNode("p", null, "Replying to: " + toDisplayString(replyTo.value != null && replyTo.value.comment), 513), [
+                        [vShow, replyTo.value != null]
+                    ]),
+                    createElementVNode("textarea", {
+                        placeholder: "Write something...",
+                        onInput: _cache[4] || (_cache[4] = ($event) => (commentInput.value = $event.target.value)),
+                        value: commentInput.value
+                    }, null, 40, _hoisted_31),
+                    withDirectives(createElementVNode("button", {
+                        class: "comment-share-btn",
+                        onClick: _cache[5] || (_cache[5] = ($event) => (handleComment()))
+                    }, [..._hoisted_33], 512), [
+                        [vShow, commentInput.value.length > 0]
+                    ]),
+                    createElementVNode("button", {
+                        class: normalizeClass({ 'comment-sticker-btn': commentInput.value.length == 0, 'comment-sticker-btn-2': commentInput.value.length > 0 })
+                    }, [..._hoisted_35], 2)
                 ])
             ]));
         };
     }
-});script$2.__file = "src/components/post/PostHome.vue";const _hoisted_1$1 = {
-    key: 0,
-    style: { "width": "100%" }
-};
-const _hoisted_2 = createStaticVNode("<div class=\"image\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:40px;\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 6);
-const _hoisted_8 = [
-    _hoisted_2
-];
-const _hoisted_9 = {
-    key: 1,
-    class: "skeleton-loader",
-    style: { "padding-top": "20px", "background": "transparent" }
-};
-const _hoisted_10 = createStaticVNode("<div class=\"image\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:40px;\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 6);
-const _hoisted_16 = [
-    _hoisted_10
-];
-const _hoisted_17 = { key: 2 };
-const _hoisted_18 = createStaticVNode("<div class=\"image\" style=\"margin-left:0px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:20px;margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div>", 5);
-const _hoisted_23 = [
-    _hoisted_18
-];
-const _hoisted_24 = {
-    key: 3,
-    class: "skeleton-loader",
-    style: { "padding-top": "12%", "display": "flex", "flex-direction": "column", "align-items": "center", "background": "transparent" }
-};
-const _hoisted_25 = createStaticVNode("<div class=\"image\" style=\"height:85px;width:85px;border-radius:50%;margin-left:0px;align-self:center;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;width:50%;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;margin-top:20px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 5);
-const _hoisted_30 = [
-    _hoisted_25
-];
-var script$1 = defineComponent({
-    __name: 'SkeletonLoader',
-    props: {
-        count: {
-            type: Number,
-            default: 4
-        },
-        type: String
-    },
-    setup(__props) {
-        const props = __props;
-        return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock(Fragment, null, [
-                (!props?.type)
-                    ? (openBlock(), createElementBlock("div", _hoisted_1$1, [
-                        (openBlock(true), createElementBlock(Fragment, null, renderList(props.count, (item) => {
-                            return (openBlock(), createElementBlock("div", {
-                                class: "skeleton-loader",
-                                key: item
-                            }, [..._hoisted_8]));
-                        }), 128))
-                    ]))
-                    : createCommentVNode("v-if", true),
-                (props?.type && props?.type === 'full-post')
-                    ? (openBlock(), createElementBlock("div", _hoisted_9, [..._hoisted_16]))
-                    : createCommentVNode("v-if", true),
-                (props?.type && props?.type === 'comments')
-                    ? (openBlock(), createElementBlock("div", _hoisted_17, [
-                        (openBlock(), createElementBlock(Fragment, null, renderList(3, (item) => {
-                            return createElementVNode("div", {
-                                class: "skeleton-loader",
-                                style: { "padding-top": "20px", "background": "transparent" },
-                                key: item
-                            }, [..._hoisted_23]);
-                        }), 64))
-                    ]))
-                    : createCommentVNode("v-if", true),
-                (props?.type && props?.type === 'profile')
-                    ? (openBlock(), createElementBlock("div", _hoisted_24, [..._hoisted_30]))
-                    : createCommentVNode("v-if", true)
-            ], 64));
-        };
-    }
-});var css_248z$1 = "\n.skeleton-loader[data-v-2606e696] {\n    width: 600px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding: 10px;\n    padding-top: 30px;\n    padding-bottom: 50px;\n    background: var(--color-background-mute);\n    margin-bottom: 10px;\n    -webkit-animation: pulse-2606e696 2s ease-out infinite;\n            animation: pulse-2606e696 2s ease-out infinite;\n}\n@media (max-width: 600px) {\n.skeleton-loader[data-v-2606e696] {\n        width: 100%;\n}\n}\n.image[data-v-2606e696] {\n    width: 40px;\n    height: 40px;\n    background: rgba(255, 255, 255, 0.1);\n    -webkit-align-self: flex-start;\n        -ms-flex-item-align: start;\n            align-self: flex-start;\n    margin-left: 5%;\n    border-radius: 20px;\n    margin-bottom: 20px;\n}\n.text[data-v-2606e696] {\n    width: 75%;\n    height: 10px;\n    background: rgba(255, 255, 255, 0.1);\n    border-radius: 15px;\n    margin-bottom: 10px;\n    margin-left: 18%;\n}\n.btns[data-v-2606e696] {\n    width: 90%;\n    margin-left: 5%;\n    height: 30px;\n    background: rgba(255, 255, 255, 0.1);\n    border-radius: 15px;\n    margin-top: 30px;\n}\n@-webkit-keyframes pulse-2606e696 {\n0% {\n        opacity: 0.8;\n}\n50% {\n        opacity: 1;\n}\n100% {\n        opacity: 0.8;\n}\n}\n@keyframes pulse-2606e696 {\n0% {\n        opacity: 0.8;\n}\n50% {\n        opacity: 1;\n}\n100% {\n        opacity: 0.8;\n}\n}";
-styleInject(css_248z$1);script$1.__scopeId = "data-v-2606e696";
-script$1.__file = "src/components/template/SkeletonLoader.vue";const _hoisted_1 = {
-    key: 0,
-    style: { "marginTop": "12%", "marginBottom": "12%", "background": "var(--color-background-mute)", "display": "flex", "flex-direction": "column" }
-};
+});script$1.__file = "src/components/post/Post.vue";const _hoisted_1 = { class: "container" };
+const _hoisted_2 = createStaticVNode("<div style=\"display:flex;align-items:center;justify-content:space-between;\" data-v-33156382><div style=\"display:flex;align-items:center;\" data-v-33156382><img src=\"https://plus.unsplash.com/premium_photo-1669800502069-499e172df081?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60\" loading=\"lazy\" class=\"avatar\" data-v-33156382><div style=\"margin-left:15px;\" data-v-33156382><h3 class=\"event-title\" data-v-33156382>Developers Live Talk</h3><p data-v-33156382>19 Sept</p></div></div><p class=\"tag\" data-v-33156382>Meetup</p></div><p class=\"details\" data-v-33156382> Let’s sit together and meet developers around the world to know each other and share our experience! </p><br data-v-33156382><p class=\"info\" data-v-33156382>Hosted by: <a data-v-33156382>@Robert</a></p><p class=\"info\" data-v-33156382>Link to Join: <a data-v-33156382>String Voice Room</a></p><br data-v-33156382><hr data-v-33156382><br data-v-33156382><h3 class=\"title\" data-v-33156382>Discussions about this Event</h3>", 9);
 var script = defineComponent({
-    __name: 'Home',
+    __name: 'EventDetails',
     setup(__props) {
-        const collapsed = ref(true);
-        const isLoading = ref(true);
-        const posts = ref();
-        const p = usePostsApi();
-        onMounted(() => {
-            if (p.posts.length > 0) {
-                posts.value = p.posts;
-                isLoading.value = false;
-            }
-            else {
-                p.getPosts()
-                    .then((val) => {
-                    if (val) {
-                        posts.value = val;
-                        isLoading.value = false;
-                    }
-                });
-            }
-        });
         return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock(Fragment, null, [
-                createVNode(script$5),
-                createVNode(script$4, {
-                    collapsed: collapsed.value,
-                    setCollapsed: (val) => collapsed.value = val
-                }, null, 8, ["collapsed", "setCollapsed"]),
-                createVNode(script$3, {
-                    toggleSidebar: () => collapsed.value = !collapsed.value
-                }, null, 8, ["toggleSidebar"]),
-                (isLoading.value)
-                    ? (openBlock(), createBlock(script$1, {
-                        key: 0,
-                        style: { "margin-top": "12%" }
-                    }))
-                    : createCommentVNode("v-if", true),
-                createVNode(Transition, { appear: "" }, {
-                    default: withCtx(() => [
-                        (!isLoading.value)
-                            ? (openBlock(), createElementBlock("div", _hoisted_1, [
-                                (openBlock(true), createElementBlock(Fragment, null, renderList(posts.value, (item) => {
-                                    return (openBlock(), createBlock(script$2, {
-                                        item: item,
-                                        key: item.id
-                                    }, null, 8, ["item"]));
-                                }), 128))
-                            ]))
-                            : createCommentVNode("v-if", true)
-                    ]),
-                    _: 1
-                })
-            ], 64));
+            return (openBlock(), createElementBlock("div", _hoisted_1, [
+                _hoisted_2,
+                createVNode(script$1),
+                createVNode(script$1)
+            ]));
         };
     }
-});var css_248z = "\n@media (max-width: 480px) {\n.v-enter-active[data-v-fae5bece],\n    .v-leave-active[data-v-fae5bece] {\n        transition: opacity 0.2s ease-in;\n}\n.v-enter-from[data-v-fae5bece],\n    .v-leave-to[data-v-fae5bece] {\n        opacity: 0;\n}\n}\n\n";
-styleInject(css_248z);script.__scopeId = "data-v-fae5bece";
-script.__file = "src/views/Home.vue";export{script as default};
+});var css_248z = "\n.container[data-v-33156382] {\n    padding: 20px;\n    padding-bottom: 200px;\n}\n.title[data-v-33156382] {\n    color: white;\n    font-weight: bold;\n}\n.event-title[data-v-33156382] {\n    color: white;\n    font-weight: bold;\n    font-size: 18px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.event-card > p[data-v-33156382] {\n    color: #ababab;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.tag[data-v-33156382] {\n    background-color: var(--c-primary);\n    padding-left: 4px;\n    padding-right: 4px;\n    font-size: 14px;\n    color: black !important;\n    border-radius: 10px;\n    margin-top: 15px;\n    float: right;\n}\n.details[data-v-33156382] {\n    color: white;\n    font-size: 18px;\n    margin-top: 15px;\n}\n.info[data-v-33156382] {\n    color: #ababab;\n    font-size: 16px;\n}\n";
+styleInject(css_248z);script.__scopeId = "data-v-33156382";
+script.__file = "src/views/EventDetails.vue";export{script as default};

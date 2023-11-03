@@ -1,0 +1,120 @@
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-primary);
+}
+.avatar-small {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    object-fit: cover;
+    border: 2px solid var(--color-primary);
+}
+.userinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.username {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.username-small {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+    .username {
+        font-size: 16px;
+    }
+    .avatar {
+        width: 35px;
+        height: 35px;
+    }
+    .post-buttons > button > svg {
+        height: 25px !important;
+        width: 25px !important;
+    }
+    .post-more-options > svg {
+        height: 18px !important;
+    }
+}
+
+.btn-primary {
+    border: 0px;
+    background-color: var(--c-secondary);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-secondary {
+    border: 1px solid var(--c-secondary);
+    background: transparent;
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-primary:active, .btn-secondary:active {
+    transform: scale(0.95);
+    transition: all 0.1s cubic-bezier(0.17, 0.89, 0.24, 1.11);
+}
+.rounded {
+    border-radius: 20px;
+}
+.btn-small {
+    padding: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.close-btn {
+    background: var(--color-background-soft);
+    border: 0px;
+    margin-left: 5%;
+    margin-top: 20px;
+    padding: 5px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--c-divider-dark-1);
+    border-top-color: var(--c-secondary);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: var(--bottom-menu-height);
+}

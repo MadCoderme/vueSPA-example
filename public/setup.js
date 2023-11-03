@@ -25,7 +25,7 @@ const Setup = {
         })
 
         document.title = metatags?.title
-        document.querySelector('meta[name="description"]').setAttribute("content", metatags?.description)
+        document.querySelector('meta[name="description"]')?.setAttribute("content", metatags?.description)
     }
 }
 

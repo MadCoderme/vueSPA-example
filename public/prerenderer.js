@@ -1,1 +1,1 @@
-document.getElementsByTagName('main')[0].innerHTML = 'Loading Vue...'
+document.getElementsByTagName('main')[0].innerHTML = 'Loading...';

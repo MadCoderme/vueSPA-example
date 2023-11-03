@@ -1,141 +1,4 @@
-import {defineComponent,openBlock,createBlock,Transition,withCtx,createElementVNode,pushScopeId,popScopeId,createTextVNode,normalizeClass,ref,createElementBlock,Fragment,withDirectives,createVNode,vShow,computed,resolveComponent,hasInjectionContext,inject,watch,reactive,effectScope,isRef,isReactive,toRaw,getCurrentScope,onScopeDispose,nextTick,toRefs,markRaw,createStaticVNode,toDisplayString,unref,createCommentVNode,renderList,onMounted}from'vue';function _mergeNamespaces(n, m){m.forEach(function(e){e&&typeof e!=='string'&&!Array.isArray(e)&&Object.keys(e).forEach(function(k){if(k!=='default'&&!(k in n)){var d=Object.getOwnPropertyDescriptor(e,k);Object.defineProperty(n,k,d.get?d:{enumerable:true,get:function(){return e[k]}});}})});return Object.freeze(n);}const _withScopeId$3 = n => (pushScopeId("data-v-4659f920"), n = n(), popScopeId(), n);
-const _hoisted_1$6 = _withScopeId$3(() => createElementVNode("h3", null, [
-    createElementVNode("svg", {
-        width: "20",
-        height: "20",
-        viewBox: "0 0 20 20",
-        fill: "none",
-        xmlns: "http://www.w3.org/2000/svg"
-    }, [
-        createElementVNode("path", {
-            "fill-rule": "evenodd",
-            "clip-rule": "evenodd",
-            d: "M2.5 8.33329C2.5 5.19079 2.5 3.61913 3.47667 2.64329C4.4525 1.66663 6.02417 1.66663 9.16667 1.66663H10.8333C13.9758 1.66663 15.5475 1.66663 16.5233 2.64329C17.5 3.61913 17.5 5.19079 17.5 8.33329V11.6666C17.5 14.8091 17.5 16.3808 16.5233 17.3566C15.5475 18.3333 13.9758 18.3333 10.8333 18.3333H9.16667C6.02417 18.3333 4.4525 18.3333 3.47667 17.3566C2.5 16.3808 2.5 14.8091 2.5 11.6666V8.33329ZM5 9.99996C5 8.82163 5 8.23246 5.36667 7.86663C5.73167 7.49996 6.32083 7.49996 7.5 7.49996H12.5C13.6783 7.49996 14.2675 7.49996 14.6333 7.86663C15 8.23246 15 8.82163 15 9.99996V13.3333C15 14.5116 15 15.1008 14.6333 15.4666C14.2675 15.8333 13.6783 15.8333 12.5 15.8333H7.5C6.32167 15.8333 5.7325 15.8333 5.36667 15.4666C5 15.1016 5 14.5125 5 13.3333V9.99996ZM5.83333 4.37496C5.66757 4.37496 5.5086 4.44081 5.39139 4.55802C5.27418 4.67523 5.20833 4.8342 5.20833 4.99996C5.20833 5.16572 5.27418 5.32469 5.39139 5.4419C5.5086 5.55911 5.66757 5.62496 5.83333 5.62496H10C10.1658 5.62496 10.3247 5.55911 10.4419 5.4419C10.5592 5.32469 10.625 5.16572 10.625 4.99996C10.625 4.8342 10.5592 4.67523 10.4419 4.55802C10.3247 4.44081 10.1658 4.37496 10 4.37496H5.83333Z",
-            fill: "#A3F7BF",
-            "fill-opacity": "0.8"
-        })
-    ]),
-    createTextVNode(" Feeds ")
-], -1));
-const _hoisted_2$5 = _withScopeId$3(() => createElementVNode("button", { class: "new-btn" }, [
-    createElementVNode("svg", {
-        width: "24",
-        height: "24",
-        viewBox: "0 0 24 24",
-        fill: "none",
-        xmlns: "http://www.w3.org/2000/svg"
-    }, [
-        createElementVNode("path", {
-            d: "M11 12H3M16 6H3M16 18H3M18 9V15M21 12H15",
-            stroke: "#A3F7BF",
-            "stroke-opacity": "0.8",
-            "stroke-width": "2",
-            "stroke-linecap": "round",
-            "stroke-linejoin": "round"
-        })
-    ])
-], -1));
-const _hoisted_3$2 = _withScopeId$3(() => createElementVNode("p", { style: { color: '#A3F7BF' } }, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot-fill'])
-    }),
-    createTextVNode(" Home ")
-], -1));
-const _hoisted_4$2 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Following ")
-], -1));
-const _hoisted_5$2 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Demo Feed 1 ")
-], -1));
-const _hoisted_6$2 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Demo Feed 2 ")
-], -1));
-const _hoisted_7$2 = _withScopeId$3(() => createElementVNode("br", null, null, -1));
-const _hoisted_8$3 = _withScopeId$3(() => createElementVNode("h3", null, [
-    createElementVNode("svg", {
-        width: "20",
-        height: "20",
-        viewBox: "0 0 20 20",
-        fill: "none",
-        xmlns: "http://www.w3.org/2000/svg"
-    }, [
-        createElementVNode("path", {
-            d: "M0 6.23702C0.000305196 7.68489 0.502143 9.08787 1.42001 10.2069C2.33788 11.326 3.61499 12.0918 5.03375 12.3741C5.19342 10.6123 5.92483 8.95122 7.11625 7.64459C6.63697 7.46715 6.11488 7.44098 5.62029 7.56961C5.12569 7.69824 4.68236 7.97549 4.35 8.36402C4.29665 8.42646 4.23154 8.47777 4.15838 8.51502C4.08522 8.55226 4.00545 8.57473 3.92361 8.58111C3.84178 8.58751 3.75949 8.5777 3.68145 8.55226C3.6034 8.52682 3.53113 8.48624 3.46875 8.43284C3.40637 8.37944 3.35511 8.31426 3.3179 8.24103C3.28069 8.1678 3.25825 8.08796 3.25186 8.00605C3.24548 7.92414 3.25527 7.84177 3.28069 7.76365C3.30611 7.68553 3.34665 7.61319 3.4 7.55076C3.96599 6.88858 4.74452 6.44416 5.60208 6.29372C6.45963 6.14327 7.34276 6.29619 8.1 6.72623C9.33147 5.7537 10.819 5.16074 12.3812 5.01962C12.0747 3.50007 11.2156 2.14849 9.97041 1.22668C8.72522 0.30487 7.18254 -0.12156 5.6412 0.029993C4.09987 0.181546 2.66958 0.900296 1.62739 2.04702C0.585204 3.19374 0.00529622 4.68681 0 6.23702ZM5.3125 4.36025C5.3125 4.48348 5.28825 4.6055 5.24114 4.71935C5.19402 4.8332 5.12497 4.93665 5.03791 5.02378C4.95086 5.11092 4.84751 5.18004 4.73377 5.2272C4.62002 5.27436 4.49811 5.29863 4.375 5.29863C4.25189 5.29863 4.12998 5.27436 4.01623 5.2272C3.90249 5.18004 3.79914 5.11092 3.71209 5.02378C3.62503 4.93665 3.55598 4.8332 3.50886 4.71935C3.46175 4.6055 3.4375 4.48348 3.4375 4.36025C3.4375 4.11137 3.53627 3.87269 3.71209 3.69671C3.8879 3.52073 4.12636 3.42186 4.375 3.42186C4.62364 3.42186 4.8621 3.52073 5.03791 3.69671C5.21373 3.87269 5.3125 4.11137 5.3125 4.36025ZM9.0625 4.36025C9.0625 4.60912 8.96373 4.8478 8.78791 5.02378C8.6121 5.19977 8.37364 5.29863 8.125 5.29863C7.87636 5.29863 7.6379 5.19977 7.46209 5.02378C7.28627 4.8478 7.1875 4.60912 7.1875 4.36025C7.1875 4.11137 7.28627 3.87269 7.46209 3.69671C7.6379 3.52073 7.87636 3.42186 8.125 3.42186C8.37364 3.42186 8.6121 3.52073 8.78791 3.69671C8.96373 3.87269 9.0625 4.11137 9.0625 4.36025ZM20 13.1185C20 14.9436 19.2757 16.6939 17.9864 17.9845C16.697 19.275 14.9484 20 13.125 20C11.3016 20 9.55295 19.275 8.26364 17.9845C6.97433 16.6939 6.25 14.9436 6.25 13.1185C6.25 11.2934 6.97433 9.54309 8.26364 8.25256C9.55295 6.96203 11.3016 6.23702 13.125 6.23702C14.9484 6.23702 16.697 6.96203 17.9864 8.25256C19.2757 9.54309 20 11.2934 20 13.1185ZM11.5625 11.8673C11.5625 11.6185 11.4637 11.3798 11.2879 11.2038C11.1121 11.0278 10.8736 10.9289 10.625 10.9289C10.3764 10.9289 10.1379 11.0278 9.96209 11.2038C9.78627 11.3798 9.6875 11.6185 9.6875 11.8673C9.6875 12.1162 9.78627 12.3549 9.96209 12.5309C10.1379 12.7068 10.3764 12.8057 10.625 12.8057C10.8736 12.8057 11.1121 12.7068 11.2879 12.5309C11.4637 12.3549 11.5625 12.1162 11.5625 11.8673ZM16.3812 15.0829C16.3189 15.0295 16.2466 14.9889 16.1686 14.9634C16.0905 14.938 16.0082 14.9282 15.9264 14.9346C15.8446 14.941 15.7648 14.9634 15.6916 15.0007C15.6185 15.0379 15.5533 15.0892 15.5 15.1517C15.2068 15.4945 14.843 15.7697 14.4335 15.9586C14.024 16.1474 13.5786 16.2454 13.1277 16.2457C12.6769 16.2461 12.2313 16.1488 11.8215 15.9606C11.4118 15.7724 11.0475 15.4978 10.7537 15.1554C10.7002 15.0931 10.635 15.0419 10.5617 15.0048C10.4884 14.9677 10.4086 14.9454 10.3267 14.9391C10.2448 14.9329 10.1625 14.9429 10.0844 14.9685C10.0064 14.9942 9.93417 15.0349 9.87187 15.0885C9.80958 15.1421 9.75843 15.2074 9.72136 15.2807C9.68428 15.3541 9.66201 15.434 9.6558 15.516C9.64958 15.5979 9.65956 15.6803 9.68517 15.7584C9.71077 15.8366 9.75149 15.9088 9.805 15.9712C10.2161 16.4509 10.726 16.8358 11.2998 17.0995C11.8736 17.3632 12.4976 17.4994 13.1289 17.4989C13.7603 17.4983 14.3841 17.3608 14.9574 17.0961C15.5306 16.8313 16.0398 16.4454 16.45 15.9649C16.5034 15.9025 16.5439 15.8302 16.5693 15.752C16.5947 15.6739 16.6045 15.5916 16.5982 15.5096C16.5918 15.4277 16.5693 15.3479 16.5321 15.2747C16.4949 15.2014 16.4436 15.1363 16.3812 15.0829ZM15.625 12.8057C15.8736 12.8057 16.1121 12.7068 16.2879 12.5309C16.4637 12.3549 16.5625 12.1162 16.5625 11.8673C16.5625 11.6185 16.4637 11.3798 16.2879 11.2038C16.1121 11.0278 15.8736 10.9289 15.625 10.9289C15.3764 10.9289 15.1379 11.0278 14.9621 11.2038C14.7863 11.3798 14.6875 11.6185 14.6875 11.8673C14.6875 12.1162 14.7863 12.3549 14.9621 12.5309C15.1379 12.7068 15.3764 12.8057 15.625 12.8057Z",
-            fill: "#A3F7BF",
-            "fill-opacity": "0.8"
-        })
-    ]),
-    createTextVNode(" Moods ")
-], -1));
-const _hoisted_9$3 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Positive ")
-], -1));
-const _hoisted_10$3 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: normalizeClass(['dot'])
-    }),
-    createTextVNode(" Motivational ")
-], -1));
-const _hoisted_11$2 = _withScopeId$3(() => createElementVNode("p", null, [
-    createElementVNode("span", {
-        class: "dot",
-        style: { backgroundColor: '#A3F7BF' }
-    }),
-    createTextVNode(" Neutral ")
-], -1));
-const _hoisted_12$2 = [
-    _hoisted_1$6,
-    _hoisted_2$5,
-    _hoisted_3$2,
-    _hoisted_4$2,
-    _hoisted_5$2,
-    _hoisted_6$2,
-    _hoisted_7$2,
-    _hoisted_8$3,
-    _hoisted_9$3,
-    _hoisted_10$3,
-    _hoisted_11$2
-];
-var script$6 = defineComponent({
-    __name: 'FeedOptions',
-    props: {
-        hide: {
-            type: Function,
-            required: true
-        }
-    },
-    setup(__props) {
-        const props = __props;
-        return (_ctx, _cache) => {
-            return (openBlock(), createBlock(Transition, { name: "fadeIn" }, {
-                default: withCtx(() => [
-                    createElementVNode("div", {
-                        class: "wrapper",
-                        onClick: _cache[1] || (_cache[1] = ($event) => (props.hide()))
-                    }, [
-                        createElementVNode("div", {
-                            class: "popup",
-                            onClick: _cache[0] || (_cache[0] = ($event) => ($event.stopPropagation()))
-                        }, [..._hoisted_12$2])
-                    ])
-                ]),
-                _: 1
-            }));
-        };
-    }
-});function styleInject(css, ref) {
+import {defineComponent,openBlock,createBlock,Transition,withCtx,createElementVNode,pushScopeId,popScopeId,createTextVNode,normalizeClass,ref,createElementBlock,Fragment,withDirectives,createVNode,vShow,hasInjectionContext,inject,watch,reactive,effectScope,isRef,isReactive,toRaw,getCurrentScope,onScopeDispose,nextTick,toRefs,markRaw,computed,createStaticVNode,normalizeStyle,setBlockTracking,toDisplayString}from'vue';function _mergeNamespaces(n, m){m.forEach(function(e){e&&typeof e!=='string'&&!Array.isArray(e)&&Object.keys(e).forEach(function(k){if(k!=='default'&&!(k in n)){var d=Object.getOwnPropertyDescriptor(e,k);Object.defineProperty(n,k,d.get?d:{enumerable:true,get:function(){return e[k]}});}})});return Object.freeze(n);}function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
   var insertAt = ref.insertAt;
 
@@ -160,11 +23,149 @@ var script$6 = defineComponent({
   } else {
     style.appendChild(document.createTextNode(css));
   }
-}var css_248z$7 = "\n.fadeIn-enter-active[data-v-4659f920] {\n  transition: all 0.5s ease-in;\n  opacity: 1;\n  -webkit-backdrop-filter: blur(2px);\n          backdrop-filter: blur(2px);\n}\n.fadeIn-enter-to[data-v-4659f920] {\n  transition: all 0.5s ease-in;\n  opacity: 1;\n  -webkit-backdrop-filter: blur(2px);\n          backdrop-filter: blur(2px);\n}\n.fadeIn-leave-active[data-v-4659f920] {\n  transition: all 0.3s ease-out;\n  opacity: 0;\n}\n.wrapper[data-v-4659f920] {\n    position: absolute;\n    height: 100%;\n    width: 100%;\n    z-index: 100;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-backdrop-filter: blur(2px);\n            backdrop-filter: blur(2px);\n}\n.popup[data-v-4659f920] {\n    width: 90%;\n    padding: 25px;\n    background-color: var(--c-black-mute);\n    border-radius: 20px;\n}\n.popup > h3[data-v-4659f920] {\n  color: white;\n  font-weight: bold;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-bottom: 10px;\n}\n.popup > h3 > svg[data-v-4659f920] {\n  margin-right: 6px;\n}\n.popup > p[data-v-4659f920] {\n  color: white;\n  font-size: 16px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  cursor: pointer;\n}\n.new-btn[data-v-4659f920] {\n  float: right;\n  margin-top: -30px;\n  background: transparent;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n}\n.new-btn[data-v-4659f920]:hover {\n  background: var(--color-background);\n}\n.dot-fill[data-v-4659f920] {\n  height: 15px;\n  width: 15px;\n  background-color: var(--c-primary);\n  border-radius: 50%;\n  display: inline-block;\n  margin-right: 10px;\n}\n.dot[data-v-4659f920] {\n  height: 15px;\n  width: 15px;\n  border: 1px solid var(--c-primary);\n  border-radius: 50%;\n  display: inline-block;\n  margin-right: 10px;\n}\n";
-styleInject(css_248z$7);script$6.__scopeId = "data-v-4659f920";
-script$6.__file = "src/components/FeedOptions.vue";const _withScopeId$2 = n => (pushScopeId("data-v-4fab8702"), n = n(), popScopeId(), n);
-const _hoisted_1$5 = { class: "header" };
-const _hoisted_2$4 = _withScopeId$2(() => createElementVNode("svg", {
+}var css_248z$3 = ".avatar {\n    width: 42px;\n    height: 42px;\n    border-radius: 50%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border: 2px solid var(--color-primary);\n}\n.avatar-small {\n    width: 35px;\n    height: 35px;\n    border-radius: 25px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border: 2px solid var(--color-primary);\n}\n.userinfo {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.username {\n    font-size: 18px;\n    color: white;\n    font-weight: bold;\n    margin-left: 15px;\n    margin-right: 10px;\n}\n.username-small {\n    font-size: 16px;\n    color: white;\n    font-weight: bold;\n    margin-left: 15px;\n    margin-right: 10px;\n}\n@media (max-width: 480px) {\n    .username {\n        font-size: 16px;\n    }\n    .avatar {\n        width: 35px;\n        height: 35px;\n    }\n    .post-buttons > button > svg {\n        height: 25px !important;\n        width: 25px !important;\n    }\n    .post-more-options > svg {\n        height: 18px !important;\n    }\n}\n.btn-primary {\n    border: 0px;\n    background-color: var(--c-secondary);\n    padding: 10px;\n    padding-left: 25px;\n    padding-right: 25px;\n    border-radius: 10px;\n    font-size: 16px;\n    cursor: pointer;\n}\n.btn-secondary {\n    border: 1px solid var(--c-secondary);\n    background: transparent;\n    color: white;\n    padding: 10px;\n    padding-left: 25px;\n    padding-right: 25px;\n    border-radius: 10px;\n    font-size: 16px;\n    cursor: pointer;\n}\n.btn-primary:active, .btn-secondary:active {\n    -webkit-transform: scale(0.95);\n            transform: scale(0.95);\n    transition: all 0.1s cubic-bezier(0.17, 0.89, 0.24, 1.11);\n}\n.rounded {\n    border-radius: 20px;\n}\n.btn-small {\n    padding: 6px;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.close-btn {\n    background: var(--color-background-soft);\n    border: 0px;\n    margin-left: 5%;\n    margin-top: 20px;\n    padding: 5px;\n    padding-bottom: 4px;\n    border-radius: 10px;\n}\n.loader {\n    width: 48px;\n    height: 48px;\n    border: 5px solid var(--c-divider-dark-1);\n    border-top-color: var(--c-secondary);\n    border-radius: 50%;\n    display: inline-block;\n    box-sizing: border-box;\n    -webkit-animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;\n            animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;\n}\n@-webkit-keyframes rotation {\n    0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n    }\n    100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n@keyframes rotation {\n    0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n    }\n    100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n.container {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    padding-top: 20px;\n    padding-bottom: var(--bottom-menu-height);\n}";
+styleInject(css_248z$3);const _withScopeId$2 = n => (pushScopeId("data-v-4659f920"), n = n(), popScopeId(), n);
+const _hoisted_1$2 = _withScopeId$2(() => createElementVNode("h3", null, [
+    createElementVNode("svg", {
+        width: "20",
+        height: "20",
+        viewBox: "0 0 20 20",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+    }, [
+        createElementVNode("path", {
+            "fill-rule": "evenodd",
+            "clip-rule": "evenodd",
+            d: "M2.5 8.33329C2.5 5.19079 2.5 3.61913 3.47667 2.64329C4.4525 1.66663 6.02417 1.66663 9.16667 1.66663H10.8333C13.9758 1.66663 15.5475 1.66663 16.5233 2.64329C17.5 3.61913 17.5 5.19079 17.5 8.33329V11.6666C17.5 14.8091 17.5 16.3808 16.5233 17.3566C15.5475 18.3333 13.9758 18.3333 10.8333 18.3333H9.16667C6.02417 18.3333 4.4525 18.3333 3.47667 17.3566C2.5 16.3808 2.5 14.8091 2.5 11.6666V8.33329ZM5 9.99996C5 8.82163 5 8.23246 5.36667 7.86663C5.73167 7.49996 6.32083 7.49996 7.5 7.49996H12.5C13.6783 7.49996 14.2675 7.49996 14.6333 7.86663C15 8.23246 15 8.82163 15 9.99996V13.3333C15 14.5116 15 15.1008 14.6333 15.4666C14.2675 15.8333 13.6783 15.8333 12.5 15.8333H7.5C6.32167 15.8333 5.7325 15.8333 5.36667 15.4666C5 15.1016 5 14.5125 5 13.3333V9.99996ZM5.83333 4.37496C5.66757 4.37496 5.5086 4.44081 5.39139 4.55802C5.27418 4.67523 5.20833 4.8342 5.20833 4.99996C5.20833 5.16572 5.27418 5.32469 5.39139 5.4419C5.5086 5.55911 5.66757 5.62496 5.83333 5.62496H10C10.1658 5.62496 10.3247 5.55911 10.4419 5.4419C10.5592 5.32469 10.625 5.16572 10.625 4.99996C10.625 4.8342 10.5592 4.67523 10.4419 4.55802C10.3247 4.44081 10.1658 4.37496 10 4.37496H5.83333Z",
+            fill: "#A3F7BF",
+            "fill-opacity": "0.8"
+        })
+    ]),
+    createTextVNode(" Feeds ")
+], -1));
+const _hoisted_2$2 = _withScopeId$2(() => createElementVNode("button", { class: "new-btn" }, [
+    createElementVNode("svg", {
+        width: "24",
+        height: "24",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+    }, [
+        createElementVNode("path", {
+            d: "M11 12H3M16 6H3M16 18H3M18 9V15M21 12H15",
+            stroke: "#A3F7BF",
+            "stroke-opacity": "0.8",
+            "stroke-width": "2",
+            "stroke-linecap": "round",
+            "stroke-linejoin": "round"
+        })
+    ])
+], -1));
+const _hoisted_3$1 = _withScopeId$2(() => createElementVNode("p", { style: { color: '#A3F7BF' } }, [
+    createElementVNode("span", {
+        class: normalizeClass(['dot-fill'])
+    }),
+    createTextVNode(" Home ")
+], -1));
+const _hoisted_4$1 = _withScopeId$2(() => createElementVNode("p", null, [
+    createElementVNode("span", {
+        class: normalizeClass(['dot'])
+    }),
+    createTextVNode(" Following ")
+], -1));
+const _hoisted_5$1 = _withScopeId$2(() => createElementVNode("p", null, [
+    createElementVNode("span", {
+        class: normalizeClass(['dot'])
+    }),
+    createTextVNode(" Demo Feed 1 ")
+], -1));
+const _hoisted_6$1 = _withScopeId$2(() => createElementVNode("p", null, [
+    createElementVNode("span", {
+        class: normalizeClass(['dot'])
+    }),
+    createTextVNode(" Demo Feed 2 ")
+], -1));
+const _hoisted_7$1 = _withScopeId$2(() => createElementVNode("br", null, null, -1));
+const _hoisted_8$1 = _withScopeId$2(() => createElementVNode("h3", null, [
+    createElementVNode("svg", {
+        width: "20",
+        height: "20",
+        viewBox: "0 0 20 20",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+    }, [
+        createElementVNode("path", {
+            d: "M0 6.23702C0.000305196 7.68489 0.502143 9.08787 1.42001 10.2069C2.33788 11.326 3.61499 12.0918 5.03375 12.3741C5.19342 10.6123 5.92483 8.95122 7.11625 7.64459C6.63697 7.46715 6.11488 7.44098 5.62029 7.56961C5.12569 7.69824 4.68236 7.97549 4.35 8.36402C4.29665 8.42646 4.23154 8.47777 4.15838 8.51502C4.08522 8.55226 4.00545 8.57473 3.92361 8.58111C3.84178 8.58751 3.75949 8.5777 3.68145 8.55226C3.6034 8.52682 3.53113 8.48624 3.46875 8.43284C3.40637 8.37944 3.35511 8.31426 3.3179 8.24103C3.28069 8.1678 3.25825 8.08796 3.25186 8.00605C3.24548 7.92414 3.25527 7.84177 3.28069 7.76365C3.30611 7.68553 3.34665 7.61319 3.4 7.55076C3.96599 6.88858 4.74452 6.44416 5.60208 6.29372C6.45963 6.14327 7.34276 6.29619 8.1 6.72623C9.33147 5.7537 10.819 5.16074 12.3812 5.01962C12.0747 3.50007 11.2156 2.14849 9.97041 1.22668C8.72522 0.30487 7.18254 -0.12156 5.6412 0.029993C4.09987 0.181546 2.66958 0.900296 1.62739 2.04702C0.585204 3.19374 0.00529622 4.68681 0 6.23702ZM5.3125 4.36025C5.3125 4.48348 5.28825 4.6055 5.24114 4.71935C5.19402 4.8332 5.12497 4.93665 5.03791 5.02378C4.95086 5.11092 4.84751 5.18004 4.73377 5.2272C4.62002 5.27436 4.49811 5.29863 4.375 5.29863C4.25189 5.29863 4.12998 5.27436 4.01623 5.2272C3.90249 5.18004 3.79914 5.11092 3.71209 5.02378C3.62503 4.93665 3.55598 4.8332 3.50886 4.71935C3.46175 4.6055 3.4375 4.48348 3.4375 4.36025C3.4375 4.11137 3.53627 3.87269 3.71209 3.69671C3.8879 3.52073 4.12636 3.42186 4.375 3.42186C4.62364 3.42186 4.8621 3.52073 5.03791 3.69671C5.21373 3.87269 5.3125 4.11137 5.3125 4.36025ZM9.0625 4.36025C9.0625 4.60912 8.96373 4.8478 8.78791 5.02378C8.6121 5.19977 8.37364 5.29863 8.125 5.29863C7.87636 5.29863 7.6379 5.19977 7.46209 5.02378C7.28627 4.8478 7.1875 4.60912 7.1875 4.36025C7.1875 4.11137 7.28627 3.87269 7.46209 3.69671C7.6379 3.52073 7.87636 3.42186 8.125 3.42186C8.37364 3.42186 8.6121 3.52073 8.78791 3.69671C8.96373 3.87269 9.0625 4.11137 9.0625 4.36025ZM20 13.1185C20 14.9436 19.2757 16.6939 17.9864 17.9845C16.697 19.275 14.9484 20 13.125 20C11.3016 20 9.55295 19.275 8.26364 17.9845C6.97433 16.6939 6.25 14.9436 6.25 13.1185C6.25 11.2934 6.97433 9.54309 8.26364 8.25256C9.55295 6.96203 11.3016 6.23702 13.125 6.23702C14.9484 6.23702 16.697 6.96203 17.9864 8.25256C19.2757 9.54309 20 11.2934 20 13.1185ZM11.5625 11.8673C11.5625 11.6185 11.4637 11.3798 11.2879 11.2038C11.1121 11.0278 10.8736 10.9289 10.625 10.9289C10.3764 10.9289 10.1379 11.0278 9.96209 11.2038C9.78627 11.3798 9.6875 11.6185 9.6875 11.8673C9.6875 12.1162 9.78627 12.3549 9.96209 12.5309C10.1379 12.7068 10.3764 12.8057 10.625 12.8057C10.8736 12.8057 11.1121 12.7068 11.2879 12.5309C11.4637 12.3549 11.5625 12.1162 11.5625 11.8673ZM16.3812 15.0829C16.3189 15.0295 16.2466 14.9889 16.1686 14.9634C16.0905 14.938 16.0082 14.9282 15.9264 14.9346C15.8446 14.941 15.7648 14.9634 15.6916 15.0007C15.6185 15.0379 15.5533 15.0892 15.5 15.1517C15.2068 15.4945 14.843 15.7697 14.4335 15.9586C14.024 16.1474 13.5786 16.2454 13.1277 16.2457C12.6769 16.2461 12.2313 16.1488 11.8215 15.9606C11.4118 15.7724 11.0475 15.4978 10.7537 15.1554C10.7002 15.0931 10.635 15.0419 10.5617 15.0048C10.4884 14.9677 10.4086 14.9454 10.3267 14.9391C10.2448 14.9329 10.1625 14.9429 10.0844 14.9685C10.0064 14.9942 9.93417 15.0349 9.87187 15.0885C9.80958 15.1421 9.75843 15.2074 9.72136 15.2807C9.68428 15.3541 9.66201 15.434 9.6558 15.516C9.64958 15.5979 9.65956 15.6803 9.68517 15.7584C9.71077 15.8366 9.75149 15.9088 9.805 15.9712C10.2161 16.4509 10.726 16.8358 11.2998 17.0995C11.8736 17.3632 12.4976 17.4994 13.1289 17.4989C13.7603 17.4983 14.3841 17.3608 14.9574 17.0961C15.5306 16.8313 16.0398 16.4454 16.45 15.9649C16.5034 15.9025 16.5439 15.8302 16.5693 15.752C16.5947 15.6739 16.6045 15.5916 16.5982 15.5096C16.5918 15.4277 16.5693 15.3479 16.5321 15.2747C16.4949 15.2014 16.4436 15.1363 16.3812 15.0829ZM15.625 12.8057C15.8736 12.8057 16.1121 12.7068 16.2879 12.5309C16.4637 12.3549 16.5625 12.1162 16.5625 11.8673C16.5625 11.6185 16.4637 11.3798 16.2879 11.2038C16.1121 11.0278 15.8736 10.9289 15.625 10.9289C15.3764 10.9289 15.1379 11.0278 14.9621 11.2038C14.7863 11.3798 14.6875 11.6185 14.6875 11.8673C14.6875 12.1162 14.7863 12.3549 14.9621 12.5309C15.1379 12.7068 15.3764 12.8057 15.625 12.8057Z",
+            fill: "#A3F7BF",
+            "fill-opacity": "0.8"
+        })
+    ]),
+    createTextVNode(" Moods ")
+], -1));
+const _hoisted_9$1 = _withScopeId$2(() => createElementVNode("p", null, [
+    createElementVNode("span", {
+        class: normalizeClass(['dot'])
+    }),
+    createTextVNode(" Positive ")
+], -1));
+const _hoisted_10$1 = _withScopeId$2(() => createElementVNode("p", null, [
+    createElementVNode("span", {
+        class: normalizeClass(['dot'])
+    }),
+    createTextVNode(" Motivational ")
+], -1));
+const _hoisted_11$1 = _withScopeId$2(() => createElementVNode("p", null, [
+    createElementVNode("span", {
+        class: "dot",
+        style: { backgroundColor: '#A3F7BF' }
+    }),
+    createTextVNode(" Neutral ")
+], -1));
+const _hoisted_12$1 = [
+    _hoisted_1$2,
+    _hoisted_2$2,
+    _hoisted_3$1,
+    _hoisted_4$1,
+    _hoisted_5$1,
+    _hoisted_6$1,
+    _hoisted_7$1,
+    _hoisted_8$1,
+    _hoisted_9$1,
+    _hoisted_10$1,
+    _hoisted_11$1
+];
+var script$2 = defineComponent({
+    __name: 'FeedOptions',
+    props: {
+        hide: {
+            type: Function,
+            required: true
+        }
+    },
+    setup(__props) {
+        const props = __props;
+        return (_ctx, _cache) => {
+            return (openBlock(), createBlock(Transition, { name: "fadeIn" }, {
+                default: withCtx(() => [
+                    createElementVNode("div", {
+                        class: "wrapper",
+                        onClick: _cache[1] || (_cache[1] = ($event) => (props.hide()))
+                    }, [
+                        createElementVNode("div", {
+                            class: "popup",
+                            onClick: _cache[0] || (_cache[0] = ($event) => ($event.stopPropagation()))
+                        }, [..._hoisted_12$1])
+                    ])
+                ]),
+                _: 1
+            }));
+        };
+    }
+});var css_248z$2 = "\n.fadeIn-enter-active[data-v-4659f920] {\n  transition: all 0.5s ease-in;\n  opacity: 1;\n  -webkit-backdrop-filter: blur(2px);\n          backdrop-filter: blur(2px);\n}\n.fadeIn-enter-to[data-v-4659f920] {\n  transition: all 0.5s ease-in;\n  opacity: 1;\n  -webkit-backdrop-filter: blur(2px);\n          backdrop-filter: blur(2px);\n}\n.fadeIn-leave-active[data-v-4659f920] {\n  transition: all 0.3s ease-out;\n  opacity: 0;\n}\n.wrapper[data-v-4659f920] {\n    position: absolute;\n    height: 100%;\n    width: 100%;\n    z-index: 100;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-backdrop-filter: blur(2px);\n            backdrop-filter: blur(2px);\n}\n.popup[data-v-4659f920] {\n    width: 90%;\n    padding: 25px;\n    background-color: var(--c-black-mute);\n    border-radius: 20px;\n}\n.popup > h3[data-v-4659f920] {\n  color: white;\n  font-weight: bold;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-bottom: 10px;\n}\n.popup > h3 > svg[data-v-4659f920] {\n  margin-right: 6px;\n}\n.popup > p[data-v-4659f920] {\n  color: white;\n  font-size: 16px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  cursor: pointer;\n}\n.new-btn[data-v-4659f920] {\n  float: right;\n  margin-top: -30px;\n  background: transparent;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n}\n.new-btn[data-v-4659f920]:hover {\n  background: var(--color-background);\n}\n.dot-fill[data-v-4659f920] {\n  height: 15px;\n  width: 15px;\n  background-color: var(--c-primary);\n  border-radius: 50%;\n  display: inline-block;\n  margin-right: 10px;\n}\n.dot[data-v-4659f920] {\n  height: 15px;\n  width: 15px;\n  border: 1px solid var(--c-primary);\n  border-radius: 50%;\n  display: inline-block;\n  margin-right: 10px;\n}\n";
+styleInject(css_248z$2);script$2.__scopeId = "data-v-4659f920";
+script$2.__file = "src/components/FeedOptions.vue";const _withScopeId$1 = n => (pushScopeId("data-v-4fab8702"), n = n(), popScopeId(), n);
+const _hoisted_1$1 = { class: "header" };
+const _hoisted_2$1 = _withScopeId$1(() => createElementVNode("svg", {
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",
@@ -176,21 +177,21 @@ const _hoisted_2$4 = _withScopeId$2(() => createElementVNode("svg", {
         fill: "#A3F7BF"
     })
 ], -1));
-var script$5 = defineComponent({
+var script$1 = defineComponent({
     __name: 'Header',
     setup(__props) {
         const isFeedOptionsVisible = ref(false);
         return (_ctx, _cache) => {
             return (openBlock(), createElementBlock(Fragment, null, [
-                createElementVNode("div", _hoisted_1$5, [
+                createElementVNode("div", _hoisted_1$1, [
                     createElementVNode("p", {
                         onClick: _cache[0] || (_cache[0] = ($event) => (isFeedOptionsVisible.value = !isFeedOptionsVisible.value))
                     }, [
                         createTextVNode(" Home "),
-                        _hoisted_2$4
+                        _hoisted_2$1
                     ])
                 ]),
-                withDirectives(createVNode(script$6, {
+                withDirectives(createVNode(script$2, {
                     hide: () => isFeedOptionsVisible.value = false
                 }, null, 8, ["hide"]), [
                     [vShow, isFeedOptionsVisible.value]
@@ -198,311 +199,9 @@ var script$5 = defineComponent({
             ], 64));
         };
     }
-});var css_248z$6 = "\n.header[data-v-4fab8702] {\n        position: absolute;\n        top: 0px;\n        left: 0px;\n        right: 0px;\n        width: 100%;\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-flex-direction: row;\n            -ms-flex-direction: row;\n                flex-direction: row;\n        -webkit-justify-content: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n        -webkit-align-items: center;\n            -ms-flex-align: center;\n                align-items: center;\n        background-color: var(--color-background);\n        padding-top: 2%;\n        padding-bottom: 2%;\n}\n.header > p[data-v-4fab8702] {\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-align-items: center;\n            -ms-flex-align: center;\n                align-items: center;\n        color: var(--c-primary);\n        cursor: pointer;\n}\n";
-styleInject(css_248z$6);script$5.__scopeId = "data-v-4fab8702";
-script$5.__file = "src/components/template/Header.vue";const _withScopeId$1 = n => (pushScopeId("data-v-29eff494"), n = n(), popScopeId(), n);
-const _hoisted_1$4 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "22",
-    height: "22",
-    viewBox: "0 0 15 15",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M3.64001 2.27L7.50001 6.13L11.34 2.29C11.4248 2.19972 11.527 2.12749 11.6404 2.07766C11.7538 2.02783 11.8761 2.00141 12 2C12.2652 2 12.5196 2.10536 12.7071 2.29289C12.8947 2.48043 13 2.73478 13 3C13.0023 3.1226 12.9796 3.24439 12.9332 3.35788C12.8867 3.47138 12.8176 3.57419 12.73 3.66L8.84001 7.5L12.73 11.39C12.8948 11.5512 12.9915 11.7696 13 12C13 12.2652 12.8947 12.5196 12.7071 12.7071C12.5196 12.8946 12.2652 13 12 13C11.8726 13.0053 11.7454 12.984 11.6266 12.9375C11.5078 12.8911 11.4 12.8204 11.31 12.73L7.50001 8.87L3.65001 12.72C3.56552 12.8073 3.46457 12.8769 3.35301 12.925C3.24145 12.9731 3.12147 12.9986 3.00001 13C2.73479 13 2.48044 12.8946 2.2929 12.7071C2.10537 12.5196 2.00001 12.2652 2.00001 12C1.99768 11.8774 2.02043 11.7556 2.06686 11.6421C2.11328 11.5286 2.18242 11.4258 2.27001 11.34L6.16001 7.5L2.27001 3.61C2.1052 3.44876 2.00855 3.23041 2.00001 3C2.00001 2.73478 2.10537 2.48043 2.2929 2.29289C2.48044 2.10536 2.73479 2 3.00001 2C3.24001 2.003 3.47001 2.1 3.64001 2.27Z",
-        fill: "#A3F7BF",
-        "fill-opacity": "0.7"
-    })
-], -1));
-const _hoisted_2$3 = [
-    _hoisted_1$4
-];
-const _hoisted_3$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M17 20H22V18C22 17.3765 21.8057 16.7686 21.4441 16.2606C21.0826 15.7527 20.5718 15.37 19.9827 15.1658C19.3937 14.9615 18.7556 14.9459 18.1573 15.121C17.5589 15.2962 17.03 15.6534 16.644 16.143M17 20H7M17 20V18C17 17.344 16.874 16.717 16.644 16.143M16.644 16.143C16.2726 15.215 15.6318 14.4195 14.804 13.8591C13.9762 13.2988 12.9996 12.9993 12 12.9993C11.0004 12.9993 10.0238 13.2988 9.196 13.8591C8.36825 14.4195 7.72736 15.215 7.356 16.143M7 20H2V18C2.00005 17.3765 2.19434 16.7686 2.55586 16.2606C2.91739 15.7527 3.42819 15.37 4.01725 15.1658C4.60632 14.9615 5.24438 14.9459 5.84274 15.121C6.4411 15.2962 6.97003 15.6534 7.356 16.143M7 20V18C7 17.344 7.126 16.717 7.356 16.143M15 7C15 7.79565 14.6839 8.55871 14.1213 9.12132C13.5587 9.68393 12.7956 10 12 10C11.2044 10 10.4413 9.68393 9.87868 9.12132C9.31607 8.55871 9 7.79565 9 7C9 6.20435 9.31607 5.44129 9.87868 4.87868C10.4413 4.31607 11.2044 4 12 4C12.7956 4 13.5587 4.31607 14.1213 4.87868C14.6839 5.44129 15 6.20435 15 7ZM21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12C18.4696 12 17.9609 11.7893 17.5858 11.4142C17.2107 11.0391 17 10.5304 17 10C17 9.46957 17.2107 8.96086 17.5858 8.58579C17.9609 8.21071 18.4696 8 19 8C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10ZM7 10C7 10.5304 6.78929 11.0391 6.41421 11.4142C6.03914 11.7893 5.53043 12 5 12C4.46957 12 3.96086 11.7893 3.58579 11.4142C3.21071 11.0391 3 10.5304 3 10C3 9.46957 3.21071 8.96086 3.58579 8.58579C3.96086 8.21071 4.46957 8 5 8C5.53043 8 6.03914 8.21071 6.41421 8.58579C6.78929 8.96086 7 9.46957 7 10Z",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    })
-], -1));
-const _hoisted_4$1 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Communities", -1));
-const _hoisted_5$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("g", { "clip-path": "url(#clip0_61_626)" }, [
-        createElementVNode("path", {
-            d: "M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4ZM12 6C12.2449 6.00003 12.4813 6.08996 12.6644 6.25272C12.8474 6.41547 12.9643 6.63975 12.993 6.883L13 7V11.586L15.707 14.293C15.8863 14.473 15.9905 14.7144 15.9982 14.9684C16.006 15.2223 15.9168 15.4697 15.7488 15.6603C15.5807 15.8508 15.3464 15.9703 15.0935 15.9944C14.8406 16.0185 14.588 15.9454 14.387 15.79L14.293 15.707L11.293 12.707C11.1376 12.5514 11.0378 12.349 11.009 12.131L11 12V7C11 6.73478 11.1054 6.48043 11.2929 6.29289C11.4804 6.10536 11.7348 6 12 6Z",
-            fill: "#A3F7BF",
-            "fill-opacity": "0.7"
-        })
-    ]),
-    createElementVNode("defs", null, [
-        createElementVNode("clipPath", { id: "clip0_61_626" }, [
-            createElementVNode("rect", {
-                width: "24",
-                height: "24",
-                fill: "white"
-            })
-        ])
-    ])
-], -1));
-const _hoisted_6$1 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Time Travel Posts", -1));
-const _hoisted_7$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        "fill-rule": "evenodd",
-        "clip-rule": "evenodd",
-        d: "M4.929 17.657C4.74153 17.8445 4.63621 18.0988 4.63621 18.364C4.63621 18.6292 4.74153 18.8835 4.929 19.071C8.834 22.976 15.166 22.976 19.071 19.071C22.976 15.166 22.976 8.83399 19.071 4.92899C15.166 1.02399 8.834 1.02399 4.929 4.92899C3.29488 6.55806 2.27694 8.70386 2.049 11H1C0.80225 11 0.608952 11.0587 0.444542 11.1686C0.280132 11.2785 0.151993 11.4346 0.0763226 11.6173C0.000652529 11.8 -0.0191504 12.0011 0.0194171 12.195C0.0579847 12.389 0.153191 12.5671 0.293001 12.707L2.293 14.707L2.295 14.709C2.38783 14.8018 2.49809 14.8754 2.61944 14.9255C2.74078 14.9757 2.87083 15.0013 3.00212 15.001C3.13341 15.0007 3.26335 14.9745 3.38449 14.9239C3.50562 14.8733 3.61556 14.7992 3.708 14.706L5.708 12.707C5.84787 12.5671 5.9431 12.3888 5.98163 12.1948C6.02017 12.0007 6.00028 11.7996 5.92449 11.6169C5.84869 11.4341 5.7204 11.278 5.55584 11.1682C5.39127 11.0584 5.19784 10.9998 5 11H4.062C4.28809 9.20635 5.11503 7.54216 6.40804 6.27868C7.70105 5.01519 9.38389 4.2269 11.1823 4.0423C12.9807 3.85769 14.7886 4.28765 16.3113 5.2621C17.834 6.23654 18.9818 7.69802 19.5676 9.40833C20.1534 11.1186 20.1426 12.9769 19.537 14.6803C18.9314 16.3837 17.7667 17.8318 16.2328 18.7885C14.6988 19.7452 12.8861 20.1541 11.09 19.9486C9.29383 19.7432 7.62026 18.9354 6.342 17.657C6.15451 17.4698 5.90042 17.3647 5.6355 17.3647C5.37058 17.3647 5.11649 17.4698 4.929 17.657ZM10 7.99999C10 7.73478 10.1054 7.48042 10.2929 7.29289C10.4804 7.10535 10.7348 6.99999 11 6.99999C11.2652 6.99999 11.5196 7.10535 11.7071 7.29289C11.8946 7.48042 12 7.73478 12 7.99999V12H16C16.2652 12 16.5196 12.1054 16.7071 12.2929C16.8946 12.4804 17 12.7348 17 13C17 13.2652 16.8946 13.5196 16.7071 13.7071C16.5196 13.8946 16.2652 14 16 14H11C10.7348 14 10.4804 13.8946 10.2929 13.7071C10.1054 13.5196 10 13.2652 10 13V7.99999Z",
-        fill: "#A3F7BF",
-        "fill-opacity": "0.7"
-    })
-], -1));
-const _hoisted_8$2 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "History", -1));
-const _hoisted_9$2 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M4 12V9C4 8.20435 4.31607 7.44129 4.87868 6.87868C5.44129 6.31607 6.20435 6 7 6H20M20 6L17 3M20 6L17 9M20 12V15C20 15.7956 19.6839 16.5587 19.1213 17.1213C18.5587 17.6839 17.7956 18 17 18H4M4 18L7 21M4 18L7 15",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    })
-], -1));
-const _hoisted_10$2 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Recaps", -1));
-const _hoisted_11$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M15 22L14.445 22.832C14.5956 22.9325 14.7707 22.9902 14.9515 22.999C15.1323 23.0077 15.3121 22.9673 15.4718 22.8819C15.6314 22.7965 15.7648 22.6693 15.8579 22.514C15.9509 22.3587 16 22.181 16 22H15ZM12 20L12.555 19.168C12.3907 19.0584 12.1975 18.9998 12 18.9998C11.8025 18.9998 11.6093 19.0584 11.445 19.168L12 20ZM9 22H8C7.99997 22.181 8.04909 22.3587 8.14213 22.514C8.23516 22.6693 8.3686 22.7965 8.52823 22.8819C8.68786 22.9673 8.86769 23.0077 9.04852 22.999C9.22935 22.9902 9.4044 22.9325 9.555 22.832L9 22ZM15.555 21.168L12.555 19.168L11.445 20.832L14.445 22.832L15.555 21.168ZM11.445 19.168L8.445 21.168L9.555 22.832L12.555 20.832L11.445 19.168ZM12.762 3.43799L12.804 3.48799L14.327 2.19199L14.285 2.14199L12.762 3.43799ZM15.329 4.53399L15.394 4.52899L15.234 2.53499L15.169 2.53999L15.329 4.53399ZM16.471 5.60599L16.466 5.67099L18.46 5.83099L18.465 5.76599L16.471 5.60599ZM17.512 8.19599L17.562 8.23799L18.858 6.71499L18.808 6.67299L17.512 8.19599ZM17.562 9.76199L17.512 9.80399L18.808 11.327L18.858 11.285L17.562 9.76199ZM16.466 12.329L16.471 12.394L18.465 12.234L18.46 12.169L16.466 12.329ZM15.394 13.471L15.329 13.466L15.169 15.46L15.234 15.465L15.394 13.471ZM12.804 14.512L12.762 14.562L14.285 15.858L14.327 15.808L12.804 14.512ZM11.238 14.562L11.196 14.512L9.673 15.808L9.715 15.858L11.238 14.562ZM8.671 13.466L8.606 13.471L8.766 15.465L8.831 15.46L8.671 13.466ZM7.529 12.394L7.534 12.329L5.54 12.169L5.535 12.234L7.529 12.394ZM6.488 9.80399L6.438 9.76199L5.142 11.285L5.192 11.327L6.488 9.80399ZM6.438 8.23799L6.488 8.19599L5.192 6.67299L5.142 6.71499L6.438 8.23799ZM7.534 5.67099L7.529 5.60599L5.535 5.76599L5.54 5.83099L7.534 5.67099ZM8.606 4.52899L8.67 4.53399L8.831 2.53999L8.766 2.53499L8.606 4.52899ZM11.196 3.48799L11.238 3.43799L9.715 2.14199L9.673 2.19199L11.196 3.48799ZM8.67 4.53399C9.14364 4.57207 9.62054 4.49709 10.0595 4.31523C10.4985 4.13338 10.888 3.84985 11.196 3.48799L9.673 2.19199C9.57024 2.31254 9.44032 2.40695 9.29393 2.46745C9.14755 2.52796 8.98888 2.55282 8.831 2.53999L8.67 4.53399ZM7.529 5.60599C7.51738 5.46161 7.53726 5.31642 7.58728 5.18048C7.63729 5.04454 7.71625 4.92109 7.81867 4.81866C7.92109 4.71624 8.04455 4.63729 8.18049 4.58727C8.31643 4.53726 8.46162 4.51737 8.606 4.52899L8.766 2.53499C8.33293 2.50028 7.89749 2.56005 7.48979 2.71017C7.08208 2.86028 6.71185 3.09716 6.40469 3.40441C6.09753 3.71167 5.86077 4.08197 5.71078 4.48972C5.56079 4.89747 5.50016 5.33293 5.535 5.76599L7.529 5.60599ZM6.488 8.19599C6.84986 7.88803 7.13339 7.49852 7.31524 7.05953C7.4971 6.62054 7.57207 6.14463 7.534 5.67099L5.54 5.83099C5.55283 5.98887 5.52796 6.14754 5.46746 6.29393C5.40696 6.44031 5.31255 6.57024 5.192 6.67299L6.488 8.19599ZM6.438 9.76199C6.32754 9.66812 6.2388 9.55134 6.17795 9.41977C6.1171 9.28819 6.08558 9.14496 6.08558 8.99999C6.08558 8.85503 6.1171 8.71179 6.17795 8.58022C6.2388 8.44864 6.32754 8.33187 6.438 8.23799L5.142 6.71499C4.81095 6.99663 4.54505 7.34683 4.3627 7.74137C4.18035 8.1359 4.08591 8.56535 4.08591 8.99999C4.08591 9.43463 4.18035 9.86408 4.3627 10.2586C4.54505 10.6532 4.81095 11.0034 5.142 11.285L6.438 9.76199ZM7.534 12.329C7.57207 11.8554 7.4971 11.3794 7.31524 10.9405C7.13339 10.5015 6.84986 10.112 6.488 9.80399L5.192 11.327C5.31255 11.4297 5.40696 11.5597 5.46746 11.7061C5.52796 11.8524 5.55283 12.0111 5.54 12.169L7.534 12.329ZM8.606 13.471C8.46162 13.4826 8.31643 13.4627 8.18049 13.4127C8.04455 13.3627 7.92109 13.2837 7.81867 13.1813C7.71625 13.0789 7.63729 12.9554 7.58728 12.8195C7.53726 12.6836 7.51738 12.5384 7.529 12.394L5.535 12.234C5.50029 12.6671 5.56006 13.1025 5.71017 13.5102C5.86029 13.9179 6.09716 14.2881 6.40442 14.5953C6.71168 14.9025 7.08198 15.1392 7.48973 15.2892C7.89748 15.4392 8.33294 15.4988 8.766 15.464L8.606 13.471ZM12.762 14.561C12.6681 14.6715 12.5514 14.7602 12.4198 14.821C12.2882 14.8819 12.145 14.9134 12 14.9134C11.855 14.9134 11.7118 14.8819 11.5802 14.821C11.4486 14.7602 11.3319 14.6715 11.238 14.561L9.715 15.858C9.99663 16.189 10.3468 16.4549 10.7414 16.6373C11.1359 16.8196 11.5654 16.9141 12 16.9141C12.4346 16.9141 12.8641 16.8196 13.2586 16.6373C13.6532 16.4549 14.0034 16.189 14.285 15.858L12.762 14.562V14.561ZM16.471 12.394C16.4826 12.5385 16.4637 12.6837 16.4137 12.8198C16.3636 12.9558 16.2845 13.0793 16.182 13.1817C16.0795 13.2842 15.9559 13.3631 15.8198 13.413C15.6838 13.463 15.5385 13.4828 15.394 13.471L15.234 15.465C15.6671 15.4997 16.1025 15.4399 16.5102 15.2898C16.9179 15.1397 17.2882 14.9028 17.5953 14.5956C17.9025 14.2883 18.1392 13.918 18.2892 13.5103C18.4392 13.1025 18.4998 12.6671 18.465 12.234L16.471 12.394ZM17.512 9.80399C17.1501 10.112 16.8666 10.5015 16.6848 10.9405C16.5029 11.3794 16.4279 11.8554 16.466 12.329L18.46 12.169C18.4472 12.0111 18.472 11.8524 18.5325 11.7061C18.593 11.5597 18.6875 11.4297 18.808 11.327L17.512 9.80399ZM17.562 8.23799C17.6725 8.33187 17.7612 8.44864 17.8221 8.58022C17.8829 8.71179 17.9144 8.85503 17.9144 8.99999C17.9144 9.14496 17.8829 9.28819 17.8221 9.41977C17.7612 9.55134 17.6725 9.66812 17.562 9.76199L18.858 11.285C19.189 11.0034 19.455 10.6532 19.6373 10.2586C19.8196 9.86408 19.9141 9.43463 19.9141 8.99999C19.9141 8.56535 19.8196 8.1359 19.6373 7.74137C19.455 7.34683 19.189 6.99663 18.858 6.71499L17.562 8.23799ZM16.466 5.67099C16.4279 6.14463 16.5029 6.62054 16.6848 7.05953C16.8666 7.49852 17.1501 7.88803 17.512 8.19599L18.808 6.67299C18.6875 6.57024 18.593 6.44031 18.5325 6.29393C18.472 6.14754 18.4472 5.98887 18.46 5.83099L16.466 5.67099ZM15.394 4.52899C15.5384 4.51737 15.6836 4.53726 15.8195 4.58727C15.9555 4.63729 16.0789 4.71624 16.1813 4.81866C16.2838 4.92109 16.3627 5.04454 16.4127 5.18048C16.4627 5.31642 16.4826 5.46161 16.471 5.60599L18.465 5.76599C18.4997 5.33292 18.4399 4.89748 18.2898 4.48978C18.1397 4.08208 17.9028 3.71184 17.5956 3.40468C17.2883 3.09752 16.918 2.86076 16.5103 2.71077C16.1025 2.56078 15.6671 2.50015 15.234 2.53499L15.394 4.52899ZM12.804 3.48799C13.112 3.84985 13.5015 4.13338 13.9405 4.31523C14.3795 4.49709 14.8554 4.57207 15.329 4.53399L15.169 2.53999C15.0111 2.55282 14.8525 2.52796 14.7061 2.46745C14.5597 2.40695 14.4298 2.31254 14.327 2.19199L12.804 3.48799ZM14.285 2.14199C14.0034 1.81111 13.6522 1.54536 13.2578 1.36312C12.8633 1.18087 12.434 1.08649 11.9995 1.08649C11.565 1.08649 11.1357 1.18087 10.7412 1.36312C10.3468 1.54536 9.99663 1.81111 9.715 2.14199L11.238 3.43799C11.3319 3.32753 11.4486 3.23879 11.5802 3.17794C11.7118 3.11709 11.855 3.08557 12 3.08557C12.145 3.08557 12.2882 3.11709 12.4198 3.17794C12.5514 3.23879 12.6681 3.32753 12.762 3.43799L14.285 2.14199ZM11.196 14.512C10.9289 14.198 10.5999 13.9425 10.2297 13.7613C9.85942 13.5802 9.4558 13.4772 9.044 13.459L8.956 15.457C9.09321 15.4631 9.22769 15.4975 9.35104 15.5578C9.4744 15.6182 9.584 15.7034 9.673 15.808L11.196 14.512ZM9.044 13.46C8.91964 13.4546 8.79507 13.457 8.671 13.467L8.831 15.461C8.87256 15.4574 8.91431 15.4564 8.956 15.458L9.044 13.46ZM10 22V14.458H8V22H10ZM15.329 13.466C15.2046 13.4559 15.0807 13.4536 14.956 13.459L15.044 15.457C15.0857 15.4554 15.1274 15.4564 15.169 15.46L15.329 13.466ZM14.956 13.459C14.5442 13.4772 14.1406 13.5802 13.7703 13.7613C13.4001 13.9425 13.0711 14.198 12.804 14.512L14.327 15.808C14.4161 15.7036 14.5257 15.6186 14.6491 15.5584C14.7724 15.4982 14.9069 15.464 15.044 15.458L14.956 13.459ZM14 14.459V22H16V14.458L14 14.459Z",
-        fill: "#A3F7BF",
-        "fill-opacity": "0.7"
-    }),
-    createElementVNode("path", {
-        d: "M14 8L11 11L10 10",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    })
-], -1));
-const _hoisted_12$1 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Badges", -1));
-const _hoisted_13$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M14.5 18C13.8 18 13.2083 17.7583 12.725 17.275C12.2417 16.7917 12 16.2 12 15.5C12 14.8 12.2417 14.2083 12.725 13.725C13.2083 13.2417 13.8 13 14.5 13C15.2 13 15.7917 13.2417 16.275 13.725C16.7583 14.2083 17 14.8 17 15.5C17 16.2 16.7583 16.7917 16.275 17.275C15.7917 17.7583 15.2 18 14.5 18ZM5 22C4.45 22 3.979 21.804 3.587 21.412C3.195 21.02 2.99934 20.5493 3 20V6C3 5.45 3.196 4.979 3.588 4.587C3.98 4.195 4.45067 3.99933 5 4H6V2H8V4H16V2H18V4H19C19.55 4 20.021 4.196 20.413 4.588C20.805 4.98 21.0007 5.45067 21 6V20C21 20.55 20.804 21.021 20.412 21.413C20.02 21.805 19.5493 22.0007 19 22H5ZM5 20H19V10H5V20ZM5 8H19V6H5V8Z",
-        fill: "#A3F7BF",
-        "fill-opacity": "0.7"
-    })
-], -1));
-const _hoisted_14$1 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Events", -1));
-const _hoisted_15$1 = _withScopeId$1(() => createElementVNode("svg", {
-    width: "24",
-    height: "24",
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M12 13V2L20 6L12 10",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    }),
-    createElementVNode("path", {
-        d: "M20.55 10.23C21.0821 11.8701 21.1319 13.6286 20.6934 15.2963C20.255 16.9639 19.3466 18.4704 18.0766 19.6367C16.8065 20.8029 15.2281 21.5798 13.5292 21.8748C11.8304 22.1699 10.0825 21.9707 8.49356 21.3009C6.90464 20.6311 5.54156 19.519 4.56649 18.0969C3.59142 16.6748 3.04541 15.0025 2.99341 13.2789C2.94142 11.5554 3.38563 9.85322 4.2732 8.37489C5.16077 6.89656 6.45434 5.70432 8 4.94",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    }),
-    createElementVNode("path", {
-        d: "M8 10C7.49891 10.667 7.17268 11.4488 7.05105 12.2742C6.92941 13.0996 7.01624 13.9422 7.30361 14.7254C7.59098 15.5087 8.06976 16.2075 8.69633 16.7584C9.32291 17.3092 10.0774 17.6945 10.8909 17.8792C11.7045 18.0638 12.5514 18.042 13.3544 17.8156C14.1573 17.5892 14.8909 17.1655 15.4882 16.5831C16.0855 16.0007 16.5276 15.278 16.7742 14.481C17.0208 13.684 17.0641 12.838 16.9 12.02",
-        stroke: "#A3F7BF",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
-    })
-], -1));
-const _hoisted_16$2 = _withScopeId$1(() => createElementVNode("p", { style: { "margin-left": "10px" } }, "Challenges", -1));
-var script$4 = defineComponent({
-    __name: 'SidebarMenu',
-    props: {
-        collapsed: Boolean,
-        setCollapsed: {
-            type: Function,
-            required: true
-        }
-    },
-    setup(__props) {
-        const props = __props;
-        const collapsed = computed(() => props?.collapsed);
-        return (_ctx, _cache) => {
-            const _component_RouterLink = resolveComponent("RouterLink");
-            return (openBlock(), createBlock(Transition, {
-                name: "slide",
-                persisted: ""
-            }, {
-                default: withCtx(() => [
-                    withDirectives(createElementVNode("nav", null, [
-                        createElementVNode("button", {
-                            onClick: _cache[0] || (_cache[0] = ($event) => (props?.setCollapsed(true))),
-                            class: "close-btn"
-                        }, [..._hoisted_2$3]),
-                        createVNode(_component_RouterLink, {
-                            to: "/communities",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_3$1,
-                                _hoisted_4$1
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/timetravel",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_5$1,
-                                _hoisted_6$1
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/history",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_7$1,
-                                _hoisted_8$2
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/recaps",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_9$2,
-                                _hoisted_10$2
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/badges",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_11$1,
-                                _hoisted_12$1
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/events",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_13$1,
-                                _hoisted_14$1
-                            ]),
-                            _: 1
-                        }),
-                        createVNode(_component_RouterLink, {
-                            to: "/challenges",
-                            class: "nav-item"
-                        }, {
-                            default: withCtx(() => [
-                                _hoisted_15$1,
-                                _hoisted_16$2
-                            ]),
-                            _: 1
-                        })
-                    ], 512), [
-                        [vShow, !collapsed.value]
-                    ])
-                ]),
-                _: 1
-            }));
-        };
-    }
-});var css_248z$5 = "\nnav[data-v-29eff494] {\n    position: fixed;\n    height: 100vh;\n    width: 60vw;\n    background-color: var(--color-background-mute);\n    right: 0px;\n    top: 0px;\n    z-index: 100;\n}\n.close-btn[data-v-29eff494]:hover {\n    background: var(--color-background);\n}\n.slide-enter-active[data-v-29eff494] {\n  transition: all 0.3s ease-out;\n  -webkit-transform: translateX(90%);\n          transform: translateX(90%);\n}\n.slide-enter-to[data-v-29eff494] {\n  transition: all 0.3s ease-out;\n  -webkit-transform: translateX(0%);\n          transform: translateX(0%);\n}\n.slide-leave-active[data-v-29eff494] {\n  transition: all 0.3s ease-out;\n  -webkit-transform: translateX(100%);\n          transform: translateX(100%);\n}\n.nav-item[data-v-29eff494] {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin: 10px;\n    font-size: 16px;\n    padding: 5px;\n    padding-left: 10%;\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-radius: 10px;\n    color: white;\n}\n.nav-item[data-v-29eff494]:hover {\n    background-color: var(--vt-c-black)\n}\n";
-styleInject(css_248z$5);script$4.__scopeId = "data-v-29eff494";
-script$4.__file = "src/components/template/SidebarMenu.vue";const _withScopeId = n => (pushScopeId("data-v-00be3d38"), n = n(), popScopeId(), n);
-const _hoisted_1$3 = _withScopeId(() => createElementVNode("svg", {
-    width: "26",
-    height: "26",
-    viewBox: "0 0 26 26",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-}, [
-    createElementVNode("path", {
-        d: "M21 11.75H5C4.31 11.75 4.25 12.3088 4.25 13C4.25 13.6912 4.31 14.25 5 14.25H21C21.69 14.25 21.75 13.6912 21.75 13C21.75 12.3088 21.69 11.75 21 11.75ZM21 16.75H5C4.31 16.75 4.25 17.3088 4.25 18C4.25 18.6912 4.31 19.25 5 19.25H21C21.69 19.25 21.75 18.6912 21.75 18C21.75 17.3088 21.69 16.75 21 16.75ZM5 9.25H21C21.69 9.25 21.75 8.69125 21.75 8C21.75 7.30875 21.69 6.75 21 6.75H5C4.31 6.75 4.25 7.30875 4.25 8C4.25 8.69125 4.31 9.25 5 9.25Z",
-        fill: "white"
-    })
-], -1));
-const _hoisted_2$2 = [
-    _hoisted_1$3
-];
-var script$3 = defineComponent({
-    __name: 'MoreOptions',
-    props: {
-        toggleSidebar: {
-            type: Function,
-            required: true
-        }
-    },
-    setup(__props) {
-        const props = __props;
-        return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock("button", {
-                onClick: _cache[0] || (_cache[0] = ($event) => (props?.toggleSidebar())),
-                class: "more-options"
-            }, [..._hoisted_2$2]));
-        };
-    }
-});var css_248z$4 = "\n.more-options[data-v-00be3d38] {\n    position: fixed;\n    top: 2%;\n    right: 3%;\n    height: 60px;\n    width: 60px;\n    background-color: var(--c-secondary);\n    border: none;\n    border-radius: 30px;\n    z-index: 99;\n}\n@media (max-width: 480px) {\n.more-options[data-v-00be3d38] {\n        height: 50px;\n        width: 50px;\n}\n}\n";
-styleInject(css_248z$4);script$3.__scopeId = "data-v-00be3d38";
-script$3.__file = "src/components/template/MoreOptions.vue";var css_248z$3 = ".avatar {\n    width: 42px;\n    height: 42px;\n    border-radius: 50%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border: 2px solid var(--color-primary);\n}\n.avatar-small {\n    width: 35px;\n    height: 35px;\n    border-radius: 25px;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border: 2px solid var(--color-primary);\n}\n.userinfo {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n.username {\n    font-size: 18px;\n    color: white;\n    font-weight: bold;\n    margin-left: 15px;\n    margin-right: 10px;\n}\n.username-small {\n    font-size: 16px;\n    color: white;\n    font-weight: bold;\n    margin-left: 15px;\n    margin-right: 10px;\n}\n@media (max-width: 480px) {\n    .username {\n        font-size: 16px;\n    }\n    .avatar {\n        width: 35px;\n        height: 35px;\n    }\n    .post-buttons > button > svg {\n        height: 25px !important;\n        width: 25px !important;\n    }\n    .post-more-options > svg {\n        height: 18px !important;\n    }\n}\n.btn-primary {\n    border: 0px;\n    background-color: var(--c-secondary);\n    padding: 10px;\n    padding-left: 25px;\n    padding-right: 25px;\n    border-radius: 10px;\n    font-size: 16px;\n    cursor: pointer;\n}\n.btn-secondary {\n    border: 1px solid var(--c-secondary);\n    background: transparent;\n    color: white;\n    padding: 10px;\n    padding-left: 25px;\n    padding-right: 25px;\n    border-radius: 10px;\n    font-size: 16px;\n    cursor: pointer;\n}\n.btn-primary:active, .btn-secondary:active {\n    -webkit-transform: scale(0.95);\n            transform: scale(0.95);\n    transition: all 0.1s cubic-bezier(0.17, 0.89, 0.24, 1.11);\n}\n.rounded {\n    border-radius: 20px;\n}\n.btn-small {\n    padding: 6px;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n.close-btn {\n    background: var(--color-background-soft);\n    border: 0px;\n    margin-left: 5%;\n    margin-top: 20px;\n    padding: 5px;\n    padding-bottom: 4px;\n    border-radius: 10px;\n}\n.loader {\n    width: 48px;\n    height: 48px;\n    border: 5px solid var(--c-divider-dark-1);\n    border-top-color: var(--c-secondary);\n    border-radius: 50%;\n    display: inline-block;\n    box-sizing: border-box;\n    -webkit-animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;\n            animation: rotation 1s cubic-bezier(0.525, 0.005, 0.500, 0.890) infinite;\n}\n@-webkit-keyframes rotation {\n    0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n    }\n    100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n@keyframes rotation {\n    0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n    }\n    100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n    }\n}\n.container {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    padding-top: 20px;\n    padding-bottom: var(--bottom-menu-height);\n}";
-styleInject(css_248z$3);var css_248z$2 = "\n.post-body {\n    width: 100%;\n    -webkit-align-self: center;\n        -ms-flex-item-align: center;\n            align-self: center;\n    max-width: 600px;\n    padding: 5%;\n    background-color: var(--color-background);\n    margin-bottom: 6px;\n    cursor: pointer;\n}\n@media (min-width: 1024px) {\n    .post-body {\n        padding: 0%;\n        padding-top: 3%;\n        padding-bottom: 3%;\n    }\n}\n.post-text {\n    font-size: 17px;\n    color: white;\n    margin-left: 60px;\n}\n@media (max-width: 480px) {\n    .post-text {\n        font-size: 15px;\n        margin-left: 50px;\n    }\n}\n.post-text-small {\n    font-size: 15px;\n    color: white;\n}\n.post-text-detail {\n    font-size: 17px;\n    color: white;\n    margin-left: 10px;\n    margin-top: 20px;\n    margin-bottom: 50px;\n}\n.post-buttons {\n    min-width: 200px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-justify-content: space-evenly;\n        -ms-flex-pack: space-evenly;\n            justify-content: space-evenly;\n    margin-top: 5px;\n}\n.post-buttons > button {\n    width: 100%;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    background-color: transparent;\n    border: 0px;\n    padding: 10px;\n    border-radius: 10px;\n    color: white;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    transition: 0.5s ease;\n}\n.post-buttons > button[disabled=false]:hover {\n    background-color: #111111;\n    transition: 0.5s;\n}\n.post-buttons button span {\n    margin-left: 5px;\n}\n.post-more-options {\n    float: right;\n    margin-top: -35px;\n    background-color: transparent;\n    border: 0px;\n    padding-left: 5px;\n    padding-right: 5px;\n    border-radius: 5px;\n}\n.post-more-options:hover {\n    background-color: #111111;\n    transition: 0.5s;\n}\n.btn-gift {\n    background-color: transparent;\n    border: 0px;\n    position: absolute;\n    right: 20px;\n}\n.comment-input {\n    position: fixed;\n    bottom: var(--bottom-menu-height);\n    margin-bottom: -3px;\n    left: 0px;\n    width: 100%;\n}\n.comment-input textarea {\n    width: 100%;\n    resize: none;\n    background-color: var(--c-black-mute);\n    border: 0px;\n    color: white;\n    padding-left: 15px;\n    padding-top: 15px;\n}\n.comment-input textarea:focus {\n    outline: none;\n}\n.comment-share-btn, .comment-share-btn-d {\n    position: absolute;\n    right: 10px;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.8;\n    cursor: pointer;\n}\n.comment-share-btn:hover {\n    fill-opacity: 1;\n}\n.comment-sticker-btn, .comment-sticker-btn-d {\n    position: absolute;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.5;\n}\n.comment-sticker-btn {\n    right: 10px;\n    -webkit-animation: moveRight 0.1s ease-out both;\n            animation: moveRight 0.1s ease-out both;\n}\n.comment-sticker-btn-d {\n    right: 0px;\n    -webkit-animation: moveRightD 0.1s ease-out both;\n            animation: moveRightD 0.1s ease-out both;\n}\n@-webkit-keyframes moveRight {\n    0% {\n        right: 45px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@keyframes moveRight {\n    0% {\n        right: 45px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@-webkit-keyframes moveRightD {\n    0% {\n        right: 15px;\n    }        \n    100% {\n        right: 0px;\n    }\n}\n@keyframes moveRightD {\n    0% {\n        right: 15px;\n    }        \n    100% {\n        right: 0px;\n    }\n}\n.comment-sticker-btn:hover {\n    fill-opacity: 0.9;\n}\n.comment-sticker-btn-2, .comment-sticker-btn-2-d {\n    position: absolute;\n    top: 15px;\n    background: transparent;\n    border: 0px;\n    fill-opacity: 0.5;\n}\n.comment-sticker-btn-2 {\n    -webkit-animation: moveLeft 0.1s ease-out both;\n            animation: moveLeft 0.1s ease-out both;\n}\n.comment-sticker-btn-2-d {\n    -webkit-animation: moveLeftD 0.2s ease-out both;\n            animation: moveLeftD 0.2s ease-out both;\n}\n.comment-sticker-btn-2:hover {\n    fill-opacity: 0.9;\n}\n@-webkit-keyframes moveLeft {\n    0% {\n        right: 10px;\n    }        \n    100% {\n        right: 45px;\n    }\n}\n@keyframes moveLeft {\n    0% {\n        right: 10px;\n    }        \n    100% {\n        right: 45px;\n    }\n}\n@-webkit-keyframes moveLeftD {\n    0% {\n        right: 0px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n@keyframes moveLeftD {\n    0% {\n        right: 0px;\n    }        \n    100% {\n        right: 10px;\n    }\n}\n.translation-original {\n    margin-bottom: 20px;\n}\n.translation-source {\n    color: var(--c-primary); \n    opacity: 0.5; \n    margin-top: 5px\n}\n.donation-container {\n    display: block;\n    width: 80%;\n    margin: 15px;\n    margin-left: 10%;\n    border-radius: 20px;\n    color: white;\n    overflow: hidden;\n}\n.donation-container > div {\n    height: 100%;\n    width: 100%;\n    padding: 10px;\n    padding-top: 20px;\n    padding-bottom: 20px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    background: rgba(0,0,0,0.7);\n    -webkit-backdrop-filter: blur(1px);\n            backdrop-filter: blur(1px);\n}\n.donation-texts {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 90%;\n    -webkit-justify-content: space-between;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n}";
-styleInject(css_248z$2);/*!
+});var css_248z$1 = "\n.header[data-v-4fab8702] {\n        position: absolute;\n        top: 0px;\n        left: 0px;\n        right: 0px;\n        width: 100%;\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-flex-direction: row;\n            -ms-flex-direction: row;\n                flex-direction: row;\n        -webkit-justify-content: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n        -webkit-align-items: center;\n            -ms-flex-align: center;\n                align-items: center;\n        background-color: var(--color-background);\n        padding-top: 2%;\n        padding-bottom: 2%;\n}\n.header > p[data-v-4fab8702] {\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-align-items: center;\n            -ms-flex-align: center;\n                align-items: center;\n        color: var(--c-primary);\n        cursor: pointer;\n}\n";
+styleInject(css_248z$1);script$1.__scopeId = "data-v-4fab8702";
+script$1.__file = "src/components/template/Header.vue";/*!
  * pinia v2.1.7
  * (c) 2023 Eduardo San Martin Morote
  * @license MIT
@@ -935,13 +634,7 @@ idOrOptions, setup, setupOptions) {
     }
     useStore.$id = id;
     return useStore;
-}const useMoreOptionsSheet = defineStore('more-options', () => {
-    const sheetRef = ref(false);
-    function toggle() {
-        sheetRef.value = !sheetRef.value;
-    }
-    return { sheetRef, toggle };
-});const resolveFetch$3 = (customFetch) => {
+}const resolveFetch$3 = (customFetch) => {
     let _fetch;
     if (customFetch) {
         _fetch = customFetch;
@@ -8120,560 +7813,434 @@ defineStore('discussion-api', {
             }
         }
     }
-});const epochs = [
-    ['y', 31536000],
-    ['m', 2592000],
-    ['d', 86400],
-    ['h', 3600],
-    ['min', 60],
-    ['s', 1]
-];
-const getDuration = (timeAgoInSeconds) => {
-    for (const [name, seconds] of epochs) {
-        const interval = Math.floor(timeAgoInSeconds / seconds);
-        if (interval >= 1) {
-            return {
-                interval: interval,
-                epoch: name
-            };
-        }
-    }
-    return { interval: 'now', epoch: null };
-};
-const formatTime = (date) => {
-    const timeAgoInSeconds = Math.floor((+new Date() - +new Date(date)) / 1000);
-    const { interval, epoch } = getDuration(timeAgoInSeconds);
-    return `${interval} ${epoch ?? ''}`;
-};
-const formatText = (text) => {
-    text = text.replace(/#([^# ]+)/g, (str, $1) => {
-        return `<a href="#/search/results?hashtag=${$1}">${str}</a>`;
-    });
-    return text;
-};
-const langCodes = {
-    "af": "Afrikaans",
-    "sq": "Albanian",
-    "an": "Aragonese",
-    "ar": "Arabic (Standard)",
-    "ar-dz": "Arabic (Algeria)",
-    "ar-bh": "Arabic (Bahrain)",
-    "ar-eg": "Arabic (Egypt)",
-    "ar-iq": "Arabic (Iraq)",
-    "ar-jo": "Arabic (Jordan)",
-    "ar-kw": "Arabic (Kuwait)",
-    "ar-lb": "Arabic (Lebanon)",
-    "ar-ly": "Arabic (Libya)",
-    "ar-ma": "Arabic (Morocco)",
-    "ar-om": "Arabic (Oman)",
-    "ar-qa": "Arabic (Qatar)",
-    "ar-sa": "Arabic (Saudi Arabia)",
-    "ar-sy": "Arabic (Syria)",
-    "ar-tn": "Arabic (Tunisia)",
-    "ar-ae": "Arabic (U.A.E.)",
-    "ar-ye": "Arabic (Yemen)",
-    "hy": "Armenian",
-    "as": "Assamese",
-    "ast": "Asturian",
-    "az": "Azerbaijani",
-    "eu": "Basque",
-    "bg": "Bulgarian",
-    "be": "Belarusian",
-    "bn": "Bengali",
-    "bs": "Bosnian",
-    "br": "Breton",
-    "my": "Burmese",
-    "ca": "Catalan",
-    "ch": "Chamorro",
-    "ce": "Chechen",
-    "zh": "Chinese",
-    "zh-hk": "Chinese (Hong Kong)",
-    "zh-cn": "Chinese (PRC)",
-    "zh-sg": "Chinese (Singapore)",
-    "zh-tw": "Chinese (Taiwan)",
-    "cv": "Chuvash",
-    "co": "Corsican",
-    "cr": "Cree",
-    "hr": "Croatian",
-    "cs": "Czech",
-    "da": "Danish",
-    "nl": "Dutch (Standard)",
-    "nl-be": "Dutch (Belgian)",
-    "en": "English",
-    "en-au": "English (Australia)",
-    "en-bz": "English (Belize)",
-    "en-ca": "English (Canada)",
-    "en-ie": "English (Ireland)",
-    "en-jm": "English (Jamaica)",
-    "en-nz": "English (New Zealand)",
-    "en-ph": "English (Philippines)",
-    "en-za": "English (South Africa)",
-    "en-tt": "English (Trinidad & Tobago)",
-    "en-gb": "English (United Kingdom)",
-    "en-us": "English (United States)",
-    "en-zw": "English (Zimbabwe)",
-    "eo": "Esperanto",
-    "et": "Estonian",
-    "fo": "Faeroese",
-    "fj": "Fijian",
-    "fi": "Finnish",
-    "fr": "French (Standard)",
-    "fr-be": "French (Belgium)",
-    "fr-ca": "French (Canada)",
-    "fr-fr": "French (France)",
-    "fr-lu": "French (Luxembourg)",
-    "fr-mc": "French (Monaco)",
-    "fr-ch": "French (Switzerland)",
-    "fy": "Frisian",
-    "fur": "Friulian",
-    "gd": "Gaelic (Scots)",
-    "gd-ie": "Gaelic (Irish)",
-    "gl": "Galacian",
-    "ka": "Georgian",
-    "de": "German (Standard)",
-    "de-at": "German (Austria)",
-    "de-de": "German (Germany)",
-    "de-li": "German (Liechtenstein)",
-    "de-lu": "German (Luxembourg)",
-    "de-ch": "German (Switzerland)",
-    "el": "Greek",
-    "gu": "Gujurati",
-    "ht": "Haitian",
-    "he": "Hebrew",
-    "hi": "Hindi",
-    "hu": "Hungarian",
-    "is": "Icelandic",
-    "id": "Indonesian",
-    "iu": "Inuktitut",
-    "ga": "Irish",
-    "it": "Italian (Standard)",
-    "it-ch": "Italian (Switzerland)",
-    "ja": "Japanese",
-    "kn": "Kannada",
-    "ks": "Kashmiri",
-    "kk": "Kazakh",
-    "km": "Khmer",
-    "ky": "Kirghiz",
-    "tlh": "Klingon",
-    "ko": "Korean",
-    "ko-kp": "Korean (North Korea)",
-    "ko-kr": "Korean (South Korea)",
-    "la": "Latin",
-    "lv": "Latvian",
-    "lt": "Lithuanian",
-    "lb": "Luxembourgish",
-    "mk": "FYRO Macedonian",
-    "ms": "Malay",
-    "ml": "Malayalam",
-    "mt": "Maltese",
-    "mi": "Maori",
-    "mr": "Marathi",
-    "mo": "Moldavian",
-    "nv": "Navajo",
-    "ng": "Ndonga",
-    "ne": "Nepali",
-    "no": "Norwegian",
-    "nb": "Norwegian (Bokmal)",
-    "nn": "Norwegian (Nynorsk)",
-    "oc": "Occitan",
-    "or": "Oriya",
-    "om": "Oromo",
-    "fa": "Persian",
-    "fa-ir": "Persian/Iran",
-    "pl": "Polish",
-    "pt": "Portuguese",
-    "pt-br": "Portuguese (Brazil)",
-    "pa": "Punjabi",
-    "pa-in": "Punjabi (India)",
-    "pa-pk": "Punjabi (Pakistan)",
-    "qu": "Quechua",
-    "rm": "Rhaeto-Romanic",
-    "ro": "Romanian",
-    "ro-mo": "Romanian (Moldavia)",
-    "ru": "Russian",
-    "ru-mo": "Russian (Moldavia)",
-    "sz": "Sami (Lappish)",
-    "sg": "Sango",
-    "sa": "Sanskrit",
-    "sc": "Sardinian",
-    "sd": "Sindhi",
-    "si": "Singhalese",
-    "sr": "Serbian",
-    "sk": "Slovak",
-    "sl": "Slovenian",
-    "so": "Somani",
-    "sb": "Sorbian",
-    "es": "Spanish",
-    "es-ar": "Spanish (Argentina)",
-    "es-bo": "Spanish (Bolivia)",
-    "es-cl": "Spanish (Chile)",
-    "es-co": "Spanish (Colombia)",
-    "es-cr": "Spanish (Costa Rica)",
-    "es-do": "Spanish (Dominican Republic)",
-    "es-ec": "Spanish (Ecuador)",
-    "es-sv": "Spanish (El Salvador)",
-    "es-gt": "Spanish (Guatemala)",
-    "es-hn": "Spanish (Honduras)",
-    "es-mx": "Spanish (Mexico)",
-    "es-ni": "Spanish (Nicaragua)",
-    "es-pa": "Spanish (Panama)",
-    "es-py": "Spanish (Paraguay)",
-    "es-pe": "Spanish (Peru)",
-    "es-pr": "Spanish (Puerto Rico)",
-    "es-es": "Spanish (Spain)",
-    "es-uy": "Spanish (Uruguay)",
-    "es-ve": "Spanish (Venezuela)",
-    "sx": "Sutu",
-    "sw": "Swahili",
-    "sv": "Swedish",
-    "sv-fi": "Swedish (Finland)",
-    "sv-sv": "Swedish (Sweden)",
-    "ta": "Tamil",
-    "tt": "Tatar",
-    "te": "Teluga",
-    "th": "Thai",
-    "tig": "Tigre",
-    "ts": "Tsonga",
-    "tn": "Tswana",
-    "tr": "Turkish",
-    "tk": "Turkmen",
-    "uk": "Ukrainian",
-    "hsb": "Upper Sorbian",
-    "ur": "Urdu",
-    "ve": "Venda",
-    "vi": "Vietnamese",
-    "vo": "Volapuk",
-    "wa": "Walloon",
-    "cy": "Welsh",
-    "xh": "Xhosa",
-    "ji": "Yiddish",
-    "zu": "Zulu",
-};const _hoisted_1$2 = { class: "userinfo" };
-const _hoisted_2$1 = createElementVNode("img", {
-    src: "https://plus.unsplash.com/premium_photo-1669800502069-499e172df081?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+});/*!
+  * vue-router v4.2.5
+  * (c) 2023 Eduardo San Martin Morote
+  * @license MIT
+  */
+
+var NavigationType;
+(function (NavigationType) {
+    NavigationType["pop"] = "pop";
+    NavigationType["push"] = "push";
+})(NavigationType || (NavigationType = {}));
+var NavigationDirection;
+(function (NavigationDirection) {
+    NavigationDirection["back"] = "back";
+    NavigationDirection["forward"] = "forward";
+    NavigationDirection["unknown"] = "";
+})(NavigationDirection || (NavigationDirection = {}));
+/**
+ * Enumeration with all possible types for navigation failures. Can be passed to
+ * {@link isNavigationFailure} to check for specific failures.
+ */
+var NavigationFailureType;
+(function (NavigationFailureType) {
+    /**
+     * An aborted navigation is a navigation that failed because a navigation
+     * guard returned `false` or called `next(false)`
+     */
+    NavigationFailureType[NavigationFailureType["aborted"] = 4] = "aborted";
+    /**
+     * A cancelled navigation is a navigation that failed because a more recent
+     * navigation finished started (not necessarily finished).
+     */
+    NavigationFailureType[NavigationFailureType["cancelled"] = 8] = "cancelled";
+    /**
+     * A duplicated navigation is a navigation that failed because it was
+     * initiated while already being at the exact same location.
+     */
+    NavigationFailureType[NavigationFailureType["duplicated"] = 16] = "duplicated";
+})(NavigationFailureType || (NavigationFailureType = {}));
+/**
+ * Allows overriding the router instance returned by `useRouter` in tests. r
+ * stands for router
+ *
+ * @internal
+ */
+const routerKey = Symbol('');
+
+/**
+ * Returns the router instance. Equivalent to using `$router` inside
+ * templates.
+ */
+function useRouter() {
+    return inject(routerKey);
+}const _withScopeId = n => (pushScopeId("data-v-b2d47914"), n = n(), popScopeId(), n);
+const _hoisted_1 = { style: { padding: 20 + 'px', paddingTop: '10%', paddingLeft: '5%' } };
+const _hoisted_2 = _withScopeId(() => createElementVNode("img", {
+    src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZhY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
     loading: "lazy",
     class: "avatar"
-}, null, -1);
-const _hoisted_3 = { class: "username" };
-const _hoisted_4 = createElementVNode("svg", {
-    width: "23",
-    height: "20",
-    viewBox: "0 0 23 20",
+}, null, -1));
+const _hoisted_3 = _withScopeId(() => createElementVNode("br", null, null, -1));
+const _hoisted_4 = { class: "post-options-1" };
+const _hoisted_5 = createStaticVNode("<button data-v-b2d47914><svg width=\"26\" height=\"26\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-v-b2d47914><g clip-path=\"url(#clip0_20_2)\" data-v-b2d47914><path d=\"M7.49999 16.6667H4.99999C4.11593 16.6667 3.26809 16.3155 2.64297 15.6903C2.01785 15.0652 1.66666 14.2174 1.66666 13.3333V5.83332C1.66666 4.94927 2.01785 4.10142 2.64297 3.4763C3.26809 2.85118 4.11593 2.49999 4.99999 2.49999H14.1667C15.0507 2.49999 15.8986 2.85118 16.5237 3.4763C17.1488 4.10142 17.5 4.94927 17.5 5.83332V8.33332M6.66666 1.66666V3.33332M12.5 1.66666V3.33332M1.66666 6.66666H17.5M15.4167 13.0358L14.1667 14.2858\" stroke=\"#A3F7BF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-b2d47914></path><path d=\"M14.1667 18.3333C16.4679 18.3333 18.3333 16.4679 18.3333 14.1667C18.3333 11.8655 16.4679 10 14.1667 10C11.8655 10 10 11.8655 10 14.1667C10 16.4679 11.8655 18.3333 14.1667 18.3333Z\" fill=\"#A3F7BF\" fill-opacity=\"0.2\" stroke=\"#A3F7BF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-b2d47914></path></g><defs data-v-b2d47914><clipPath id=\"clip0_20_2\" data-v-b2d47914><rect width=\"20\" height=\"20\" fill=\"white\" data-v-b2d47914></rect></clipPath></defs></svg></button>", 1);
+const _hoisted_6 = _withScopeId(() => createElementVNode("svg", {
+    width: "26",
+    height: "26",
+    viewBox: "0 0 20 20",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
 }, [
     createElementVNode("path", {
-        opacity: "0.2",
-        d: "M13.5222 10C13.5222 10.3708 13.403 10.7334 13.1797 11.0417C12.9564 11.35 12.639 11.5904 12.2677 11.7323C11.8963 11.8742 11.4877 11.9113 11.0935 11.839C10.6992 11.7666 10.3371 11.588 10.0529 11.3258C9.76866 11.0636 9.5751 10.7295 9.49668 10.3658C9.41827 10.0021 9.45851 9.62508 9.61233 9.28247C9.76615 8.93986 10.0266 8.64702 10.3608 8.44099C10.6951 8.23497 11.088 8.125 11.4899 8.125C12.0289 8.125 12.5459 8.32254 12.927 8.67417C13.3081 9.02581 13.5222 9.50272 13.5222 10ZM4.7156 8.125C4.31365 8.125 3.92073 8.23497 3.58652 8.44099C3.25231 8.64702 2.99182 8.93986 2.838 9.28247C2.68418 9.62508 2.64394 10.0021 2.72235 10.3658C2.80077 10.7295 2.99433 11.0636 3.27855 11.3258C3.56277 11.588 3.92489 11.7666 4.31912 11.839C4.71335 11.9113 5.12198 11.8742 5.49333 11.7323C5.86468 11.5904 6.18209 11.35 6.4054 11.0417C6.62871 10.7334 6.7479 10.3708 6.7479 10C6.7479 9.50272 6.53379 9.02581 6.15266 8.67417C5.77153 8.32254 5.2546 8.125 4.7156 8.125ZM18.2643 8.125C17.8623 8.125 17.4694 8.23497 17.1352 8.44099C16.801 8.64702 16.5405 8.93986 16.3867 9.28247C16.2328 9.62508 16.1926 10.0021 16.271 10.3658C16.3494 10.7295 16.543 11.0636 16.8272 11.3258C17.1114 11.588 17.4736 11.7666 17.8678 11.839C18.262 11.9113 18.6706 11.8742 19.042 11.7323C19.4133 11.5904 19.7307 11.35 19.9541 11.0417C20.1774 10.7334 20.2966 10.3708 20.2966 10C20.2966 9.50272 20.0824 9.02581 19.7013 8.67417C19.3202 8.32254 18.8033 8.125 18.2643 8.125Z",
-        fill: "white",
-        "fill-opacity": "0.6"
-    }),
-    createElementVNode("path", {
-        d: "M11.4899 7.5C10.954 7.5 10.4301 7.64662 9.98448 7.92133C9.53887 8.19603 9.19156 8.58648 8.98646 9.04329C8.78137 9.50011 8.72771 10.0028 8.83226 10.4877C8.93682 10.9727 9.1949 11.4181 9.57386 11.7678C9.95282 12.1174 10.4356 12.3555 10.9613 12.452C11.4869 12.5484 12.0318 12.4989 12.5269 12.3097C13.022 12.1205 13.4452 11.8 13.743 11.3889C14.0407 10.9778 14.1997 10.4945 14.1997 10C14.1997 9.33696 13.9142 8.70107 13.406 8.23223C12.8978 7.76339 12.2086 7.5 11.4899 7.5ZM11.4899 11.25C11.222 11.25 10.96 11.1767 10.7372 11.0393C10.5144 10.902 10.3407 10.7068 10.2382 10.4784C10.1356 10.2499 10.1088 9.99861 10.1611 9.75614C10.2134 9.51366 10.3424 9.29093 10.5319 9.11612C10.7214 8.9413 10.9628 8.82225 11.2256 8.77402C11.4884 8.72579 11.7608 8.75054 12.0084 8.84515C12.256 8.93976 12.4676 9.09998 12.6165 9.30554C12.7653 9.5111 12.8448 9.75277 12.8448 10C12.8448 10.3315 12.7021 10.6495 12.448 10.8839C12.1939 11.1183 11.8493 11.25 11.4899 11.25ZM4.7156 7.5C4.17967 7.5 3.65577 7.64662 3.21015 7.92133C2.76454 8.19603 2.41723 8.58648 2.21213 9.04329C2.00704 9.50011 1.95338 10.0028 2.05793 10.4877C2.16249 10.9727 2.42057 11.4181 2.79953 11.7678C3.17849 12.1174 3.66132 12.3555 4.18696 12.452C4.71259 12.5484 5.25743 12.4989 5.75257 12.3097C6.24771 12.1205 6.67091 11.8 6.96866 11.3889C7.26641 10.9778 7.42533 10.4945 7.42533 10C7.42533 9.33696 7.13984 8.70107 6.63167 8.23223C6.1235 7.76339 5.43427 7.5 4.7156 7.5ZM4.7156 11.25C4.44763 11.25 4.18568 11.1767 3.96288 11.0393C3.74007 10.902 3.56641 10.7068 3.46387 10.4784C3.36132 10.2499 3.33449 9.99861 3.38677 9.75614C3.43904 9.51366 3.56808 9.29093 3.75756 9.11612C3.94705 8.9413 4.18846 8.82225 4.45128 8.77402C4.7141 8.72579 4.98652 8.75054 5.23408 8.84515C5.48165 8.93976 5.69325 9.09998 5.84213 9.30554C5.991 9.5111 6.07047 9.75277 6.07047 10C6.07047 10.3315 5.92772 10.6495 5.67363 10.8839C5.41955 11.1183 5.07493 11.25 4.7156 11.25ZM18.2643 7.5C17.7283 7.5 17.2044 7.64662 16.7588 7.92133C16.3132 8.19603 15.9659 8.58648 15.7608 9.04329C15.5557 9.50011 15.502 10.0028 15.6066 10.4877C15.7111 10.9727 15.9692 11.4181 16.3482 11.7678C16.7272 12.1174 17.21 12.3555 17.7356 12.452C18.2613 12.5484 18.8061 12.4989 19.3012 12.3097C19.7964 12.1205 20.2196 11.8 20.5173 11.3889C20.8151 10.9778 20.974 10.4945 20.974 10C20.974 9.33696 20.6885 8.70107 20.1803 8.23223C19.6722 7.76339 18.9829 7.5 18.2643 7.5ZM18.2643 11.25C17.9963 11.25 17.7343 11.1767 17.5115 11.0393C17.2887 10.902 17.1151 10.7068 17.0125 10.4784C16.91 10.2499 16.8831 9.99861 16.9354 9.75614C16.9877 9.51366 17.1167 9.29093 17.3062 9.11612C17.4957 8.9413 17.7371 8.82225 17.9999 8.77402C18.2628 8.72579 18.5352 8.75054 18.7827 8.84515C19.0303 8.93976 19.2419 9.09998 19.3908 9.30554C19.5397 9.5111 19.6191 9.75277 19.6191 10C19.6191 10.3315 19.4764 10.6495 19.2223 10.8839C18.9682 11.1183 18.6236 11.25 18.2643 11.25Z",
-        fill: "white",
-        "fill-opacity": "0.6"
+        d: "M7.5 4.58334C7.5 5.27501 8.05833 5.83334 8.75 5.83334H11.6667V14.5833C11.6667 15.275 12.225 15.8333 12.9167 15.8333C13.6083 15.8333 14.1667 15.275 14.1667 14.5833V5.83334H17.0833C17.775 5.83334 18.3333 5.27501 18.3333 4.58334C18.3333 3.89168 17.775 3.33334 17.0833 3.33334H8.75C8.05833 3.33334 7.5 3.89168 7.5 4.58334ZM3.75 10H5V14.5833C5 15.275 5.55833 15.8333 6.25 15.8333C6.94167 15.8333 7.5 15.275 7.5 14.5833V10H8.75C9.44167 10 10 9.44168 10 8.75001C10 8.05834 9.44167 7.50001 8.75 7.50001H3.75C3.05833 7.50001 2.5 8.05834 2.5 8.75001C2.5 9.44168 3.05833 10 3.75 10Z",
+        fill: "#A3F7BF"
     })
-], -1);
-const _hoisted_5 = [
-    _hoisted_4
+], -1));
+const _hoisted_7 = [
+    _hoisted_6
 ];
-const _hoisted_6 = ["innerHTML"];
-const _hoisted_7 = {
-    key: 0,
-    class: "donation-container",
-    style: { "background-image": "url('https://images.unsplash.com/photo-1537440499989-de5f6b6854de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGtpZHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60')" }
-};
-const _hoisted_8$1 = createElementVNode("div", { class: "donation-texts" }, [
-    createElementVNode("p", null, "4367$ Collected"),
-    createElementVNode("p", null, "10000$ Goal")
-], -1);
-const _hoisted_9$1 = createElementVNode("meter", {
-    max: "10000",
-    value: "4367",
-    style: { "height": "8px", "margin-bottom": "15px", "margin-top": "10px" }
-}, null, -1);
-const _hoisted_10$1 = {
-    key: 1,
-    class: "translation-original",
-    style: { "margin-left": "45px", "margin-top": "20px" }
-};
-const _hoisted_11 = createElementVNode("br", null, null, -1);
-const _hoisted_12 = { class: "translation-source" };
-const _hoisted_13 = createStaticVNode("<svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_20_229)\"><path d=\"M3.97688 5.87475L3.59625 7H2.625L4.25425 2.625H5.37775L7 7H5.97888L5.59825 5.87475H3.97688ZM5.40662 5.23075L4.8125 3.4615H4.76963L4.1755 5.23075H5.40662Z\" fill=\"#A3F7BF\"></path><path d=\"M0 1.75C0 1.28587 0.184374 0.840752 0.512563 0.512563C0.840752 0.184374 1.28587 0 1.75 0L7.875 0C8.33913 0 8.78425 0.184374 9.11244 0.512563C9.44063 0.840752 9.625 1.28587 9.625 1.75V4.375H12.25C12.7141 4.375 13.1592 4.55937 13.4874 4.88756C13.8156 5.21575 14 5.66087 14 6.125V12.25C14 12.7141 13.8156 13.1592 13.4874 13.4874C13.1592 13.8156 12.7141 14 12.25 14H6.125C5.66087 14 5.21575 13.8156 4.88756 13.4874C4.55937 13.1592 4.375 12.7141 4.375 12.25V9.625H1.75C1.28587 9.625 0.840752 9.44063 0.512563 9.11244C0.184374 8.78425 0 8.33913 0 7.875V1.75ZM1.75 0.875C1.51794 0.875 1.29538 0.967187 1.13128 1.13128C0.967187 1.29538 0.875 1.51794 0.875 1.75V7.875C0.875 8.10706 0.967187 8.32962 1.13128 8.49372C1.29538 8.65781 1.51794 8.75 1.75 8.75H7.875C8.10706 8.75 8.32962 8.65781 8.49372 8.49372C8.65781 8.32962 8.75 8.10706 8.75 7.875V1.75C8.75 1.51794 8.65781 1.29538 8.49372 1.13128C8.32962 0.967187 8.10706 0.875 7.875 0.875H1.75ZM7.99575 9.62062C8.16462 9.884 8.3475 10.1307 8.547 10.3609C7.8925 10.864 7.08313 11.2368 6.125 11.4914C6.28075 11.6813 6.51962 12.047 6.61062 12.25C7.595 11.9359 8.43062 11.5115 9.13587 10.9427C9.81575 11.5246 10.6575 11.9621 11.6996 12.2308C11.816 12.0085 12.0619 11.6419 12.25 11.452C11.2656 11.2306 10.4501 10.8447 9.7825 10.3285C10.3784 9.67488 10.8517 8.88387 11.2009 7.91612H12.25V7H9.625V7.91612H10.2944C10.0161 8.65462 9.64688 9.26888 9.18138 9.77987C9.0528 9.6429 8.93159 9.4992 8.81825 9.34938C8.57134 9.50769 8.2884 9.601 7.99575 9.62062Z\" fill=\"#A3F7BF\"></path></g><defs><clipPath id=\"clip0_20_229\"><rect width=\"14\" height=\"14\" fill=\"white\"></rect></clipPath></defs></svg>", 1);
-const _hoisted_14 = { class: "post-buttons" };
-const _hoisted_15 = {
-    width: "28",
-    height: "27",
-    viewBox: "0 0 27 26",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-};
-const _hoisted_16$1 = createElementVNode("path", {
-    d: "M23.8684 7.20078C23.5281 6.41275 23.0374 5.69865 22.4237 5.09844C21.8096 4.49644 21.0855 4.01805 20.2909 3.68926C19.4669 3.34698 18.5831 3.17178 17.6909 3.17383C16.4391 3.17383 15.2179 3.5166 14.1565 4.16407C13.9026 4.31895 13.6614 4.48907 13.4329 4.67442C13.2044 4.48907 12.9632 4.31895 12.7093 4.16407C11.6479 3.5166 10.4266 3.17383 9.17488 3.17383C8.27352 3.17383 7.40008 3.34649 6.57488 3.68926C5.77762 4.01934 5.05906 4.49414 4.44207 5.09844C3.82761 5.69797 3.33676 6.41224 2.99734 7.20078C2.64442 8.0209 2.46414 8.8918 2.46414 9.78809C2.46414 10.6336 2.6368 11.5147 2.97957 12.4109C3.26649 13.16 3.67781 13.9369 4.2034 14.7215C5.03621 15.9631 6.18133 17.258 7.6032 18.5707C9.95945 20.7467 12.2929 22.2498 12.3919 22.3107L12.9936 22.6967C13.2602 22.8668 13.603 22.8668 13.8696 22.6967L14.4714 22.3107C14.5704 22.2473 16.9013 20.7467 19.26 18.5707C20.6819 17.258 21.827 15.9631 22.6598 14.7215C23.1854 13.9369 23.5993 13.16 23.8837 12.4109C24.2264 11.5147 24.3991 10.6336 24.3991 9.78809C24.4016 8.8918 24.2214 8.0209 23.8684 7.20078ZM13.4329 20.6883C13.4329 20.6883 4.39383 14.8967 4.39383 9.78809C4.39383 7.20078 6.53426 5.10352 9.17488 5.10352C11.0309 5.10352 12.6407 6.13946 13.4329 7.65274C14.2251 6.13946 15.8348 5.10352 17.6909 5.10352C20.3315 5.10352 22.472 7.20078 22.472 9.78809C22.472 14.8967 13.4329 20.6883 13.4329 20.6883Z",
-    fill: "#E74C3C"
-}, null, -1);
-const _hoisted_17$1 = ["fill-opacity"];
-const _hoisted_18$1 = createElementVNode("svg", {
-    width: "28",
-    height: "27",
-    viewBox: "0 0 25 24",
+const _hoisted_8 = { class: "format-options" };
+const _hoisted_9 = _withScopeId(() => createElementVNode("svg", {
+    width: "16",
+    height: "17",
+    viewBox: "0 0 11 12",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
 }, [
     createElementVNode("path", {
-        opacity: "0.16",
-        d: "M12.4329 21C14.2129 21 15.953 20.4722 17.433 19.4832C18.9131 18.4943 20.0666 17.0887 20.7478 15.4442C21.429 13.7996 21.6072 11.99 21.26 10.2442C20.9127 8.49836 20.0555 6.89472 18.7969 5.63604C17.5382 4.37737 15.9345 3.5202 14.1887 3.17294C12.4429 2.82567 10.6333 3.0039 8.98874 3.68509C7.34421 4.36628 5.9386 5.51983 4.94967 6.99987C3.96073 8.47991 3.43289 10.22 3.43289 12C3.43289 13.488 3.79289 14.89 4.43289 16.127L3.43289 21L8.30589 20C9.54189 20.639 10.9459 21 12.4329 21Z",
-        fill: "white",
-        "fill-opacity": "0.7"
+        d: "M0.751373 0C0.950286 0 1.14105 0.0790175 1.2817 0.21967C1.42236 0.360322 1.50137 0.551088 1.50137 0.75V5H8.50137V0.75C8.50137 0.551088 8.58039 0.360322 8.72104 0.21967C8.8617 0.0790175 9.05246 0 9.25137 0C9.45029 0 9.64105 0.0790175 9.7817 0.21967C9.92236 0.360322 10.0014 0.551088 10.0014 0.75V11.25C10.0014 11.4489 9.92236 11.6397 9.7817 11.7803C9.64105 11.921 9.45029 12 9.25137 12C9.05246 12 8.8617 11.921 8.72104 11.7803C8.58039 11.6397 8.50137 11.4489 8.50137 11.25V6.5H1.50137V11.25C1.50137 11.4489 1.42236 11.6397 1.2817 11.7803C1.14105 11.921 0.950286 12 0.751373 12C0.552461 12 0.361695 11.921 0.221043 11.7803C0.0803908 11.6397 0.00137329 11.4489 0.00137329 11.25V0.75C0.00137329 0.551088 0.0803908 0.360322 0.221043 0.21967C0.361695 0.0790175 0.552461 0 0.751373 0Z",
+        fill: "#A3F7BF",
+        "fill-opacity": "0.8"
+    })
+], -1));
+const _hoisted_10 = [
+    _hoisted_9
+];
+const _hoisted_11 = _withScopeId(() => createElementVNode("svg", {
+    width: "16",
+    height: "17",
+    viewBox: "0 0 11 12",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+}, [
+    createElementVNode("path", {
+        d: "M1 0H5.5C6.14255 0.000201235 6.77266 0.177234 7.3213 0.511705C7.86994 0.846177 8.31594 1.32519 8.61047 1.89627C8.90499 2.46734 9.03667 3.10846 8.99108 3.7494C8.94549 4.39033 8.72439 5.00636 8.352 5.53C8.99792 5.93183 9.49529 6.53322 9.76878 7.24307C10.0423 7.95292 10.077 8.73256 9.86762 9.4639C9.65828 10.1952 9.2163 10.8384 8.60863 11.2961C8.00096 11.7537 7.26071 12.0008 6.5 12H1C0.734784 12 0.48043 11.8946 0.292893 11.7071C0.105357 11.5196 0 11.2652 0 11V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM2 7V10H6.5C6.89782 10 7.27936 9.84196 7.56066 9.56066C7.84196 9.27936 8 8.89782 8 8.5C8 8.10218 7.84196 7.72064 7.56066 7.43934C7.27936 7.15804 6.89782 7 6.5 7H2ZM5.5 5C5.89782 5 6.27936 4.84196 6.56066 4.56066C6.84196 4.27936 7 3.89782 7 3.5C7 3.10218 6.84196 2.72064 6.56066 2.43934C6.27936 2.15804 5.89782 2 5.5 2H2V5H5.5Z",
+        fill: "#A3F7BF",
+        "fill-opacity": "0.8"
+    })
+], -1));
+const _hoisted_12 = [
+    _hoisted_11
+];
+const _hoisted_13 = _withScopeId(() => createElementVNode("svg", {
+    width: "16",
+    height: "17",
+    viewBox: "0 0 11 12",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+}, [
+    createElementVNode("path", {
+        d: "M3.33471 0.75C3.33471 0.551088 3.40055 0.360322 3.51776 0.21967C3.63497 0.0790175 3.79395 0 3.95971 0H9.37637C9.54213 4.19176e-09 9.7011 0.0790175 9.81831 0.21967C9.93552 0.360322 10.0014 0.551088 10.0014 0.75C10.0014 0.948912 9.93552 1.13968 9.81831 1.28033C9.7011 1.42098 9.54213 1.5 9.37637 1.5H7.28887L4.07387 10.5H6.04304C6.2088 10.5 6.36777 10.579 6.48498 10.7197C6.60219 10.8603 6.66804 11.0511 6.66804 11.25C6.66804 11.4489 6.60219 11.6397 6.48498 11.7803C6.36777 11.921 6.2088 12 6.04304 12H0.626373C0.460613 12 0.301642 11.921 0.184431 11.7803C0.0672212 11.6397 0.00137329 11.4489 0.00137329 11.25C0.00137329 11.0511 0.0672212 10.8603 0.184431 10.7197C0.301642 10.579 0.460613 10.5 0.626373 10.5H2.71387L5.92887 1.5H3.95971C3.79395 1.5 3.63497 1.42098 3.51776 1.28033C3.40055 1.13968 3.33471 0.948912 3.33471 0.75Z",
+        fill: "#A3F7BF",
+        "fill-opacity": "0.8"
+    })
+], -1));
+const _hoisted_14 = [
+    _hoisted_13
+];
+const _hoisted_15 = _withScopeId(() => createElementVNode("button", null, [
+    createElementVNode("svg", {
+        width: "16",
+        height: "17",
+        viewBox: "0 0 11 12",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+    }, [
+        createElementVNode("g", { "clip-path": "url(#clip0_46_120)" }, [
+            createElementVNode("path", {
+                d: "M5.00212 0.0019711C2.46735 0.0293785 0.261473 1.74322 0.521149 2.0669C0.591056 2.34658 1.5202 3.06285 1.59323 3.56625C1.66469 4.06035 1.70821 4.61503 2.17277 4.61503C2.65444 4.61503 2.65286 3.96866 2.74298 3.56625C2.88904 2.92301 3.8912 2.59672 4.15844 3.05973C4.43501 3.54139 5.04251 3.47769 5.21654 3.09857C5.77159 1.78838 7.87249 4.23382 6.79358 4.43324C4.1665 4.57838 2.76828 4.78996 1.76705 5.37778C-0.321004 6.60364 -0.0857263 8.54489 0.154505 8.64394C0.284042 12.2845 5.74219 12.9147 7.32497 10.0802V11.5649H9.74413V6.43378C9.79224 6.39387 9.86925 6.36896 9.89312 6.2435C10.4581 1.78855 8.42816 -0.0697187 5.00214 0.00199425L5.00212 0.0019711ZM7.28147 6.95651C7.28147 8.58429 6.3955 9.48443 5.39726 9.68549C4.03161 9.96058 2.74457 9.55503 2.74457 8.39371C2.7265 6.71255 5.19601 6.53273 7.09659 6.56963C7.34094 6.5948 7.27643 6.80556 7.28147 6.95651Z",
+                fill: "#A3F7BF",
+                "fill-opacity": "0.8"
+            })
+        ]),
+        createElementVNode("defs", null, [
+            createElementVNode("clipPath", { id: "clip0_46_120" }, [
+                createElementVNode("rect", {
+                    width: "10",
+                    height: "11.8519",
+                    fill: "white",
+                    transform: "translate(0.00137329)"
+                })
+            ])
+        ])
+    ])
+], -1));
+const _hoisted_16 = ["value"];
+const _hoisted_17 = _withScopeId(() => createElementVNode("p", { class: "toxicity-msg" }, " Your post may appear to be toxic to others. Consider making it more friendly to readers ", -1));
+const _hoisted_18 = { style: { display: 'flex', marginTop: 26 + 'px' } };
+const _hoisted_19 = createStaticVNode("<button class=\"options-btn\" data-v-b2d47914><svg width=\"22\" height=\"22\" viewBox=\"0 0 22 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" data-v-b2d47914><path opacity=\"0.16\" d=\"M11 19.25C15.5563 19.25 19.25 15.5563 19.25 11C19.25 6.44365 15.5563 2.75 11 2.75C6.44365 2.75 2.75 6.44365 2.75 11C2.75 15.5563 6.44365 19.25 11 19.25Z\" fill=\"#A3F7BF\" data-v-b2d47914></path><path d=\"M11 19.25C15.5563 19.25 19.25 15.5563 19.25 11C19.25 6.44365 15.5563 2.75 11 2.75C6.44365 2.75 2.75 6.44365 2.75 11C2.75 15.5563 6.44365 19.25 11 19.25Z\" stroke=\"#A3F7BF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-b2d47914></path><path d=\"M10.0833 7.33334V11.9167H14.6667\" stroke=\"#A3F7BF\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" data-v-b2d47914></path></svg> Set Lifespan </button>", 1);
+const _hoisted_20 = _withScopeId(() => createElementVNode("svg", {
+    width: "22",
+    height: "22",
+    viewBox: "0 0 22 22",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+}, [
+    createElementVNode("path", {
+        opacity: "0.3",
+        d: "M11 5.5C9.31449 5.4944 7.66162 5.96456 6.23139 6.85642C4.80116 7.74828 3.65165 9.02565 2.915 10.5417C4.4275 13.6308 7.52583 15.5833 11 15.5833C14.4742 15.5833 17.5725 13.6308 19.085 10.5417C18.3484 9.02565 17.1988 7.74828 15.7686 6.85642C14.3384 5.96456 12.6855 5.4944 11 5.5ZM11 14.6667C8.72667 14.6667 6.875 12.815 6.875 10.5417C6.875 8.26834 8.72667 6.41667 11 6.41667C13.2733 6.41667 15.125 8.26834 15.125 10.5417C15.125 12.815 13.2733 14.6667 11 14.6667Z",
+        fill: "#A3F7BF"
     }),
     createElementVNode("path", {
-        d: "M12.4329 21C14.2129 21 15.953 20.4722 17.433 19.4832C18.9131 18.4943 20.0666 17.0887 20.7478 15.4442C21.429 13.7996 21.6072 11.99 21.26 10.2442C20.9127 8.49836 20.0555 6.89472 18.7969 5.63604C17.5382 4.37737 15.9345 3.5202 14.1887 3.17294C12.4429 2.82567 10.6333 3.0039 8.98874 3.68509C7.34421 4.36628 5.9386 5.51983 4.94967 6.99987C3.96073 8.47991 3.43289 10.22 3.43289 12C3.43289 13.488 3.79289 14.89 4.43289 16.127L3.43289 21L8.30589 20C9.54189 20.639 10.9459 21 12.4329 21Z",
-        stroke: "white",
-        "stroke-opacity": "0.7",
-        "stroke-width": "2",
-        "stroke-linecap": "round",
-        "stroke-linejoin": "round"
+        d: "M11 3.66666C6.41667 3.66666 2.5025 6.5175 0.916667 10.5417C2.5025 14.5658 6.41667 17.4167 11 17.4167C15.5833 17.4167 19.4975 14.5658 21.0833 10.5417C19.4975 6.5175 15.5833 3.66666 11 3.66666ZM11 15.5833C9.31449 15.5889 7.66162 15.1188 6.23139 14.2269C4.80116 13.3351 3.65165 12.0577 2.915 10.5417C4.4275 7.4525 7.52583 5.5 11 5.5C14.4742 5.5 17.5725 7.4525 19.085 10.5417C18.3483 12.0577 17.1988 13.3351 15.7686 14.2269C14.3384 15.1188 12.6855 15.5889 11 15.5833ZM11 6.41666C8.72667 6.41666 6.875 8.26833 6.875 10.5417C6.875 12.815 8.72667 14.6667 11 14.6667C13.2733 14.6667 15.125 12.815 15.125 10.5417C15.125 8.26833 13.2733 6.41666 11 6.41666ZM11 12.8333C10.3922 12.8333 9.80932 12.5919 9.37955 12.1621C8.94978 11.7323 8.70833 11.1495 8.70833 10.5417C8.70833 9.93388 8.94978 9.35098 9.37955 8.92121C9.80932 8.49144 10.3922 8.25 11 8.25C11.6078 8.25 12.1907 8.49144 12.6205 8.92121C13.0502 9.35098 13.2917 9.93388 13.2917 10.5417C13.2917 11.1495 13.0502 11.7323 12.6205 12.1621C12.1907 12.5919 11.6078 12.8333 11 12.8333Z",
+        fill: "#A3F7BF"
     })
-], -1);
-const _hoisted_19 = createStaticVNode("<svg width=\"28\" height=\"27\" viewBox=\"0 0 25 25\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_14_63)\"><path d=\"M6.05789 10.25C5.95844 10.25 5.86305 10.2895 5.79273 10.3598C5.7224 10.4302 5.68289 10.5255 5.68289 10.625V20.375C5.68289 20.582 5.85089 20.75 6.05789 20.75H18.8079C18.9073 20.75 19.0027 20.7105 19.0731 20.6402C19.1434 20.5698 19.1829 20.4745 19.1829 20.375V10.625C19.1829 10.5255 19.1434 10.4302 19.0731 10.3598C19.0027 10.2895 18.9073 10.25 18.8079 10.25H17.3079C17.0095 10.25 16.7234 10.1315 16.5124 9.9205C16.3014 9.70952 16.1829 9.42337 16.1829 9.125C16.1829 8.82664 16.3014 8.54049 16.5124 8.32951C16.7234 8.11853 17.0095 8 17.3079 8H18.8079C20.2569 8 21.4329 9.176 21.4329 10.625V20.375C21.4329 21.0712 21.1563 21.7389 20.664 22.2312C20.1718 22.7234 19.5041 23 18.8079 23H6.05789C5.3617 23 4.69402 22.7234 4.20174 22.2312C3.70945 21.7389 3.43289 21.0712 3.43289 20.375V10.625C3.43289 9.176 4.60889 8 6.05789 8H7.55789C7.85626 8 8.14241 8.11853 8.35339 8.32951C8.56437 8.54049 8.68289 8.82664 8.68289 9.125C8.68289 9.42337 8.56437 9.70952 8.35339 9.9205C8.14241 10.1315 7.85626 10.25 7.55789 10.25H6.05789ZM12.1674 0.765505C12.2022 0.730582 12.2436 0.702875 12.2892 0.68397C12.3347 0.665066 12.3836 0.655334 12.4329 0.655334C12.4822 0.655334 12.5311 0.665066 12.5766 0.68397C12.6222 0.702875 12.6636 0.730582 12.6984 0.765505L17.0424 5.1095C17.095 5.16195 17.1308 5.22883 17.1453 5.30166C17.1598 5.37449 17.1524 5.45 17.124 5.5186C17.0955 5.58721 17.0474 5.64582 16.9856 5.68702C16.9238 5.72822 16.8512 5.75014 16.7769 5.75H13.5579V14.375C13.5579 14.6734 13.4394 14.9595 13.2284 15.1705C13.0174 15.3815 12.7313 15.5 12.4329 15.5C12.1345 15.5 11.8484 15.3815 11.6374 15.1705C11.4264 14.9595 11.3079 14.6734 11.3079 14.375V5.75H8.08889C8.01463 5.75014 7.94199 5.72822 7.8802 5.68702C7.81841 5.64582 7.77024 5.58721 7.7418 5.5186C7.71337 5.45 7.70594 5.37449 7.72046 5.30166C7.73499 5.22883 7.77081 5.16195 7.82339 5.1095L12.1674 0.765505Z\" fill=\"white\" fill-opacity=\"0.7\"></path></g><defs><clipPath id=\"clip0_14_63\"><rect width=\"24\" height=\"24\" fill=\"white\" transform=\"translate(0.432892 0.5)\"></rect></clipPath></defs></svg>", 1);
-var script$2 = defineComponent({
-    __name: 'PostHome',
-    props: {
-        item: { type: null, required: false }
-    },
+], -1));
+const _hoisted_21 = { style: { "margin-left": "10px", "color": "#ababab" } };
+const _hoisted_22 = { class: "visibility-options" };
+const _hoisted_23 = _withScopeId(() => createElementVNode("p", null, "Everyone", -1));
+const _hoisted_24 = _withScopeId(() => createElementVNode("p", { class: "visibility-desc" }, "Everyone on String can view your Post", -1));
+const _hoisted_25 = {
+    width: "19",
+    height: "19",
+    viewBox: "0 0 15 15",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+};
+const _hoisted_26 = _withScopeId(() => createElementVNode("path", {
+    d: "M10.6075 3.90691C10.464 3.82706 10.3062 3.77629 10.1431 3.75749C9.97995 3.73868 9.81472 3.75222 9.65683 3.79732C9.49894 3.84242 9.35149 3.91821 9.22292 4.02034C9.09434 4.12247 8.98716 4.24895 8.9075 4.39253L6.58687 8.56878L5.25874 7.24066C5.14344 7.12127 5.00551 7.02604 4.853 6.96053C4.7005 6.89502 4.53647 6.86054 4.3705 6.85909C4.20452 6.85765 4.03992 6.88928 3.8863 6.95213C3.73268 7.01498 3.59312 7.1078 3.47575 7.22516C3.35839 7.34253 3.26557 7.48209 3.20272 7.63571C3.13987 7.78933 3.10824 7.95393 3.10968 8.11991C3.11112 8.28588 3.14561 8.44991 3.21112 8.60241C3.27663 8.75492 3.37186 8.89285 3.49124 9.00816L5.99125 11.5082C6.2275 11.745 6.54624 11.875 6.87499 11.875L7.04812 11.8625C7.23971 11.8357 7.42247 11.7648 7.58201 11.6554C7.74154 11.546 7.8735 11.401 7.96749 11.2319L11.0925 5.60691C11.1723 5.46344 11.223 5.30566 11.2418 5.14258C11.2606 4.9795 11.2471 4.81432 11.2021 4.65645C11.1571 4.49859 11.0814 4.35115 10.9793 4.22254C10.8773 4.09393 10.751 3.98668 10.6075 3.90691Z",
+    fill: "#A3F7BF"
+}, null, -1));
+const _hoisted_27 = [
+    _hoisted_26
+];
+const _hoisted_28 = _withScopeId(() => createElementVNode("p", null, "Followers", -1));
+const _hoisted_29 = _withScopeId(() => createElementVNode("p", { class: "visibility-desc" }, "Only your Followers can view your Post", -1));
+const _hoisted_30 = {
+    width: "19",
+    height: "19",
+    viewBox: "0 0 15 15",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+};
+const _hoisted_31 = _withScopeId(() => createElementVNode("path", {
+    d: "M10.6075 3.90691C10.464 3.82706 10.3062 3.77629 10.1431 3.75749C9.97995 3.73868 9.81472 3.75222 9.65683 3.79732C9.49894 3.84242 9.35149 3.91821 9.22292 4.02034C9.09434 4.12247 8.98716 4.24895 8.9075 4.39253L6.58687 8.56878L5.25874 7.24066C5.14344 7.12127 5.00551 7.02604 4.853 6.96053C4.7005 6.89502 4.53647 6.86054 4.3705 6.85909C4.20452 6.85765 4.03992 6.88928 3.8863 6.95213C3.73268 7.01498 3.59312 7.1078 3.47575 7.22516C3.35839 7.34253 3.26557 7.48209 3.20272 7.63571C3.13987 7.78933 3.10824 7.95393 3.10968 8.11991C3.11112 8.28588 3.14561 8.44991 3.21112 8.60241C3.27663 8.75492 3.37186 8.89285 3.49124 9.00816L5.99125 11.5082C6.2275 11.745 6.54624 11.875 6.87499 11.875L7.04812 11.8625C7.23971 11.8357 7.42247 11.7648 7.58201 11.6554C7.74154 11.546 7.8735 11.401 7.96749 11.2319L11.0925 5.60691C11.1723 5.46344 11.223 5.30566 11.2418 5.14258C11.2606 4.9795 11.2471 4.81432 11.2021 4.65645C11.1571 4.49859 11.0814 4.35115 10.9793 4.22254C10.8773 4.09393 10.751 3.98668 10.6075 3.90691Z",
+    fill: "#A3F7BF"
+}, null, -1));
+const _hoisted_32 = [
+    _hoisted_31
+];
+const _hoisted_33 = _withScopeId(() => createElementVNode("p", null, "Following", -1));
+const _hoisted_34 = _withScopeId(() => createElementVNode("p", { class: "visibility-desc" }, "Only people you Follow can view your Post", -1));
+const _hoisted_35 = {
+    width: "19",
+    height: "19",
+    viewBox: "0 0 15 15",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+};
+const _hoisted_36 = _withScopeId(() => createElementVNode("path", {
+    d: "M10.6075 3.90691C10.464 3.82706 10.3062 3.77629 10.1431 3.75749C9.97995 3.73868 9.81472 3.75222 9.65683 3.79732C9.49894 3.84242 9.35149 3.91821 9.22292 4.02034C9.09434 4.12247 8.98716 4.24895 8.9075 4.39253L6.58687 8.56878L5.25874 7.24066C5.14344 7.12127 5.00551 7.02604 4.853 6.96053C4.7005 6.89502 4.53647 6.86054 4.3705 6.85909C4.20452 6.85765 4.03992 6.88928 3.8863 6.95213C3.73268 7.01498 3.59312 7.1078 3.47575 7.22516C3.35839 7.34253 3.26557 7.48209 3.20272 7.63571C3.13987 7.78933 3.10824 7.95393 3.10968 8.11991C3.11112 8.28588 3.14561 8.44991 3.21112 8.60241C3.27663 8.75492 3.37186 8.89285 3.49124 9.00816L5.99125 11.5082C6.2275 11.745 6.54624 11.875 6.87499 11.875L7.04812 11.8625C7.23971 11.8357 7.42247 11.7648 7.58201 11.6554C7.74154 11.546 7.8735 11.401 7.96749 11.2319L11.0925 5.60691C11.1723 5.46344 11.223 5.30566 11.2418 5.14258C11.2606 4.9795 11.2471 4.81432 11.2021 4.65645C11.1571 4.49859 11.0814 4.35115 10.9793 4.22254C10.8773 4.09393 10.751 3.98668 10.6075 3.90691Z",
+    fill: "#A3F7BF"
+}, null, -1));
+const _hoisted_37 = [
+    _hoisted_36
+];
+const _hoisted_38 = _withScopeId(() => createElementVNode("p", null, "Selected", -1));
+const _hoisted_39 = _withScopeId(() => createElementVNode("p", { class: "visibility-desc" }, "Only people you Select can view your Post", -1));
+const _hoisted_40 = {
+    width: "19",
+    height: "19",
+    viewBox: "0 0 15 15",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+};
+const _hoisted_41 = _withScopeId(() => createElementVNode("path", {
+    d: "M10.6075 3.90691C10.464 3.82706 10.3062 3.77629 10.1431 3.75749C9.97995 3.73868 9.81472 3.75222 9.65683 3.79732C9.49894 3.84242 9.35149 3.91821 9.22292 4.02034C9.09434 4.12247 8.98716 4.24895 8.9075 4.39253L6.58687 8.56878L5.25874 7.24066C5.14344 7.12127 5.00551 7.02604 4.853 6.96053C4.7005 6.89502 4.53647 6.86054 4.3705 6.85909C4.20452 6.85765 4.03992 6.88928 3.8863 6.95213C3.73268 7.01498 3.59312 7.1078 3.47575 7.22516C3.35839 7.34253 3.26557 7.48209 3.20272 7.63571C3.13987 7.78933 3.10824 7.95393 3.10968 8.11991C3.11112 8.28588 3.14561 8.44991 3.21112 8.60241C3.27663 8.75492 3.37186 8.89285 3.49124 9.00816L5.99125 11.5082C6.2275 11.745 6.54624 11.875 6.87499 11.875L7.04812 11.8625C7.23971 11.8357 7.42247 11.7648 7.58201 11.6554C7.74154 11.546 7.8735 11.401 7.96749 11.2319L11.0925 5.60691C11.1723 5.46344 11.223 5.30566 11.2418 5.14258C11.2606 4.9795 11.2471 4.81432 11.2021 4.65645C11.1571 4.49859 11.0814 4.35115 10.9793 4.22254C10.8773 4.09393 10.751 3.98668 10.6075 3.90691Z",
+    fill: "#A3F7BF"
+}, null, -1));
+const _hoisted_42 = [
+    _hoisted_41
+];
+var script = defineComponent({
+    __name: 'CreatePost',
     setup(__props) {
-        const moreOptions = useMoreOptionsSheet();
-        const api = usePostsApi();
-        const props = __props;
-        const item = computed(() => props.item);
-        const isLoved = ref(item.value?.loves[0]?.id ? true : false);
-        function handleLove() {
-            if (item.value?.id && typeof item.value.loveCount == 'number') {
-                if (!isLoved.value) {
-                    api.lovePost(item.value?.id).then((res) => {
-                        if (res !== 201) {
-                            isLoved.value = false;
-                            item.value?.loveCount && item.value.loveCount--;
-                        }
-                    });
-                    isLoved.value = true;
-                    item.value.loveCount++;
-                }
-                else {
-                    api.unlovePost(item.value?.id).then((res) => {
-                        if (res !== 204) {
-                            isLoved.value = true;
-                            item.value?.loveCount && item.value.loveCount++;
-                        }
-                    });
-                    isLoved.value = false;
-                    item.value.loveCount--;
-                }
+        const text = ref('');
+        const isFormatOptionsVisible = ref(false);
+        const isVisibilityOptionsVisible = ref(false);
+        const visibility = ref(0);
+        const toxicity = ref(0);
+        const p = usePostsApi();
+        const router = useRouter();
+        function handleVisibility(type) {
+            visibility.value = type;
+            isVisibilityOptionsVisible.value = false;
+        }
+        function handleShare() {
+            if (toxicity.value > 0.95) {
+                alert('Please reduce toxicity or violence in your post to make it suitable for readers');
+                return;
             }
+            p.translatePost(encodeURIComponent(text.value))
+                .then(translated => {
+                if (translated) {
+                    p.createPost(text.value, translated.lang, translated.text)
+                        .then((res) => {
+                        if (res === 201) {
+                            router.push('/');
+                        }
+                    });
+                }
+            });
+        }
+        let typingTimer;
+        function triggerCheck() {
+            clearTimeout(typingTimer);
+            typingTimer = setTimeout(() => analyzeText(), 1500);
+        }
+        function analyzeText() {
+            if (text.value.length < 5)
+                return;
+            fetch(`https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=AIzaSyBF3kMu0WRaEoIDa00MACOK1W7otGDubCY`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    comment: { text: text.value },
+                    requestedAttributes: { TOXICITY: {} }
+                })
+            })
+                .then(response => response.json())
+                .then(responseJson => {
+                if (responseJson.attributeScores?.TOXICITY?.summaryScore?.value)
+                    toxicity.value = responseJson.attributeScores.TOXICITY.summaryScore.value;
+            });
+        }
+        let currSize = '4';
+        function execCommand(comm) {
+            if (comm === 'fontSize') {
+                currSize = currSize === '3' ? '4' : '3';
+                document.execCommand(comm, false, currSize);
+            }
+            else
+                document.execCommand(comm);
         }
         return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock("div", {
-                class: "post-body",
-                onClick: _cache[4] || (_cache[4] = ($event) => (_ctx.$router.push('/p/' + item.value?.id)))
-            }, [
-                createElementVNode("div", _hoisted_1$2, [
-                    _hoisted_2$1,
-                    createElementVNode("p", _hoisted_3, toDisplayString(item.value?.user?.username ?? 'Anonymous'), 1),
-                    createElementVNode("p", null, toDisplayString(item.value?.created_at ? unref(formatTime)(new Date(item.value?.created_at)) : ''), 1)
-                ]),
-                createElementVNode("button", {
-                    class: "post-more-options",
-                    onClick: _cache[0] || (_cache[0] = ($event) => { $event.stopPropagation(); unref(moreOptions).toggle(); })
-                }, [..._hoisted_5]),
-                createElementVNode("p", {
-                    class: "post-text",
-                    innerHTML: _ctx.$sanitize(item.value?.text && unref(formatText)(item.value.text)),
-                    onClick: _cache[1] || (_cache[1] = ($event) => ($event.target.nodeName === 'A' && $event.stopPropagation()))
-                }, null, 8, _hoisted_6),
-                (item.value?.text == 'donation')
-                    ? (openBlock(), createElementBlock("div", _hoisted_7, [
+            return (openBlock(), createElementBlock(Fragment, null, [
+                createVNode(script$1),
+                createElementVNode("div", _hoisted_1, [
+                    _hoisted_2,
+                    _hoisted_3,
+                    createElementVNode("div", _hoisted_4, [
+                        _hoisted_5,
+                        createElementVNode("button", {
+                            onClick: _cache[0] || (_cache[0] = ($event) => (isFormatOptionsVisible.value = !isFormatOptionsVisible.value)),
+                            style: normalizeStyle({
+                                backgroundColor: isFormatOptionsVisible.value ? 'var(--c-indigo)' : 'transparent',
+                                transition: 'all 0.5s ease-out'
+                            })
+                        }, [..._hoisted_7], 4),
+                        withDirectives(createVNode(Transition, { name: "slide-down" }, {
+                            default: withCtx(() => [
+                                createElementVNode("div", _hoisted_8, [
+                                    createElementVNode("button", {
+                                        onClick: _cache[1] || (_cache[1] = ($event) => (execCommand('fontSize')))
+                                    }, [..._hoisted_10]),
+                                    createElementVNode("button", {
+                                        onClick: _cache[2] || (_cache[2] = ($event) => (execCommand('bold')))
+                                    }, [..._hoisted_12]),
+                                    createElementVNode("button", {
+                                        onClick: _cache[3] || (_cache[3] = ($event) => (execCommand('italic')))
+                                    }, [..._hoisted_14]),
+                                    _hoisted_15
+                                ])
+                            ]),
+                            _: 1
+                        }, 512), [
+                            [vShow, isFormatOptionsVisible.value]
+                        ])
+                    ]),
+                    _cache[4] || (setBlockTracking(-1),
+                        _cache[4] = createElementVNode("div", {
+                            contenteditable: "",
+                            class: "post-input",
+                            onInput: ($event) => { triggerCheck(); text.value = _ctx.$sanitize($event.target.innerHTML); },
+                            placeholder: "Write something..."
+                        }, null, 40, ["onInput"]),
+                        setBlockTracking(1),
+                        _cache[4]),
+                    createElementVNode("p", {
+                        style: normalizeStyle({ color: 'var(--c-divider-dark-1)' })
+                    }, toDisplayString(text.value.length) + "/300 ", 5),
+                    withDirectives(createElementVNode("div", null, [
+                        createElementVNode("meter", {
+                            max: "1",
+                            value: toxicity.value,
+                            class: "toxicity-level"
+                        }, "90%", 8, _hoisted_16),
+                        _hoisted_17
+                    ], 512), [
+                        [vShow, text.value.length > 5 && toxicity.value > 0.85]
+                    ]),
+                    createElementVNode("div", _hoisted_18, [
                         createElementVNode("div", null, [
-                            _hoisted_8$1,
-                            _hoisted_9$1,
+                            _hoisted_19,
                             createElementVNode("button", {
-                                class: "btn-primary rounded",
-                                onClick: _cache[2] || (_cache[2] = ($event) => ($event.stopPropagation()))
-                            }, " Donate ")
-                        ])
-                    ]))
-                    : createCommentVNode("v-if", true),
-                (item.value?.lang !== 'en')
-                    ? (openBlock(), createElementBlock("blockquote", _hoisted_10$1, [
-                        createTextVNode(toDisplayString(item.value?.translatedText) + " ", 1),
-                        _hoisted_11,
-                        createElementVNode("p", _hoisted_12, [
-                            _hoisted_13,
-                            createTextVNode(" Translated from " + toDisplayString(unref(langCodes)[item.value?.lang] ?? 'Foreign Language'), 1)
-                        ])
-                    ]))
-                    : createCommentVNode("v-if", true),
-                createElementVNode("div", _hoisted_14, [
-                    createElementVNode("button", {
-                        onClick: _cache[3] || (_cache[3] = ($event) => { handleLove(); $event.stopPropagation(); })
-                    }, [
-                        (openBlock(), createElementBlock("svg", _hoisted_15, [
-                            _hoisted_16$1,
-                            createElementVNode("path", {
-                                d: "M17.6909 5.10352C15.8348 5.10352 14.2251 6.13945 13.4329 7.65273C12.6407 6.13945 11.0309 5.10352 9.17488 5.10352C6.53426 5.10352 4.39383 7.20078 4.39383 9.78809C4.39383 14.8967 13.4329 20.6883 13.4329 20.6883C13.4329 20.6883 22.472 14.8967 22.472 9.78809C22.472 7.20078 20.3315 5.10352 17.6909 5.10352Z",
-                                fill: "#E74C3C",
-                                "fill-opacity": isLoved.value ? 1 : 0.2
-                            }, null, 8, _hoisted_17$1)
-                        ])),
-                        createElementVNode("span", null, toDisplayString(item.value?.loveCount && item.value?.loveCount > 0 ? item.value?.loveCount : ''), 1)
-                    ]),
-                    createElementVNode("button", null, [
-                        _hoisted_18$1,
-                        createElementVNode("span", null, toDisplayString(item.value?.commentCount && item.value?.commentCount > 0 ? item.value?.commentCount : ''), 1)
-                    ]),
-                    createElementVNode("button", null, [
-                        _hoisted_19,
-                        createElementVNode("span", null, toDisplayString(item.value?.shareCount && item.value?.shareCount > 0 ? item.value?.shareCount : ''), 1)
+                                class: "options-btn",
+                                onClick: _cache[5] || (_cache[5] = ($event) => (isVisibilityOptionsVisible.value = !isVisibilityOptionsVisible.value))
+                            }, [
+                                _hoisted_20,
+                                createTextVNode(" Visibility "),
+                                createElementVNode("span", _hoisted_21, toDisplayString(visibility.value == 0 ? 'Everyone' : visibility.value == 1 ? 'Followers' : visibility.value == 2 ? 'Following' : 'Selected'), 1)
+                            ])
+                        ]),
+                        withDirectives(createVNode(Transition, { name: "visibility-fadein" }, {
+                            default: withCtx(() => [
+                                createElementVNode("div", _hoisted_22, [
+                                    createElementVNode("button", {
+                                        onClick: _cache[6] || (_cache[6] = ($event) => (handleVisibility(0)))
+                                    }, [
+                                        _hoisted_23,
+                                        _hoisted_24,
+                                        withDirectives((openBlock(), createElementBlock("svg", _hoisted_25, [..._hoisted_27], 512)), [
+                                            [vShow, visibility.value == 0]
+                                        ])
+                                    ]),
+                                    createElementVNode("button", {
+                                        onClick: _cache[7] || (_cache[7] = ($event) => (handleVisibility(1)))
+                                    }, [
+                                        _hoisted_28,
+                                        _hoisted_29,
+                                        withDirectives((openBlock(), createElementBlock("svg", _hoisted_30, [..._hoisted_32], 512)), [
+                                            [vShow, visibility.value == 1]
+                                        ])
+                                    ]),
+                                    createElementVNode("button", {
+                                        onClick: _cache[8] || (_cache[8] = ($event) => (handleVisibility(2)))
+                                    }, [
+                                        _hoisted_33,
+                                        _hoisted_34,
+                                        withDirectives((openBlock(), createElementBlock("svg", _hoisted_35, [..._hoisted_37], 512)), [
+                                            [vShow, visibility.value == 2]
+                                        ])
+                                    ]),
+                                    createElementVNode("button", {
+                                        onClick: _cache[9] || (_cache[9] = ($event) => (handleVisibility(3)))
+                                    }, [
+                                        _hoisted_38,
+                                        _hoisted_39,
+                                        withDirectives((openBlock(), createElementBlock("svg", _hoisted_40, [..._hoisted_42], 512)), [
+                                            [vShow, visibility.value == 3]
+                                        ])
+                                    ])
+                                ])
+                            ]),
+                            _: 1
+                        }, 512), [
+                            [vShow, isVisibilityOptionsVisible.value]
+                        ]),
+                        createElementVNode("button", {
+                            class: "btn-primary btn-share",
+                            onClick: _cache[10] || (_cache[10] = ($event) => (handleShare()))
+                        }, " Share ")
                     ])
                 ])
-            ]));
-        };
-    }
-});script$2.__file = "src/components/post/PostHome.vue";const _hoisted_1$1 = {
-    key: 0,
-    style: { "width": "100%" }
-};
-const _hoisted_2 = createStaticVNode("<div class=\"image\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:40px;\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 6);
-const _hoisted_8 = [
-    _hoisted_2
-];
-const _hoisted_9 = {
-    key: 1,
-    class: "skeleton-loader",
-    style: { "padding-top": "20px", "background": "transparent" }
-};
-const _hoisted_10 = createStaticVNode("<div class=\"image\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:40px;\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"text\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 6);
-const _hoisted_16 = [
-    _hoisted_10
-];
-const _hoisted_17 = { key: 2 };
-const _hoisted_18 = createStaticVNode("<div class=\"image\" style=\"margin-left:0px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-top:-45px;width:25%;margin-bottom:20px;margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:60px;\" data-v-2606e696></div>", 5);
-const _hoisted_23 = [
-    _hoisted_18
-];
-const _hoisted_24 = {
-    key: 3,
-    class: "skeleton-loader",
-    style: { "padding-top": "12%", "display": "flex", "flex-direction": "column", "align-items": "center", "background": "transparent" }
-};
-const _hoisted_25 = createStaticVNode("<div class=\"image\" style=\"height:85px;width:85px;border-radius:50%;margin-left:0px;align-self:center;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;width:50%;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;margin-top:20px;\" data-v-2606e696></div><div class=\"text\" style=\"margin-left:0px;\" data-v-2606e696></div><div class=\"btns\" data-v-2606e696></div>", 5);
-const _hoisted_30 = [
-    _hoisted_25
-];
-var script$1 = defineComponent({
-    __name: 'SkeletonLoader',
-    props: {
-        count: {
-            type: Number,
-            default: 4
-        },
-        type: String
-    },
-    setup(__props) {
-        const props = __props;
-        return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock(Fragment, null, [
-                (!props?.type)
-                    ? (openBlock(), createElementBlock("div", _hoisted_1$1, [
-                        (openBlock(true), createElementBlock(Fragment, null, renderList(props.count, (item) => {
-                            return (openBlock(), createElementBlock("div", {
-                                class: "skeleton-loader",
-                                key: item
-                            }, [..._hoisted_8]));
-                        }), 128))
-                    ]))
-                    : createCommentVNode("v-if", true),
-                (props?.type && props?.type === 'full-post')
-                    ? (openBlock(), createElementBlock("div", _hoisted_9, [..._hoisted_16]))
-                    : createCommentVNode("v-if", true),
-                (props?.type && props?.type === 'comments')
-                    ? (openBlock(), createElementBlock("div", _hoisted_17, [
-                        (openBlock(), createElementBlock(Fragment, null, renderList(3, (item) => {
-                            return createElementVNode("div", {
-                                class: "skeleton-loader",
-                                style: { "padding-top": "20px", "background": "transparent" },
-                                key: item
-                            }, [..._hoisted_23]);
-                        }), 64))
-                    ]))
-                    : createCommentVNode("v-if", true),
-                (props?.type && props?.type === 'profile')
-                    ? (openBlock(), createElementBlock("div", _hoisted_24, [..._hoisted_30]))
-                    : createCommentVNode("v-if", true)
             ], 64));
         };
     }
-});var css_248z$1 = "\n.skeleton-loader[data-v-2606e696] {\n    width: 600px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding: 10px;\n    padding-top: 30px;\n    padding-bottom: 50px;\n    background: var(--color-background-mute);\n    margin-bottom: 10px;\n    -webkit-animation: pulse-2606e696 2s ease-out infinite;\n            animation: pulse-2606e696 2s ease-out infinite;\n}\n@media (max-width: 600px) {\n.skeleton-loader[data-v-2606e696] {\n        width: 100%;\n}\n}\n.image[data-v-2606e696] {\n    width: 40px;\n    height: 40px;\n    background: rgba(255, 255, 255, 0.1);\n    -webkit-align-self: flex-start;\n        -ms-flex-item-align: start;\n            align-self: flex-start;\n    margin-left: 5%;\n    border-radius: 20px;\n    margin-bottom: 20px;\n}\n.text[data-v-2606e696] {\n    width: 75%;\n    height: 10px;\n    background: rgba(255, 255, 255, 0.1);\n    border-radius: 15px;\n    margin-bottom: 10px;\n    margin-left: 18%;\n}\n.btns[data-v-2606e696] {\n    width: 90%;\n    margin-left: 5%;\n    height: 30px;\n    background: rgba(255, 255, 255, 0.1);\n    border-radius: 15px;\n    margin-top: 30px;\n}\n@-webkit-keyframes pulse-2606e696 {\n0% {\n        opacity: 0.8;\n}\n50% {\n        opacity: 1;\n}\n100% {\n        opacity: 0.8;\n}\n}\n@keyframes pulse-2606e696 {\n0% {\n        opacity: 0.8;\n}\n50% {\n        opacity: 1;\n}\n100% {\n        opacity: 0.8;\n}\n}";
-styleInject(css_248z$1);script$1.__scopeId = "data-v-2606e696";
-script$1.__file = "src/components/template/SkeletonLoader.vue";const _hoisted_1 = {
-    key: 0,
-    style: { "marginTop": "12%", "marginBottom": "12%", "background": "var(--color-background-mute)", "display": "flex", "flex-direction": "column" }
-};
-var script = defineComponent({
-    __name: 'Home',
-    setup(__props) {
-        const collapsed = ref(true);
-        const isLoading = ref(true);
-        const posts = ref();
-        const p = usePostsApi();
-        onMounted(() => {
-            if (p.posts.length > 0) {
-                posts.value = p.posts;
-                isLoading.value = false;
-            }
-            else {
-                p.getPosts()
-                    .then((val) => {
-                    if (val) {
-                        posts.value = val;
-                        isLoading.value = false;
-                    }
-                });
-            }
-        });
-        return (_ctx, _cache) => {
-            return (openBlock(), createElementBlock(Fragment, null, [
-                createVNode(script$5),
-                createVNode(script$4, {
-                    collapsed: collapsed.value,
-                    setCollapsed: (val) => collapsed.value = val
-                }, null, 8, ["collapsed", "setCollapsed"]),
-                createVNode(script$3, {
-                    toggleSidebar: () => collapsed.value = !collapsed.value
-                }, null, 8, ["toggleSidebar"]),
-                (isLoading.value)
-                    ? (openBlock(), createBlock(script$1, {
-                        key: 0,
-                        style: { "margin-top": "12%" }
-                    }))
-                    : createCommentVNode("v-if", true),
-                createVNode(Transition, { appear: "" }, {
-                    default: withCtx(() => [
-                        (!isLoading.value)
-                            ? (openBlock(), createElementBlock("div", _hoisted_1, [
-                                (openBlock(true), createElementBlock(Fragment, null, renderList(posts.value, (item) => {
-                                    return (openBlock(), createBlock(script$2, {
-                                        item: item,
-                                        key: item.id
-                                    }, null, 8, ["item"]));
-                                }), 128))
-                            ]))
-                            : createCommentVNode("v-if", true)
-                    ]),
-                    _: 1
-                })
-            ], 64));
-        };
-    }
-});var css_248z = "\n@media (max-width: 480px) {\n.v-enter-active[data-v-fae5bece],\n    .v-leave-active[data-v-fae5bece] {\n        transition: opacity 0.2s ease-in;\n}\n.v-enter-from[data-v-fae5bece],\n    .v-leave-to[data-v-fae5bece] {\n        opacity: 0;\n}\n}\n\n";
-styleInject(css_248z);script.__scopeId = "data-v-fae5bece";
-script.__file = "src/views/Home.vue";export{script as default};
+});var css_248z = "\n.post-input[data-v-b2d47914]:empty:not(:focus):before{\n  content:attr(placeholder);\n  color:grey;\n}\n.post-input[data-v-b2d47914] {\n    background-color: transparent;\n    border: 0px;\n    font-size: 18px;\n    border-bottom: 2px solid var(--c-divider-dark-1);\n    color: white;\n    width: 100%;\n    height: 30vh;\n    margin-top: 20px;\n    padding-right: 12%;\n    resize: none;\n}\n.post-input[data-v-b2d47914]:focus {\n    outline: none;\n}\n.btn-share[data-v-b2d47914] {\n    position: absolute;\n    right: 20px;\n}\n.post-options-1[data-v-b2d47914] {\n    position: absolute;\n    right: 20px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n}\n.post-options-1 > button[data-v-b2d47914] {\n    margin-bottom: 10px;\n    background-color: transparent;\n    border: 0px;\n    border-radius: 50%;\n    padding: 8px;\n    padding-bottom: 3px;\n    cursor: pointer;\n    z-index: 10;\n}\n.post-options-1 > button[data-v-b2d47914]:active {\n    background-color: var(--c-black-mute);\n}\n.options-btn[data-v-b2d47914] {\n    background-color: transparent;\n    border: 0px;\n    color: white;\n    padding: 5px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    font-size: 16px;\n    margin-bottom: 5px;\n    cursor: pointer;\n}\n.options-btn svg[data-v-b2d47914] {\n    margin-right: 10px;\n}\n.slide-down-enter-active[data-v-b2d47914],\n.slide-down-leave-active[data-v-b2d47914] {\n  -webkit-transform-origin: top;\n          transform-origin: top;\n  transition: -webkit-transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000);\n  transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000);\n  transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000), -webkit-transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000);\n}\n.slide-down-enter-to[data-v-b2d47914],\n.slide-down-leave-from[data-v-b2d47914] {\n  -webkit-transform: scaleY(1);\n          transform: scaleY(1);\n}\n.slide-down-enter-from[data-v-b2d47914],\n.slide-down-leave-to[data-v-b2d47914] {\n  -webkit-transform: scaleY(0);\n          transform: scaleY(0);\n}\n.visibility-fadein-enter-to[data-v-b2d47914],\n.visibility-fadein-leave-from[data-v-b2d47914] {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    transition: 0.2s ease;\n}\n.visibility-fadein-enter-from[data-v-b2d47914],\n.visibility-fadein-leave-to[data-v-b2d47914] {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    transition: 0.2s ease;\n}\n.active-format-option[data-v-b2d47914] {\n    background-color: var(--c-indigo);\n    transition: all 0.3s ease;\n}\n.format-options[data-v-b2d47914] {\n    margin-top: -50px;\n    padding-top: 50px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    background-color: var(--c-divider-dark-1);\n    border-radius: 20px;\n    padding-bottom: 5px;\n}\n.format-options > button[data-v-b2d47914] {\n    background: transparent;\n    border: none;\n    color: var(--c-primary);\n    margin-bottom: 7px;\n    cursor: pointer;\n}\n.toxicity-msg[data-v-b2d47914] {\n    color: #E74C3C;\n}\nmeter[data-v-b2d47914] {\n    background: #E74C3C55;\n    border-radius: 20px;\n    width: 100%;\n    height: 7px;\n    margin-top: 20px;\n    border-color: transparent;\n}\nmeter[data-v-b2d47914]::-webkit-meter-bar {\n    background: #E74C3CCC;\n    border-radius: 20px;\n}\nmeter[data-v-b2d47914]::-moz-meter-bar{\n    background: #E74C3C;\n    border-radius: 20px;\n    -moz-transition: width 0.5s ease;\n    transition: width 0.5s ease;\n}\nmeter[data-v-b2d47914]::-webkit-meter-optimum-value {\n    background: #E74C3C;\n    border-radius: 20px;\n    -webkit-transition: width 0.5 ease;\n    transition: width 0.5 ease;\n}\n.toxicity-level[data-v-b2d47914]::-webkit-meter-optimum-value {\n    color: blue;\n}\n.visibility-options[data-v-b2d47914] {\n    position: absolute;\n    margin-top: 80px;\n    background-color: var(--c-black-mute);\n    border: 2px solid var(--c-divider-dark-1); \n    border-radius: 10px;\n    max-width: 80%;\n    box-shadow:  3px 3px 10px #000,\n             0px 0px 0px #000;\n    overflow: hidden;\n}\n.visibility-options > button[data-v-b2d47914] {\n    background: transparent;\n    border: none;\n    color: white;\n    text-align: left;\n    padding: 15px;\n    padding-top: 10px;\n    padding-bottom: 10px;\n    cursor: pointer;\n    width: 100%;\n}\n.visibility-options > button[data-v-b2d47914]:hover {\n    background: #1e1e1e;\n}\n.visibility-options > button > svg[data-v-b2d47914] {\n    float: right;\n    margin-top: -30px;\n}\n.visibility-desc[data-v-b2d47914] {\n    font-size: 15px;\n    color: #ababab;\n    margin-top: 2px;\n}\n";
+styleInject(css_248z);script.__scopeId = "data-v-b2d47914";
+script.__file = "src/views/CreatePost.vue";export{script as default};
