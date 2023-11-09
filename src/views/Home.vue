@@ -16,7 +16,7 @@ const collapsed = ref(true)
 const isLoading = ref(true)
 const posts : Ref<PostDataType[] | undefined> = ref();
 (window as any).app.use(createPinia());
-(window as any).use(Vue3Sanitize, {
+(window as any).app.use(Vue3Sanitize, {
         allowedTags: ['a', 'b', 'i', 'font', 'br', 'div'],
         allowedAttributes: {
             a: ['href'],

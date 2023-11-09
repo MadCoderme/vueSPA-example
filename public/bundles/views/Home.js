@@ -19193,7 +19193,7 @@ var script = defineComponent({
         const isLoading = ref(true);
         const posts = ref();
         window.app.use(createPinia());
-        window.use(Vue3Sanitize, {
+        window.app.use(Vue3Sanitize, {
             allowedTags: ['a', 'b', 'i', 'font', 'br', 'div'],
             allowedAttributes: {
                 a: ['href'],
