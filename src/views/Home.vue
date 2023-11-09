@@ -14,21 +14,19 @@ import Vue3Sanitize from 'vue-3-sanitize'
 
 const collapsed = ref(true)
 const isLoading = ref(true)
-const posts : Ref<PostDataType[] | undefined> = ref()
-const p = usePostsApi()
-
-onMounted(() => {
-
-    (window as any).app.use(createPinia())
-    (window as any).use(Vue3Sanitize, {
+const posts : Ref<PostDataType[] | undefined> = ref();
+(window as any).app.use(createPinia());
+(window as any).use(Vue3Sanitize, {
         allowedTags: ['a', 'b', 'i', 'font', 'br', 'div'],
         allowedAttributes: {
             a: ['href'],
             font: ['size']
         },
         disallowedTagsMode: 'escape'
-    })
+});
+const p = usePostsApi()
 
+onMounted(() => {
     if (p.posts.length > 0) {
         posts.value = p.posts
         isLoading.value = false

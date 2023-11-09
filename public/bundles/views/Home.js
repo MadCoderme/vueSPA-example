@@ -19192,16 +19192,17 @@ var script = defineComponent({
         const collapsed = ref(true);
         const isLoading = ref(true);
         const posts = ref();
+        window.app.use(createPinia());
+        window.use(Vue3Sanitize, {
+            allowedTags: ['a', 'b', 'i', 'font', 'br', 'div'],
+            allowedAttributes: {
+                a: ['href'],
+                font: ['size']
+            },
+            disallowedTagsMode: 'escape'
+        });
         const p = usePostsApi();
         onMounted(() => {
-            window.app.use(createPinia())(window).use(Vue3Sanitize, {
-                allowedTags: ['a', 'b', 'i', 'font', 'br', 'div'],
-                allowedAttributes: {
-                    a: ['href'],
-                    font: ['size']
-                },
-                disallowedTagsMode: 'escape'
-            });
             if (p.posts.length > 0) {
                 posts.value = p.posts;
                 isLoading.value = false;
