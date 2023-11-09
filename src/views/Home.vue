@@ -61,6 +61,10 @@ onMounted(() => {
     </Transition>
 </template>
 <style scoped>
+@import '../assets/base.css';
+@import '../assets/main.css';
+@import '../assets/common.css';
+
 @media (max-width: 480px) {
     .v-enter-active,
     .v-leave-active {
