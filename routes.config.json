@@ -7,17 +7,17 @@
         ]
     },
     {
-        "path": "/fruits",
-        "component": "views/Fruits.vue",
+        "path": "/search",
+        "component": "views/Search.vue",
         "meta": [
-            { "name": "title", "content": "Fruits page!" }
+            { "name": "title", "content": "Search String" }
         ]
     },
     {
-        "path": "/flowers",
-        "component": "views/Flowers.vue",
+        "path": "/create",
+        "component": "views/CreatePost.vue",
         "meta": [
-            { "name": "title", "content": "Flowers page!" }
+            { "name": "title", "content": "New post" }
         ]
     }
 ]

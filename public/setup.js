@@ -10,7 +10,7 @@ window.onload = async() => {
         })
 }
 
-let app
+window.app = null
 const Setup = {
     serve: (container) => {
         mountPath(window.location.hash, container, true)
@@ -35,9 +35,9 @@ const mountPath = (route, container, isFirstTime) => {
         Setup.updateMetaInformation(p)
         import('./bundles/' + p.component.replace('.vue', '.js'))
             .then((script) => {
-                if (app) app.unmount()
-                app = createApp(script.default)
-                app.mount(container)
+                if (window.app) window.app.unmount()
+                window.app = createApp(script.default)
+                window.app.mount(container)
             })
     }
     else 
@@ -47,9 +47,9 @@ const mountPath = (route, container, isFirstTime) => {
         Setup.updateMetaInformation(p)
         import('./bundles/' + p.component.replace('.vue', '.js'))
             .then((script) => {
-                if (app) app.unmount()
-                app = createApp(script.default)
-                app.mount(container)
+                if (window.app) window.app.unmount()
+                window.app = createApp(script.default)
+                window.app.mount(container)
                 window.history.replaceState(null, '', window.location.origin + '/#' + p.path)
             })
     }
