@@ -1,4 +1,22 @@
 <!-- eslint-disable vue/multi-word-component-names -->
+<style scoped>
+@import '../assets/base.css';
+@import '../assets/main.css';
+@import '../assets/common.css';
+
+@media (max-width: 480px) {
+    .v-enter-active,
+    .v-leave-active {
+        transition: opacity 0.2s ease-in;
+    }
+
+    .v-enter-from,
+    .v-leave-to {
+        opacity: 0;
+    }
+}
+
+</style>
 <script setup lang="ts">
 import { onMounted, ref, type Ref } from 'vue';
 
@@ -60,21 +78,3 @@ onMounted(() => {
         </div>
     </Transition>
 </template>
-<style scoped>
-@import '../assets/base.css';
-@import '../assets/main.css';
-@import '../assets/common.css';
-
-@media (max-width: 480px) {
-    .v-enter-active,
-    .v-leave-active {
-        transition: opacity 0.2s ease-in;
-    }
-
-    .v-enter-from,
-    .v-leave-to {
-        opacity: 0;
-    }
-}
-
-</style>
