@@ -1,1 +1,1 @@
-export const routes = [{"path":"/","component":"views/Home.vue","meta":[{"name":"title","content":"Home page!"}]},{"path":"/search","component":"views/Search.vue","meta":[{"name":"title","content":"Search String"}]},{"path":"/create","component":"views/CreatePost.vue","meta":[{"name":"title","content":"New post"}]}]
+export const routes = [{"path":"/todo","component":"views/Todo.vue","meta":[]},{"path":"/done","component":"views/Done.vue","meta":[]}]
